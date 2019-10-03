@@ -155,7 +155,7 @@
 										data-endspeed="300"
 										data-endeasing="Power4.easeIn" style="z-index: 10;">
 										<br>
-											<b style="font-size: 20px;">
+											<b style="">
 												Utiliza la más novedosa tecnología <br>
 												blockchain adaptada al mercado <br>
 												venezolano.
@@ -275,7 +275,7 @@
 									data-endspeed="300"
 									data-forcerewind="on" style="z-index: 3;">
 									<br>
-										<b style="font-size: 20px">
+										<b style="">
 											Tendrás acceso a las ordenes de <br>
 											compra y venta, precios ofertados <br>
 											y volúmenes intercambiados en <br>
@@ -297,7 +297,7 @@
 									data-endspeed="1000"
 									data-endeasing="Power4.easeIn" style="z-index: 10;">
 									<a href="#" class="btn btn-default btn-lg" style="">
-										<span>Ingresar</span> 
+										<span>INGRESAR</span> 
 									</a>
 								</div>														
 
