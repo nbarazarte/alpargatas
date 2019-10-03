@@ -27,11 +27,11 @@
 							<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
 								@include('revolutionSlider')
 							<!-- END REVOLUTION SLIDER -->
-								@include('scripts')
 							</div>
 						</div>
 					</div>
 				</div>
+
 
 				<div class="kswr-column-settings" data-minheight="0px" data-isminheight="off" data-theclasses="kswr_pnone kswr_mnone kswr_bnone"></div>
 

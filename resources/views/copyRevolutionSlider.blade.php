@@ -24,3 +24,5 @@
 	<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
 
 </div>
+
+@include('scripts')
