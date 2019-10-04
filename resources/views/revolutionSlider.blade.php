@@ -192,7 +192,7 @@
 									data-endelementdelay="0.1" 
 									data-endspeed="300" 
 									style="z-index: 2;">
-									<img src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png" width="55%">
+									<img src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png" width="60%">
 								</div>
 
 							</li>
@@ -210,21 +210,22 @@
 								</div>
 
 								<div class="tp-caption lft boxshadow" 
-									data-x="70" 
-									data-y="90" 
+									data-x="0" 
+									data-y="150" 
 									data-speed="900" 
 									data-start="500" 
 									data-easing="easeOutBack"
 									data-autoplay="true"
 									data-volume="mute" 
-									data-aspectratio="16:9"
+									data-aspectratio="4:3"
 									data-endeasing="Power4.easeIn" style="z-index: 10;">
 
-									<video class="" preload="none" width="640" height="360" poster="">
+									<video class="" preload="none" width="55%" height="55%" poster="">
 										<source src="assets/images/demo/video/CRYPTIAHD.mp4" type="video/mp4" />
 									</video>
 
 								</div>
+
 								<div class="tp-caption lft start" 
 									data-x="right" 
 									data-y="0" 
