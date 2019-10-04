@@ -79,8 +79,8 @@
 
 						<ul class="hide">
 
-								<!-- SLIDE  -->
-							<li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+							<!-- SLIDE  -->
+							<li data-transition="fade" data-slotamount="7" data-masterspeed="800"  data-saveperformance="off" >
 
 								<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -294,7 +294,7 @@
 								</div>
 
 								<div class="tp-caption customin ltl tp-resizeme"
-									data-x="left" data-hoffset="810"
+									data-x="left" data-hoffset="890"
 									data-y="370"
 									data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 									data-speed="800"
