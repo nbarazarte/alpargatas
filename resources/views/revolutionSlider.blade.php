@@ -85,7 +85,7 @@
 								<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 								<div class="tp-caption"
-									data-x="center"
+									data-x="left"
 									data-y="center"
 									style="z-index: 10;width: 100%; height: 100%">
 									<div id="particles" style="width: 100%; height: 100%"></div>	
@@ -203,7 +203,7 @@
 								<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
 
 								<div class="tp-caption"
-									data-x="center"
+									data-x="left"
 									data-y="center"
 									style="z-index: 10;width: 100%; height: 100%">
 									<div id="particles2" style="width: 100%; height: 100%"></div>	
@@ -341,11 +341,6 @@
   });
 
   particleground(document.getElementById('particles2'), {
-    dotColor: '#ffffff',
-    lineColor: '#ffffff'
-  });
-
-  particleground(document.getElementById('particles3'), {
     dotColor: '#ffffff',
     lineColor: '#ffffff'
   });
@@ -725,10 +720,10 @@
     maxSpeedY: 0.7,
     directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
     directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
-    density: 10000, // How many particles will be generated: one particle every n pixels
+    density: 6000, // How many particles will be generated: one particle every n pixels
     dotColor: '#666666',
     lineColor: '#666666',
-    particleRadius: 7, // Dot size
+    particleRadius: 3, // Dot size
     lineWidth: 0.5,
     curvedLines: false,
     proximity: 100, // How close two dots need to be before they join
