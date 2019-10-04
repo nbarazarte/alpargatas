@@ -12,11 +12,6 @@
 		<br><br>
 			<!-- wrapper -->
 					
-					<!-- 
-					<div >
-						@ include('particulas2')
-					</div>
-				-->
 			<div id="wrapper">
 
 				<!-- 
@@ -84,83 +79,82 @@
 
 						<ul class="hide">
 
-
 								<!-- SLIDE  -->
-								<li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+							<li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
 
-									<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-									<div class="tp-caption"
-										data-x="center"
-										data-y="center"
-										style="z-index: 10;width: 100%; height: 100%">
-										<div id="particles" style="width: 100%; height: 100%"></div>	
-									</div>
+								<div class="tp-caption"
+									data-x="center"
+									data-y="center"
+									style="z-index: 10;width: 100%; height: 100%">
+									<div id="particles" style="width: 100%; height: 100%"></div>	
+								</div>
 
-									<div class="tp-caption lft start" 
-										data-x="0" 
-										data-y="0" 
-										data-speed="750" 
-										data-start="750" 
-										data-easing="easeOutExpo" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300"
-										data-endeasing="Power4.easeIn" style="z-index: 10;">
-											<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png">
-									</div>
+								<div class="tp-caption lft start" 
+									data-x="0" 
+									data-y="0" 
+									data-speed="750" 
+									data-start="750" 
+									data-easing="easeOutExpo" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.1" 
+									data-endspeed="300"
+									data-endeasing="Power4.easeIn" style="z-index: 10;">
+										<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png">
+								</div>
 
-									<div class="tp-caption medium_light_white lfb start" 
-										data-x="left" data-hoffset="70"
-										data-y="96" 
-										data-speed="300" 
-										data-start="1200" 
-										data-easing="easeOutExpo" 
-										data-splitin="none" 
-										data-splitout="none" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300"
-										data-endeasing="Power4.easeIn" style="z-index: 10;">
-										<h3>
-											Compra y Vende <br>Criptomonedas
-										</h3>
-									</div>
+								<div class="tp-caption medium_light_white lfb start" 
+									data-x="left" data-hoffset="70"
+									data-y="96" 
+									data-speed="300" 
+									data-start="1200" 
+									data-easing="easeOutExpo" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.1" 
+									data-endspeed="300"
+									data-endeasing="Power4.easeIn" style="z-index: 10;">
+									<h3>
+										Compra y Vende <br>Criptomonedas
+									</h3>
+								</div>
 
-									<div class="tp-caption block_black lfl start" 
-										data-x="left" data-hoffset="70"
-										data-y="195" 
-										data-speed="300" 
-										data-start="1500" 
-										data-easing="easeOutExpo" 
-										data-splitin="none" 
-										data-splitout="none" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300"
-										data-endeasing="Power4.easeIn" style="z-index: 10;">
-											<h3>CRYPTIA EXCHANGE</h3>
-									</div>
+								<div class="tp-caption block_black lfl start" 
+									data-x="left" data-hoffset="70"
+									data-y="195" 
+									data-speed="300" 
+									data-start="1500" 
+									data-easing="easeOutExpo" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.1" 
+									data-endspeed="300"
+									data-endeasing="Power4.easeIn" style="z-index: 10;">
+										<h3>CRYPTIA EXCHANGE</h3>
+								</div>
 
-									<div class="tp-caption small_light_white lfl start" 
-										data-x="left" data-hoffset="70"
-										data-y="250" 
-										data-speed="1000" 
-										data-start="1800" 
-										data-easing="easeOutExpo" 
-										data-splitin="none" 
-										data-splitout="none" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300"
-										data-endeasing="Power4.easeIn" style="z-index: 10;">
-										<br>
-											<b style="">
-												Utiliza la más novedosa tecnología <br>
-												blockchain adaptada al mercado <br>
-												venezolano.
-											</b>
-									</div>
+								<div class="tp-caption small_light_white lfl start" 
+									data-x="left" data-hoffset="70"
+									data-y="250" 
+									data-speed="1000" 
+									data-start="1800" 
+									data-easing="easeOutExpo" 
+									data-splitin="none" 
+									data-splitout="none" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.1" 
+									data-endspeed="300"
+									data-endeasing="Power4.easeIn" style="z-index: 10;">
+									<br>
+										<b style="">
+											Utiliza la más novedosa tecnología <br>
+											blockchain adaptada al mercado <br>
+											venezolano.
+										</b>
+								</div>
 
 								<div class="tp-caption tp-fade fadeout fullscreenvideo"
 									data-x="0"
@@ -188,11 +182,23 @@
 
 								</div>
 
-								</li>
+								<div class="tp-caption lfb" 
+									data-x="right" data-hoffset="-70" 
+									data-y="150" 
+									data-speed="2000" 
+									data-start="500" 
+									data-easing="easeOutExpo" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.1" 
+									data-endspeed="300" 
+									style="z-index: 2;">
+									<img src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png" width="55%">
+								</div>
 
+							</li>
 
 							<!-- SLIDE -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+							<li data-transition="fade" data-slotamount="1" data-masterspeed="300" data-saveperformance="off"  data-title="Slide">
 
 								<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
 
@@ -209,9 +215,12 @@
 									data-speed="900" 
 									data-start="500" 
 									data-easing="easeOutBack"
+									data-autoplay="true"
+									data-volume="mute" 
+									data-aspectratio="16:9"
 									data-endeasing="Power4.easeIn" style="z-index: 10;">
 
-									<video class="" preload="none" width="640" height="360" poster="" controls>
+									<video class="" preload="none" width="640" height="360" poster="">
 										<source src="assets/images/demo/video/CRYPTIAHD.mp4" type="video/mp4" />
 									</video>
 
