@@ -315,7 +315,7 @@
 
 	</div>
 
-	<div class="callout alert alert-warning noborder margin-top-60 margin-bottom-60">
+	<div class="callout callout-theme-color alert alert-warning noborder margin-top-60 margin-bottom-60">
 
 		<div class="text-center">
 
@@ -324,7 +324,7 @@
 				El mercado de criptomonedas está en constante expansión produciendo nuevas oportunidades de negocio a nivel mundial. <br>A través de la tecnología blockchain ofrecemos una forma segura y confiable de intercambiar criptomonedas.
 			</p>
 			
-			<a style="background-color: #DCC857; border: #DCC857" href="#" rel="nofollow" target="_blank" class="btn btn-warning btn-lg margin-top-30">Ver Mercados</a>
+			<a style="" href="#" rel="nofollow" target="_blank" class="btn btn-warning btn-lg margin-top-30">Ver Mercados</a>
 
 		</div>
 
@@ -741,7 +741,7 @@
 <!-- /BLOG -->
 
 <!-- CALLOUT -->
-<div class="callout callout-theme-color">
+<div class="callout callout-theme-color alert alert-warning">
 	<div class="container">
 
 		<div class="row">
@@ -751,7 +751,7 @@
 			</div>
 
 			<div class="col-md-3"><!-- button -->
-				<a href="page-careers.html" class="btn btn-primary btn-lg">Ingresar ahora</a>
+				<a href="#" class="btn btn-primary btn-lg">Ingresar ahora</a>
 			</div>
 
 		</div>

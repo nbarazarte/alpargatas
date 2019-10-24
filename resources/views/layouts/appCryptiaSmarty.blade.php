@@ -5,9 +5,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Cryptia Exchange | Compra y venta de criptomonedas</title>
-		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Author" content="" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -101,9 +101,7 @@
 
 						<!-- Logo -->
 						<a class="logo pull-left scrollTo" href="#top">
-							
 							<img src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
-
 						</a>
 
 						<!-- 
@@ -153,7 +151,7 @@
 									</li>
 
 									<li><!-- NOTICIAS -->
-										<a href="#noticias">
+										<a href="#">
 											NOTICIAS
 										</a>
 									</li>
@@ -204,24 +202,23 @@
 						
 						<div class="col-md-3">
 							<!-- Footer Logo -->
-							<img class="footer-logo" src="assets/images/logo-footer.png" alt="" />
+							<img class="footer-logo" src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
 
 							<!-- Small Description -->
-							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+							<p>La forma más segura y confiable de intercambiar criptomonedas.</p>
 
 							<!-- Contact Address -->
 							<address>
 								<ul class="list-unstyled">
 									<li class="footer-sprite address">
-										PO Box 21132<br>
-										Here Weare St, Melbourne<br>
-										Vivas 2355 Australia<br>
+										Av. Francisco de Miranda con Mohedano, Edif. Centro de Seguros Sudamérica, piso 11, oficina 11-B2, Urb. El Rosal, Caracas (Chacao), <br>
+										Miranda Zona Postal 1060 Caracas, Venezuela
 									</li>
 									<li class="footer-sprite phone">
-										Phone: 1-800-565-2390
+										Teléfonos: +58-0212-953-5109 / 7412 / 8130 / 6733
 									</li>
 									<li class="footer-sprite email">
-										<a href="mailto:support@yourname.com">support@yourname.com</a>
+										<a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a>
 									</li>
 								</ul>
 							</address>
@@ -232,7 +229,7 @@
 						<div class="col-md-3">
 
 							<!-- Latest Blog Post -->
-							<h4 class="letter-spacing-1">LATEST NEWS</h4>
+							<h4 class="letter-spacing-1">ÚLTIMAS NOTICIAS</h4>
 							<ul class="footer-posts list-unstyled">
 								<li>
 									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
@@ -254,15 +251,17 @@
 						<div class="col-md-2">
 
 							<!-- Links -->
-							<h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
+							<h4 class="letter-spacing-1">CRYPTIA EXCHANGE</h4>
 							<ul class="footer-links list-unstyled">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Our Services</a></li>
-								<li><a href="#">Our Clients</a></li>
-								<li><a href="#">Our Pricing</a></li>
-								<li><a href="#">Smarty Tour</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Incio</a></li>
+								<li><a href="#">Sobre Nosotros</a></li>
+								<li><a href="#">Mercados</a></li>
+								<li><a href="#">Monedas</a></li>
+								<li><a href="#">Noticias</a></li>
+								<li><a href="#">Tutoriales</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#contacto">Contacto</a></li>
+								<li><a href="#">Exchange</a></li>
 							</ul>
 							<!-- /Links -->
 
@@ -271,15 +270,15 @@
 						<div class="col-md-4">
 
 							<!-- Newsletter Form -->
-							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
-							<p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+							<h4 class="letter-spacing-1">MANTENTE EN CONTACTO</h4>
+							<p>Subscríbete a nuestro boletín para mantenerte informado</p>
 
 							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Tu dirección correo electrónico">
 									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
+										<button class="btn btn-primary" type="submit">Subscríbete</button>
 									</span>
 								</div>
 							</form>
@@ -287,30 +286,20 @@
 
 							<!-- Social Icons -->
 							<div class="margin-top-20">
-								<a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+								<a href="https://www.facebook.com/CryptiaExchange/?hc_ref=ARRunlUUrumZJ2D8puynjxgr67QxldbQ372nMx-bW7-dZK2xCWjN5jPlaS44ZNfBONU&fref=nf" class="social-icon social-icon-border social-facebook pull-left" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook">
 
 									<i class="icon-facebook"></i>
 									<i class="icon-facebook"></i>
 								</a>
 
-								<a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+								<a href="https://twitter.com/cryptiaexchange" class="social-icon social-icon-border social-twitter pull-left" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter">
 									<i class="icon-twitter"></i>
 									<i class="icon-twitter"></i>
 								</a>
 
-								<a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
-									<i class="icon-rss"></i>
-									<i class="icon-rss"></i>
+								<a href="https://www.instagram.com/cryptiaexchange/" class="social-icon social-icon-border social-gplus pull-left" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
 								</a>
 					
 							</div>
@@ -325,11 +314,9 @@
 				<div class="copyright">
 					<div class="container">
 						<ul class="pull-right nomargin list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Tarifas</a></li>
 						</ul>
-						&copy; All Rights Reserved, Company LTD
+						&copy; All Rights Reserved, Cryptia Exchange
 					</div>
 				</div>
 			</footer>
