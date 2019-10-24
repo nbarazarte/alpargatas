@@ -270,7 +270,7 @@
 	<div class="container">				
 		<br><br><br>				
 		<header class="text-center margin-bottom-60">
-			<h2>Cryptia Exchange</h2>
+			<h2 style="font-size: 60px">Cryptia Exchange</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -337,7 +337,7 @@
 	<div class="container">
 		<br><br><br>
 		<header class="text-center margin-bottom-60">
-			<h2>Monedas</h2>
+			<h2 style="font-size: 60px">Monedas</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA MÁS NOVEDOSA TECNOLOGÍA BLOCKCHAIN DEL MERCADO VENEZOLANO</b></span></h2>
 			<hr />
 		</header>
@@ -357,7 +357,8 @@
 <!-- /MONEDAS -->
 
 <!-- NOTICIAS -->
-<section id="noticias-resumen">
+<section id="noticias-resumen" class="parallax parallax-2" style="background-image: url('assets/images/demo/1200x800/2345634635-2.jpeg');">
+	<div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
 	<div class="container">
 		<br><br><br>
 		<header class="text-center margin-bottom-60">
@@ -385,13 +386,13 @@
 				.owl-padding-15
 				.owl-padding-20
 		-->
-		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": false, "pagination": false}'>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/24-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -399,7 +400,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -407,11 +408,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/17-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -419,7 +420,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -427,11 +428,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/30-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -439,7 +440,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -447,11 +448,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/26-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -459,7 +460,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -467,10 +468,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/18-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -478,7 +479,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -486,10 +487,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/34-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -497,7 +498,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -505,10 +506,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/37-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -516,7 +517,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -524,10 +525,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/23-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -535,7 +536,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -545,6 +546,7 @@
 		</div>
 
 	</div>
+
 </section>
 <!-- /NOTICIAS -->
 
@@ -553,7 +555,7 @@
 	<div class="container">
 		<br><br><br>
 		<header class="text-center margin-bottom-60">
-			<h2>Nuestro Blog</h2>
+			<h2 style="font-size: 60px">Nuestro Blog</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>SOMOS LA CASA DE INTERCAMBIO DE CRIPTOMONEDAS MÁS EFECTIVA</b></span></h2>
 			<hr />
 		</header>
@@ -579,11 +581,11 @@
 		-->
 		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/24-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -591,7 +593,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -599,11 +601,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/17-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -611,7 +613,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -619,11 +621,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/30-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -631,7 +633,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -639,11 +641,11 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/26-min.jpg" alt="">
 				</a>
 
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -651,7 +653,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -659,10 +661,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/18-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -670,7 +672,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -678,10 +680,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/34-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -689,7 +691,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -697,10 +699,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/37-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -708,7 +710,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -716,10 +718,10 @@
 				</ul>
 			</div>
 			<div class="img-hover">
-				<a href="blog-single-default.html">
+				<a href="#">
 					<img class="img-responsive" src="assets/images/demo/451x300/23-min.jpg" alt="">
 				</a>
-				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Lorem Ipsum Dolor</a></h4>
+				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
 				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
@@ -727,7 +729,7 @@
 						29th Jan 2015
 					</li>
 					<li>
-						<a href="blog-single-default.html#comments">
+						<a href="##comments">
 							<i class="fa fa-comments"></i> 
 							3
 						</a>
@@ -765,7 +767,7 @@
 	<div class="container">
 		<br><br><br>
 		<header class="text-center margin-bottom-60">
-			<h2>Contáctanos</h2>
+			<h2 style="font-size: 60px">Contáctanos</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>COMO CLIENTE DE CRYPTIA EXCHANGE ERES EL MAYOR VALOR</b></span></h2>
 			<hr />
 		</header>
