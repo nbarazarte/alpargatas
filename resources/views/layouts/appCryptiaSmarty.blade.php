@@ -99,10 +99,32 @@
 							<i class="fa fa-bars"></i>
 						</button>
 
-						<!-- Logo -->
-						<a class="logo pull-left scrollTo" href="#top">
-							<img src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
-						</a>
+						@if (Route::current()->getName() == 'inicio')
+							
+							<!-- Logo -->
+							<a class="logo pull-left scrollTo" href="#top">
+								<img src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
+							</a>
+
+						@else
+
+							@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
+
+								<!-- Logo -->
+								<a class="logo pull-left" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000">
+									<img src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
+								</a>
+
+							@else
+
+								<!-- Logo -->
+								<a class="logo pull-left" href="http://{{ $_SERVER['SERVER_NAME'] }}">
+									<img src="wp-content/uploads/2017/12/logo-Cryptia-Exchange-menu.png" alt="" />
+								</a>
+
+							@endif
+
+						@endif
 
 						<!-- 
 							Top Nav 
@@ -120,59 +142,124 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- INICIO -->
-										<a href="#">
-											INICIO
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="#cryptia">CRYPTIA EXCHANGE</a></li>
-											<li><a href="#monedas">MONEDAS</a></li>
-											<li><a href="#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
-											<li><a href="#blog-resumen">NUESTRO BLOG</a></li>
-										</ul>
-									</li>
+									
+								@include('layouts.menu.inicio')
 
-									<li><!-- NOSOTROS -->
-										<a class="external" href="#">
+								@if (Route::current()->getName() == 'nosotros')
+									
+									<li class="active">
+										<a href="#nosotros">
 											SOBRE NOSOTROS
 										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#valores">NUESTROS VALORES</a></li>
+										</ul>	
 									</li>
 
+								@else
+
+									@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
+
+										<li><!-- NOSOTROS -->									
+											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros">
+												SOBRE NOSOTROS
+											</a>
+											<ul class="dropdown-menu">
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#valores">NUESTROS VALORES</a></li>
+											</ul>
+										</li>
+
+									@else
+
+										<li><!-- NOSOTROS -->									
+											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros">
+												SOBRE NOSOTROS
+											</a>
+											<ul class="dropdown-menu">
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#valores">NUESTROS VALORES</a></li>
+											</ul>
+										</li>									
+
+									@endif
+
+								@endif
+
+								@if (Route::current()->getName() == 'mercados')
+									
+									<li class="active"><a href="#mercados">MERCADOS</a></li>
+
+								@else
+
 									<li><!-- MERCADOS -->
-										<a class="external" href="#">
+										<a class="external" href="{{ route('mercados')}}">
 											MERCADOS
 										</a>
 									</li>
 
+								@endif
+
+								@if (Route::current()->getName() == 'monedas')
+									
+									<li class="active"><a href="#monedas">MONEDAS</a></li>
+
+								@else
+
 									<li><!-- MONEDAS -->
-										<a class="external" href="#">
+										<a class="external" href="{{ route('monedas')}}">
 											MONEDAS
 										</a>
 									</li>
 
+								@endif								
+
+								@if (Route::current()->getName() == 'noticias')
+									
+									<li class="active"><a href="#noticias">NOTICIAS</a></li>
+
+								@else
 									<li><!-- NOTICIAS -->
-										<a href="#">
+										<a href="{{ route('noticias')}}">
 											NOTICIAS
 										</a>
 									</li>
 
+								@endif
+									
+								@if (Route::current()->getName() == 'tutoriales')
+									
+									<li class="active"><a href="#tutoriales">TUTORIALES</a></li>
+
+								@else
+
 									<li><!-- TUTORIALES -->
-										<a class="external" href="#">
+										<a class="external" href="{{ route('tutoriales')}}">
 											TUTORIALES
 										</a>
 									</li>
+
+								@endif
+
+								@if (Route::current()->getName() == 'blog')
+									
+									<li class="active"><a href="#blog">BLOG</a></li>
+
+								@else
+
 									<li><!-- BLOG -->
-										<a class="external" href="#">
+										<a class="external" href="{{ route('blog')}}">
 											BLOG
 										</a>
 									</li>
+
+								@endif
+
 									<li><!-- CONTACTO -->
 										<a href="#contacto">
-											CONTACTO
+											CONTÁCTANOS
 										</a>
 									</li>
 									<li><!-- EXCHANGE -->
-										<a class="external" href="#">
+										<a class="external" href="https://exchange.cryptiaexchange.com/en/login" target="_blank">
 											EXCHANGE
 										</a>
 									</li>									
@@ -193,6 +280,160 @@
 			</div>
 
 			@yield('content')
+
+			<!-- CALLOUT -->
+			<div class="callout callout-theme-color alert alert-warning">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-9"><!-- title + shortdesc -->
+							<h3>Proporcionamos a nuestros usuarios la plataforma mas rápida y segura</h3>
+						</div>
+
+						<div class="col-md-3"><!-- button -->
+							<a href="https://exchange.cryptiaexchange.com/en/login" target="_blank" class="btn btn-primary btn-lg">Ingresar ahora</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- /CALLOUT -->
+
+			<!-- CONTACTO -->
+			<section id="contacto">
+				<div class="container">
+					<br>
+					<header class="text-center margin-bottom-60">
+						<h2 style="font-size: 60px">Contáctanos</h2>
+						<h2 class="weight-300 letter-spacing-1 size-13"><span><b>COMO CLIENTE DE CRYPTIA EXCHANGE ERES EL MAYOR VALOR</b></span></h2>
+						<hr />
+					</header>
+
+					<div class="row">
+
+						<!-- FORM -->
+						<div class="col-md-12 col-sm-12">
+
+							<h3>Si tienes dudas, comentarios o quieres ser parte de nuestro equipo <strong><em>¡contáctanos!</em></strong></h3>
+
+							
+							<!--
+								MESSAGES
+								
+									How it works?
+									The form data is posted to php/contact.php where the fields are verified!
+									php.contact.php will redirect back here and will add a hash to the end of the URL:
+										#alert_success 		= email sent
+										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
+										#alert_mandatory	= email not sent - required fields empty
+										Hashes are handled by assets/js/contact.js
+
+									Form data: required to be an array. Example:
+										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
+										Also, add `required` to input fields if is a mandatory field. 
+										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
+
+									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
+												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
+
+									WARNING! Do not change the `email` and `name`!
+												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+							-->
+
+							<!-- Alert Success -->
+							<div id="alert_success" class="alert alert-success margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Thank You!</strong> Your message successfully sent!
+							</div><!-- /Alert Success -->
+
+
+							<!-- Alert Failed -->
+							<div id="alert_failed" class="alert alert-danger margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>[SMTP] Error!</strong> Internal server error!
+							</div><!-- /Alert Failed -->
+
+
+							<!-- Alert Mandatory -->
+							<div id="alert_mandatory" class="alert alert-danger margin-bottom-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+							</div><!-- /Alert Mandatory -->
+
+
+							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-4">
+												<label for="contact:name">Nombre y Apellido *</label>
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:email">Dirección de Correo Electrónico *</label>
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Teléfono</label>
+												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="contact:subject">Asunto *</label>
+												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											</div>
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="contact:message">Mensaje *</label>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="contact:attachment">Archivo adjunto</label>
+
+												<!-- custom file upload -->
+												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Buscar" />
+												<small class="text-muted block">Tamaño máximo: 10Mb (zip/pdf/jpg/png)</small>
+
+											</div>
+										</div>
+									</div>
+
+								</fieldset>
+
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> ENVIAR MENSAJE</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+						<!-- /FORM -->
+
+
+
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
 
 			<!-- FOOTER -->
 			<footer id="footer">
@@ -253,15 +494,15 @@
 							<!-- Links -->
 							<h4 class="letter-spacing-1">CRYPTIA EXCHANGE</h4>
 							<ul class="footer-links list-unstyled">
-								<li><a href="#">Incio</a></li>
-								<li><a href="#">Sobre Nosotros</a></li>
-								<li><a href="#">Mercados</a></li>
-								<li><a href="#">Monedas</a></li>
-								<li><a href="#">Noticias</a></li>
-								<li><a href="#">Tutoriales</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#contacto">Contacto</a></li>
-								<li><a href="#">Exchange</a></li>
+								<li><a href="route('inicio')}}">Incio</a></li>
+								<li><a href="{{ route('nosotros')}}">Sobre Nosotros</a></li>
+								<li><a href="{{ route('mercados')}}">Mercados</a></li>
+								<li><a href="{{ route('monedas')}}">Monedas</a></li>
+								<li><a href="{{ route('noticias')}}">Noticias</a></li>
+								<li><a href="{{ route('tutoriales')}}">Tutoriales</a></li>
+								<li><a href="{{ route('blog')}}">Blog</a></li>
+								<li><a href="#contacto">Contáctanos</a></li>
+								<li><a href="https://exchange.cryptiaexchange.com/en/login" target="_blank">Exchange</a></li>
 							</ul>
 							<!-- /Links -->
 
