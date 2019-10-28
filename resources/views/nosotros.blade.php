@@ -40,7 +40,7 @@
 <section>
 	<div class="container">
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Cryptia Exchange</h2>
+			<h2 style="font-size: 60px">Cryptia <span>Exchange</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -82,30 +82,87 @@
 
 		</div>
 
-
-<div class="row">
-	<div class="col-md-6">
-		<h4>Misión</h4>
-
-		<p style="text-align: justify;">Cryptia Exchange nace de la necesidad de desarrollar un sistema financiero tecnológico que pueda contribuir a la transformación digital del capital venezolano. La suma de nuestros esfuerzos se concentra en despertar interés, motivación y confianza en inversores nacionales e internacionales que deseen comercializar criptoactivos mediante una exchange segura, y vanguardista.</p>
-
-		<p style="text-align: justify;">Garantes de las regulaciones y buenas prácticas en el entorno digital y financiero ponemos al alcance de nuestros clientes el medio idóneo para transar en un medio confiable y seguro para tus operaciones. De la mano de un equipo de profesionales especializados en el área financiera, Cryptia Exchange se establece como uno de los principales forjadores de la industria digital del país que ofrece estrategias de crecimiento sostenibles enfocadas en la atención, asesoría y satisfacción del cliente.</p>
-
-	</div>
-
-	<div class="col-md-6">
-		<h4>Visión</h4>
-		
-		<p style="text-align: justify;">Cryptia Exchange aspira liderar la industria comercial de criptoactivos venezolana con alcance internacional.La innovación tecnológica y financiera es un principio activo de nuestra plataforma para expedir soluciones que siempre generen a sus clientes las mejores oportunidades de crecimiento.</p>
-
-		<p style="text-align: justify;">Trabajamos para hacerles sentir que somos la elección correcta cuando de rapidez, soporte y fiabilidad se trate.<br>¡Tus estados de cuenta hablarán por si solos!</p>
-
-	</div>
-</div>
-
 	</div>
 </section>
 <!-- / Sobre nosotros-->
+
+<!-- 
+	INFO BAR 
+	outside .container and section
+-->
+<section class="info-bar info-bar-dark" style="background-color: #041333">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-4">
+				<i class="glyphicon glyphicon-globe"></i>
+				<h3>ALCANCE GLOBAL</h3>
+				<p>Modalidades de negocio internacional.</p>
+			</div>
+
+			<div class="col-sm-4">
+				<i class="fa fa-shield"></i>
+				<h3>LA PLATAFORMA MÁS SEGURA</h3>
+				<p>100% confiable.</p>
+			</div>
+
+			<div class="col-sm-4">
+				<i class="glyphicon glyphicon-flag"></i>
+				<h3>SOPORTE EN LÍNEA 24/7</h3>
+				<p>Contáctanos, estamos para servirte.</p>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+<!-- /INFO BAR -->
+
+<!-- Nuestra Misión-->
+<section id="mision">
+	<div class="container">
+		<br>
+		<div class="text-center">
+			<h2 style="font-size: 60px">Nuestra <span>Misión</span></h2>
+			<h2 class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">Desarrollar un sistema financiero tecnológico que pueda contribuir a la transformación digital del capital venezolano.</h2>
+		</div>					
+						
+		<div class="row">
+			
+			<div class="col-md-12">
+				<p style="text-align: justify;">La suma de nuestros esfuerzos se concentra en despertar interés, motivación y confianza en inversores nacionales e internacionales que deseen comercializar criptoactivos mediante una exchange segura, y vanguardista.</p>
+				<p style="text-align: justify;">Garantes de las regulaciones y buenas prácticas en el entorno digital y financiero ponemos al alcance de nuestros clientes el medio idóneo para transar en un medio confiable y seguro para tus operaciones. De la mano de un equipo de profesionales especializados en el área financiera, Cryptia Exchange se establece como uno de los principales forjadores de la industria digital del país que ofrece estrategias de crecimiento sostenibles enfocadas en la atención, asesoría y satisfacción del cliente.</p>
+				<hr />
+			</div>
+
+		</div>
+
+	</div>
+</section>
+<!-- / Nuestra Misión-->
+
+<!-- Nuestra Visión-->
+<section id="vision">
+	<div class="container">
+		<br>
+		<div class="text-center">
+			<h2 style="font-size: 60px">Nuestra <span>Visión</span></h2>
+			<h2 class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">Liderar la industria comercial de criptoactivos venezolana con alcance internacional.</h2>
+		</div>					
+						
+		<div class="row">
+			
+			<div class="col-md-12">
+				<p style="text-align: justify;">La innovación tecnológica y financiera es un principio activo de nuestra plataforma para expedir soluciones que siempre generen a sus clientes las mejores oportunidades de crecimiento.Trabajamos para hacerles sentir que somos la elección correcta cuando de rapidez, soporte y fiabilidad se trate.<br>¡Tus estados de cuenta hablarán por si solos!.</p>
+				<hr />
+			</div>
+
+		</div>
+
+	</div>
+</section>
+<!-- / Nuestra Visión-->
 
 <!-- CALLOUT -->
 <section class="callout-dark heading-title heading-arrow-bottom" style="z-index:100; background-color: #041333">
@@ -125,7 +182,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestros Valores</h2>
+			<h2 style="font-size: 60px">Nuestros <span>Valores</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -176,5 +233,90 @@
 	</div>
 </section>
 <!-- / Valores-->
+
+<!-- -->
+<section id="servicios">
+	<div class="container">
+
+		<br>
+		<header class="text-center margin-bottom-60">
+			<h2 style="font-size: 60px">Nuestros <span>Servicios</span></h2>
+			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
+			<hr />
+		</header>
+
+		<h2 class="size-25">¿Qué ofrecemos?</h2>
+
+		<div class="text-center">
+			<p class="lead">Servicios de primera categoría con una propuesta de valor sólida, y una plataforma de intercambio de criptomonedas que pone a la disposición de los clientes el uso e incorporación de monedas digitales en cada sector de la economía nacional e internacional.</p>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-5th">
+
+				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+					<a class="box-icon-title" href="#">
+						<i class="fa fa-tablet"></i>
+						<h2>Tecnología</h2>
+					</a>
+					<p>Tecnología en software descentralizado con competencias de talla internacional.</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-5th">
+
+				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+					<a class="box-icon-title" href="#">
+						<i class="fa fa-random"></i>
+						<h2>Ecosistema Digital</h2>
+					</a>
+					<p>Un ecosistema digital rápido, confiable y de alta seguridad.</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-5th">
+
+				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+					<a class="box-icon-title" href="#">
+						<i class="fa fa-globe"></i>
+						<h2>Alcance Global</h2>
+					</a>
+					<p>Modalidades de negocio de alcance nacional e internacional.</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-5th">
+
+				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+					<a class="box-icon-title" href="#">
+						<i class="fa fa-tachometer"></i>
+						<h2>Monitoreo</h2>
+					</a>
+					<p>Monitoreo y prevención de actividades ilícitas y lavado de dinero.</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-5th">
+
+				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+					<a class="box-icon-title" href="#">
+						<i class="fa fa-trophy"></i>
+						<h2>Servicio</h2>
+					</a>
+					<p>El mejor servicio al cliente.</p>
+				</div>
+
+			</div>			
+
+		</div>
+
+	</div>
+</section>
+<!-- / -->
 
 @endsection

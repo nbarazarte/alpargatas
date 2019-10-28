@@ -159,7 +159,7 @@
 					<div id="particles2" style="width: 100%; height: 100%"></div>	
 				</div>
 
-				<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
+				<div class="tp-caption lft boxshadow"
 					data-x="left" data-hoffset="45"
 					data-y="150"
 					data-customin="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
@@ -175,7 +175,7 @@
 					data-volume="mute" 
 					data-aspectratio="4:3"
 					data-endeasing="Power4.easeIn"
-					style="z-index: 5;" >
+					style="z-index: 4;" >
 					<video class="" preload="none" width="700px" poster="">
 						<source src="assets/images/demo/video/CRYPTIAHD.mp4" type="video/mp4" />
 					</video>
@@ -270,7 +270,7 @@
 	<div class="container">				
 		<br>		
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Cryptia Exchange</h2>
+			<h2 style="font-size: 60px">Cryptia <span>Exchange</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -555,7 +555,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestro Blog</h2>
+			<h2 style="font-size: 60px">Nuestro <span>Blog</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>SOMOS LA CASA DE INTERCAMBIO DE CRIPTOMONEDAS MÁS EFECTIVA</b></span></h2>
 			<hr />
 		</header>

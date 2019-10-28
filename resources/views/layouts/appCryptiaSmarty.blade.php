@@ -152,7 +152,10 @@
 											SOBRE NOSOTROS
 										</a>
 										<ul class="dropdown-menu">
-											<li><a href="#valores">NUESTROS VALORES</a></li>
+											<li><a href="#mision">MISIÓN</a></li>
+											<li><a href="#vision">VISIÓN</a></li>
+											<li><a href="#valores">VALORES</a></li>
+											<li><a href="#servicios">SERVICIOS</a></li>
 										</ul>	
 									</li>
 
@@ -165,7 +168,10 @@
 												SOBRE NOSOTROS
 											</a>
 											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#valores">NUESTROS VALORES</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#mision">MISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#vision">VISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#valores">VALORES</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#servicios">SERVICIOS</a></li>												
 											</ul>
 										</li>
 
@@ -176,7 +182,10 @@
 												SOBRE NOSOTROS
 											</a>
 											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#valores">NUESTROS VALORES</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#mision">MISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#vision">VISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#valores">VALORES</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#servicios">SERVICIOS</a></li>			
 											</ul>
 										</li>									
 
@@ -314,7 +323,7 @@
 					<div class="row">
 
 						<!-- FORM -->
-						<div class="col-md-12 col-sm-12">
+						<div class="col-md-8 col-sm-8">
 
 							<h3>Si tienes dudas, comentarios o quieres ser parte de nuestro equipo <strong><em>¡contáctanos!</em></strong></h3>
 
@@ -426,7 +435,49 @@
 						</div>
 						<!-- /FORM -->
 
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
 
+							<h2>Visítanos</h2>
+
+							<!-- 
+							Available heights
+								height-100
+								height-150
+								height-200
+								height-250
+								height-300
+								height-350
+								height-400
+								height-450
+								height-500
+								height-550
+								height-600
+							-->
+							<!--
+							<div id="map2" class="height-400 grayscale"></div>
+
+							<hr />
+							-->
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Av. Francisco de Miranda con Mohedano, Edif. Centro de Seguros Sudamérica, piso 11, oficina 11-B2, Urb. El Rosal, Caracas (Chacao), Miranda Zona Postal 1060 Caracas, Venezuela</span>
+								<span class="block">
+									<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
+									<a href="tel:+58-0212-953-5109">+58-0212-953-5109</a></span>
+									
+									<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
+									<a href="tel:+58-0212-953-7412">+58-0212-953-7412</a></span>
+									<br>
+									<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
+									<a href="tel:+58-0212-953-8130">+58-0212-953-8130</a></span>
+									<br>
+									<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
+									<a href="tel:+58-0212-953-6733">+58-0212-953-6733</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Correo Electrónico:</strong> <a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
 
 
 					</div>
