@@ -9,7 +9,7 @@
 		<ul>
 
 			<!-- SLIDE BITCOIN -->
-			<li data-index="rs-309" data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Bitcoin" data-description="">
+			<li data-index="rs-309" data-masterspeed="1000" data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Bitcoin" data-description="">
 				<!-- MAIN IMAGE -->
 				<img src="assets/images/demo/monedas/banner/bitcoin-3089728_1920.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
@@ -140,7 +140,7 @@
 			</li>
 
 			<!-- SLIDE RIPPLE -->
-			<li data-index="rs-311" data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Ripple" data-description="">
+			<li data-index="rs-311" data-masterspeed="1000"  data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Ripple" data-description="">
 				<!-- MAIN IMAGE -->
 				<img src="assets/images/demo/monedas/banner/currency-3077534_1920.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
@@ -271,7 +271,7 @@
 			</li>
 
 			<!-- SLIDE ETHEREUM -->
-			<li data-index="rs-312" data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Ethereum" data-description="">
+			<li data-index="rs-312" data-masterspeed="1000"  data-transition="slideoverhorizontal" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb=""  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Ethereum" data-description="">
 				<!-- MAIN IMAGE -->
 				<img src="assets/images/demo/monedas/banner/ethereum-bg9-1024x683.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
@@ -882,7 +882,8 @@
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
 							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Bitcoin Dorado.png" alt="">
+								<br>
+								<img class="img-responsive" src="assets/images/demo/monedas/bitcoin.png" style="width: 80%" alt="">
 							</div>
 						</div>
 
@@ -891,10 +892,6 @@
 				</div>
 			</div>
 		</section>
-
-		<div  class="divider divider-color divider-left"><!-- divider -->
-			<i class="fa fa-star-o"></i>
-		</div>
 
 		<section id="ripple">
 			<div class="container">
@@ -917,7 +914,8 @@
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
 							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Ripple Dorado.png" alt="">
+								<br>
+								<img class="img-responsive" src="assets/images/demo/monedas/ripple.png" style="width: 80%" alt="">
 							</div>
 						</div>
 
@@ -948,10 +946,6 @@
 				</div>
 			</div>
 		</section>
-
-		<div class="divider divider-color divider-right"><!-- divider -->
-			<i class="fa fa-star-o"></i>
-		</div>
 
 		<section id="ethereum">
 			<div class="container">
@@ -985,8 +979,8 @@
 								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Ethereum dorado.png" alt="">
+							<div>								
+								<img class="img-responsive" src="assets/images/demo/monedas/ethereum.png" style="width: 100%" alt="">
 							</div>
 						</div>
 
@@ -995,10 +989,6 @@
 				</div>
 			</div>
 		</section>
-
-		<div class="divider divider-color divider-left"><!-- divider -->
-			<i class="fa fa-star-o"></i>
-		</div>
 
 		<section id="dash">
 			<div class="container">
@@ -1021,7 +1011,8 @@
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
 							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Dash Dorado.png" alt="">
+								<br>
+								<img class="img-responsive" src="assets/images/demo/monedas/dash.svg" style="width: 80%" alt="">
 							</div>
 						</div>
 
@@ -1051,11 +1042,7 @@
 
 				</div>	
 			</div>
-		</section>
-		
-		<div class="divider divider-color divider-right"><!-- divider -->
-			<i class="fa fa-star-o"></i>
-		</div>		
+		</section>	
 
 		<section id="litecoin">
 			<div class="container">
@@ -1099,7 +1086,8 @@
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
 							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Litecoin Dorado.png" alt="">
+								<br>
+								<img class="img-responsive" src="assets/images/demo/monedas/litecoin.png" style="width: 80%" alt="">
 							</div>
 						</div>
 
@@ -1108,10 +1096,6 @@
 				</div>
 			</div>
 		</section>
-
-		<div class="divider divider-color divider-left"><!-- divider -->
-			<i class="fa fa-star-o"></i>
-		</div>
 
 		<section id="petro">
 			<div class="container">
@@ -1134,7 +1118,8 @@
 						-->
 						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
 							<div>
-								<img class="img-responsive" src="assets/images/demo/monedas/Petro Dorado.png" alt="">
+								<br>
+								<img class="img-responsive" src="assets/images/demo/monedas/petro.png" style="width: 80%" alt="">
 							</div>
 						</div>
 
