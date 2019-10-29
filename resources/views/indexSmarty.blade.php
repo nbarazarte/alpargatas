@@ -333,7 +333,7 @@
 <!-- /Cryptia Exchange -->
 
 <!-- MONEDAS -->
-<section id="monedas" class="nopadding-bottom">
+<section id="monedas-inicio" class="nopadding-bottom">
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">

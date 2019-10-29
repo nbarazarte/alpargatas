@@ -90,9 +90,6 @@
 					</div>
 				</div><!-- /breaking news -->
 
-
-
-
 				<!-- TWO COLUMNS -->
 				<div class="row">
 
@@ -134,9 +131,7 @@
 						</div>
 						<!-- /article summary -->
 
-
 						<hr /><!-- separator -->
-
 
 						<!-- article summary -->
 						<div class="row">
@@ -156,9 +151,7 @@
 						</div>
 						<!-- /article summary -->
 
-
 						<hr /><!-- separator -->
-
 
 						<!-- article summary -->
 						<div class="row">
@@ -214,14 +207,10 @@
 				</div>
 				<!-- /TWO COLUMNS -->
 
-
-
-
 				<h3 class="page-header weight-300 margin-top-100">
 					<a href="#" data-toggle="tooltip" title="view more"><i class="fa fa-plus-square-o"></i></a> 
 					Otras <strong>Noticias</strong> 
 				</h3>
-
 
 				<!-- THREE COLUMNS -->
 				<div class="row">
@@ -249,7 +238,6 @@
 						<!-- /article item -->
 
 					</div>
-
 
 					<div class="col-md-4">
 
@@ -303,8 +291,6 @@
 				</div>
 				<!-- /THREE COLUMNS -->
 
-
-
 			</div>
 			<!-- /LEFT -->
 
@@ -335,8 +321,6 @@
 				</div>
 				<!-- /No #1 Hot -->
 
-
-
 				<!-- video -->
 				<div class="embed-responsive embed-responsive-16by9 margin-top-30">
 					<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
@@ -346,8 +330,6 @@
 					<small class="pull-right margin-top-3">(0 comments)</small>
 				</h5>
 				<!-- /video -->
-
-
 
 				<!-- small articles -->
 				<div class="row margin-top-30">
@@ -434,24 +416,23 @@
 
 				<!-- FOLLOW -->
 				<h3 class="page-header weight-300 margin-top-60">
-					
 					Síguenos<span> en</span> 
 				</h3>
 
 				<!-- Social Icons -->
 				<div class="margin-top-20 clearfix">
-					<a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+					<a href="https://www.facebook.com/CryptiaExchange/?hc_ref=ARRunlUUrumZJ2D8puynjxgr67QxldbQ372nMx-bW7-dZK2xCWjN5jPlaS44ZNfBONU&fref=nf" target="_blank" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
 
 						<i class="icon-facebook"></i>
 						<i class="icon-facebook"></i>
 					</a>
 
-					<a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+					<a href="https://twitter.com/cryptiaexchange" target="_blank" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
 						<i class="icon-twitter"></i>
 						<i class="icon-twitter"></i>
 					</a>
 
-					<a href="#" class="social-icon social-icon-border social-instagram pull-left" data-toggle="tooltip" data-placement="top" title="Instagram">
+					<a href="https://www.instagram.com/cryptiaexchange/" target="_blank" class="social-icon social-icon-border social-instagram pull-left" data-toggle="tooltip" data-placement="top" title="Instagram">
 						<i class="icon-instagram"></i>
 						<i class="icon-instagram"></i>
 					</a>
