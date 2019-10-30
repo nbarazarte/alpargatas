@@ -120,10 +120,10 @@
 												SOBRE NOSOTROS
 											</a>
 											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#mision">MISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#vision">VISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#valores">VALORES</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}sobre-nosotros#servicios">SERVICIOS</a></li>			
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#mision">MISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#vision">VISIÓN</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#valores">VALORES</a></li>
+												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#servicios">SERVICIOS</a></li>			
 											</ul>
 										</li>									
 

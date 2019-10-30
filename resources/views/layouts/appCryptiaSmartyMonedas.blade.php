@@ -4,10 +4,10 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
-		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<title>Cryptia Exchange | Compra y venta de criptomonedas</title>
+		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Author" content="" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />

@@ -419,35 +419,7 @@
 		<!-- PAGELEVEL SCRIPTS -->
 		<script type="text/javascript" src="assets/js/contact.js"></script>
 
-		<!-- 
-			GMAP.JS 
-			http://hpneo.github.io/gmaps/
-		-->
-		<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
-		<script type="text/javascript" src="assets/plugins/gmaps.js"></script>
-		<script type="text/javascript">
 
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#map2',
-					lat: -12.043333,
-					lng: -77.028333,
-					scrollwheel: false
-				});
-
-				var marker = map2.addMarker({
-					lat: -12.043333,
-					lng: -77.028333,
-					title: 'Company, Inc.'
-				});
-
-			});
-
-		</script>
 
 <script type="text/javascript">
 	
