@@ -61,7 +61,7 @@
 				</div>
 
 				<div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
-					data-x="25"
+					data-x="12"
 					data-y="150"
 					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 					data-speed="500"
@@ -74,7 +74,7 @@
 				</div>
 
 				<div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
-					data-x="25"
+					data-x="12"
 					data-y="213"
 					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 					data-speed="500"
@@ -87,7 +87,7 @@
 				</div>
 
 				<div class="tp-caption small_light_white lfl start" 
-					data-x="25" 
+					data-x="12" 
 					data-y="315" 
 					data-speed="1000" 
 					data-start="1800" 
@@ -97,12 +97,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300"
-					data-endeasing="Power4.easeIn" style="z-index: 10;">
+					data-endeasing="Power4.easeIn" style="z-index: 10; font-size: 25px;">
 					<br>
-					<b style="">
-						Cryptiaexchange utiliza la más novedosa <br>
-						tecnología blockchain adaptada al mercado <br>
-						venezolano.
+					<b>
+						Cryptia Exchange utiliza la más <br>
+						novedosa tecnología blockchain <br>
+						adaptada al mercado venezolano.
 					</b>
 				</div>
 
@@ -234,7 +234,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="500"
-					data-endeasing="Power4.easeIn" style="z-index: 5; color: #fff; font-size:20px; max-width: 550px; white-space: normal; text-shadow:none;">
+					data-endeasing="Power4.easeIn" style="z-index: 5; color: #fff; font-size:25px; max-width: 550px; white-space: normal; text-shadow:none;">
 					<b>
 						Tendrás acceso a las ordenes de <br>
 						compra y venta, precios ofertados <br>
