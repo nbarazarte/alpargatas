@@ -126,7 +126,7 @@
 
 					<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
 
-					<video class="" preload="none" width="100%" height="100%" poster="" >
+					<video class="img-responsive" preload="none" width="100%" height="100%" poster="" >
 						<source src="assets/images/demo/video/cryptocurrencyIntro.mp4" type="video/mp4" />
 					</video>
 
@@ -142,7 +142,7 @@
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
 					style="z-index: 2;">
-					<img src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png" width="60%">
+					<img class="img-responsive" src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png">
 				</div>
 
 			</li>
@@ -319,7 +319,7 @@
 
 		<div class="text-center">
 
-			<h3>Contáctanos en<strong> atencionalcliente@cryptiaexchange.com</strong></h3>
+			<h3>Proporcionamos a nuestros usuarios la plataforma mas rápida y segura</h3>
 			<p class="font-lato size-20">
 				El mercado de criptomonedas está en constante expansión produciendo nuevas oportunidades de negocio a nivel mundial. <br>A través de la tecnología blockchain ofrecemos una forma segura y confiable de intercambiar criptomonedas.
 			</p>
