@@ -325,7 +325,6 @@
 			</p>
 			
 			<a style="" href="{{ route('mercados')}}" rel="nofollow" target="_blank" class="btn btn-warning btn-lg margin-top-30">Ver Mercados</a>
-
 		</div>
 
 	</div>			
@@ -357,7 +356,7 @@
 <!-- /MONEDAS -->
 
 <!-- NOTICIAS -->
-<section id="noticias-resumen" class="parallax parallax-2" style="background-image: url('assets/images/demo/1200x800/2345634635-2.jpeg');">
+<section id="noticias-resumen" class="parallax parallax-2" style="background-image: url('assets/images/demo/1200x800/bg-bitcoin345-2.jpg');">
 	<div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
 	<div class="container">
 		<br>

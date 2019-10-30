@@ -242,7 +242,7 @@
 
 									<li><!-- CONTACTO -->
 										<a href="#contacto">
-											CONTÁCTANOS
+											CONTACTO
 										</a>
 									</li>
 									<li><!-- EXCHANGE -->
