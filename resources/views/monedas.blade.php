@@ -833,316 +833,311 @@
 </section>
 <!-- /INFO BAR -->
 
-<!-- WELCOME -->
-<section>
+<section id="bitcoin">
 	<div class="container">
+		<br>
+		<!-- Bitcoin -->
+		<div class="row">
 
-		<section id="bitcoin">
-			<div class="container">
-				<br>
-				<!-- Bitcoin -->
+			<div class="col-sm-6">
+				<header class="margin-bottom-40">
+					<h1 class="weight-300">Bitcoin</h1>
+					<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA PRIMERA CRIPTOMONEDA</b></span></h2>
+				</header>
+
+				<p style="text-align: justify;">Fue la primera Criptomoneda denominada como tal. No pertenece a ningún Estado o país y puede usarse en todo el mundo por igual. Se puede comprar bitcoins con euros u otras divisas y viceversa, como cualquier moneda. Es descentralizada: no es controlada por ningún Estado, banco, institución financiera o empresa. Es imposible su falsificación o duplicación gracias a un sofisticado sistema criptográfico. Las transacciones son irreversibles. No es necesario revelar su identidad al hacer negocios y preserva su privacidad.</p>
+
+				<p style="text-align: justify;">Los usuarios pueden manejar sus fondos con monederos digitales. Con ella es posible realizar transacciones financieras desde cualquier lugar del mundo y en todo momento, por lo que, además, resulta una moneda que no posee ataduras territoriales, como sí las posee el dinero fíat.</p>
+
 				<div class="row">
 
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Bitcoin</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA PRIMERA CRIPTOMONEDA</b></span></h2>
-						</header>
-
-						<p style="text-align: justify;">Fue la primera Criptomoneda denominada como tal. No pertenece a ningún Estado o país y puede usarse en todo el mundo por igual. Se puede comprar bitcoins con euros u otras divisas y viceversa, como cualquier moneda. Es descentralizada: no es controlada por ningún Estado, banco, institución financiera o empresa. Es imposible su falsificación o duplicación gracias a un sofisticado sistema criptográfico. Las transacciones son irreversibles. No es necesario revelar su identidad al hacer negocios y preserva su privacidad.</p>
-
-						<p style="text-align: justify;">Los usuarios pueden manejar sus fondos con monederos digitales. Con ella es posible realizar transacciones financieras desde cualquier lugar del mundo y en todo momento, por lo que, además, resulta una moneda que no posee ataduras territoriales, como sí las posee el dinero fíat.</p>
-
-						<div class="row">
-
-							<div class="col-md-12">
-								<ul class="list-unstyled list-icons" style="text-align: justify;">
-									<li><i class="fa fa-circle-o"></i> Esta la criptomoneda alcanzó un valor máximo histórico de casi US$20,000 a mediados de diciembre 2017.</li>
-									<li><i class="fa fa-circle-o"></i> Se trata de una moneda digital que solo existe en la cadena de bloques o blockchain que la soporta y debido a un sofisticado proceso de verificación (consenso) de transacciones.</li>
-									<li><i class="fa fa-circle-o"></i> Cada bitcoin — o porción de él — es único, pues cada transacción se registra públicamente (aunque sin datos personales) en un gran “libro” digital de contabilidad elaborado con complejas estructuras criptográficas, llamado blockchain o cadena de bloques. Por ello bitcoin es llamado ‘criptomoneda’ y es tan sólo la primera de su tipo.</li>
-								</ul>
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
-							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<br>
-								<img class="img-responsive" src="assets/images/demo/monedas/bitcoin.png" style="width: 80%" alt="">
-							</div>
-						</div>
-
+					<div class="col-md-12">
+						<ul class="list-unstyled list-icons" style="text-align: justify;">
+							<li><i class="fa fa-circle-o"></i> Esta la criptomoneda alcanzó un valor máximo histórico de casi US$20,000 a mediados de diciembre 2017.</li>
+							<li><i class="fa fa-circle-o"></i> Se trata de una moneda digital que solo existe en la cadena de bloques o blockchain que la soporta y debido a un sofisticado proceso de verificación (consenso) de transacciones.</li>
+							<li><i class="fa fa-circle-o"></i> Cada bitcoin — o porción de él — es único, pues cada transacción se registra públicamente (aunque sin datos personales) en un gran “libro” digital de contabilidad elaborado con complejas estructuras criptográficas, llamado blockchain o cadena de bloques. Por ello bitcoin es llamado ‘criptomoneda’ y es tan sólo la primera de su tipo.</li>
+						</ul>
 					</div>
 
 				</div>
+
 			</div>
-		</section>
 
-		<section id="ripple">
-			<div class="container">
-				<br>
-				<!-- Ripple -->
-				<div  class="row">
+			<div class="col-sm-6">
 
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
-							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<br>
-								<img class="img-responsive" src="assets/images/demo/monedas/ripple.png" style="width: 80%" alt="">
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Ripple</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA CRIPTOMONEDA DE LOS BANCOS</b></span></h2>
-						</header>
-
-						<p style="text-align: justify;">Considerada la criptomoneda de los bancos, Ripple es un sistema virtual de pagos en tiempo real basado en la tecnología de blockchain que es utilizada por instituciones financieras como una forma más rápida y económica que sus sistemas de respaldo tradicionales, ya que les permite enviar y recibir dinero y liquidar transacciones a una velocidad de entre 5 y 10 segundos (mucho más rápida que Bitcoin). Además, permite la conversión entre distintas divisas y criptomonedas.</p>						
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
 					
-						<div class="row">
-
-							<div class="col-md-12">
-								<ul class="list-unstyled list-icons" style="text-align: justify;">
-									<li><i class="fa fa-circle-o"></i> Fue creada como una alternativa de código abierto para permitir transferencias bancarias sin importar la divisa. A diferencia de otros criptoactivos, el Ripple no fue diseñado con fines acumulativos, sino para ser utilizado en transacciones cotidianas.</li>
-									
-								</ul>
-							</div>
-
-						</div>
-						
-						
-					</div>			
-
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<br>
+						<img class="img-responsive" src="assets/images/demo/monedas/bitcoin.png" style="width: 100%" alt="">
+					</div>
 				</div>
-			</div>
-		</section>
 
-		<section id="ethereum">
-			<div class="container">
-				<br>
-				<!-- Ethereum -->
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="ripple">
+	<div class="container">
+		<br>
+		<!-- Ripple -->
+		<div  class="row">
+
+			<div class="col-sm-6">
+
+				<header class="margin-bottom-40">
+					<h1 class="weight-300">Ripple</h1>
+					<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA CRIPTOMONEDA DE LOS BANCOS</b></span></h2>
+				</header>
+
+				<p style="text-align: justify;">Considerada la criptomoneda de los bancos, Ripple es un sistema virtual de pagos en tiempo real basado en la tecnología de blockchain que es utilizada por instituciones financieras como una forma más rápida y económica que sus sistemas de respaldo tradicionales, ya que les permite enviar y recibir dinero y liquidar transacciones a una velocidad de entre 5 y 10 segundos (mucho más rápida que Bitcoin). Además, permite la conversión entre distintas divisas y criptomonedas.</p>						
+			
 				<div class="row">
 
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Ethereum</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>EL ACTIVO DIGITAL</b></span></h2>
-						</header>
-
-						<p style="text-align: justify;">El Ether es un activo digital. Igual que el dinero en efectivo, no requiere que un tercero procese o apruebe una transacción. Pero en lugar de operar como moneda digital o pago.</p>
-
-						<p style="text-align: justify;">Al igual que el resto es descentralizada, anónima (Ya que las direcciones para enviarlas y recibirlas son series numéricas aleatorias. Permite realizar transacciones directas de forma mucho más rápida y segura que las que se producen con dinero 'fiat'.</p>
-
-					</div>
-
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
+					<div class="col-md-12">
+						<ul class="list-unstyled list-icons" style="text-align: justify;">
+							<li><i class="fa fa-circle-o"></i> Fue creada como una alternativa de código abierto para permitir transferencias bancarias sin importar la divisa. A diferencia de otros criptoactivos, el Ripple no fue diseñado con fines acumulativos, sino para ser utilizado en transacciones cotidianas.</li>
 							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>								
-								<img class="img-responsive" src="assets/images/demo/monedas/ethereum.png" style="width: 100%" alt="">
-							</div>
-						</div>
-
+						</ul>
 					</div>
 
 				</div>
+				
 			</div>
-		</section>
 
-		<section id="dash">
-			<div class="container">
-				<br>
-				<!-- Dash -->
+			<div class="col-sm-6">
+
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
+					
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<br>
+						<img class="img-responsive" src="assets/images/demo/monedas/ripple.png" style="width: 100%" alt="">
+					</div>
+				</div>
+
+			</div>							
+
+		</div>
+	</div>
+</section>
+
+<section id="ethereum">
+	<div class="container">
+		<br>
+		<!-- Ethereum -->
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<header class="margin-bottom-40">
+					<h1 class="weight-300">Ethereum</h1>
+					<h2 class="weight-300 letter-spacing-1 size-13"><span><b>EL ACTIVO DIGITAL</b></span></h2>
+				</header>
+
+				<p style="text-align: justify;">El Ether es un activo digital. Igual que el dinero en efectivo, no requiere que un tercero procese o apruebe una transacción. Pero en lugar de operar como moneda digital o pago.</p>
+
+				<p style="text-align: justify;">Al igual que el resto es descentralizada, anónima (Ya que las direcciones para enviarlas y recibirlas son series numéricas aleatorias. Permite realizar transacciones directas de forma mucho más rápida y segura que las que se producen con dinero 'fiat'.</p>
+
+			</div>
+
+			<div class="col-sm-6">
+
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
+					
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>								
+						<img class="img-responsive" src="assets/images/demo/monedas/ethereum.png" style="width: 100%" alt="">
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="dash">
+	<div class="container">
+		<br>
+		<!-- Dash -->
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<header class="margin-bottom-40">
+					<h1 class="weight-300">Dash</h1>
+					<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA CRIPTODIVISA PEER-TO-PEER</b></span></h2>
+				</header>
+
+				<p style="text-align: justify;">Se trata de una criptodivisa del tipo peer-to-peer de código abierto que ofrece características similares a Bitcoin pero con algunas funcionalidades más avanzadas, cómo las transacciones instantáneas “InstantSend”, transacciones privadas "PrivateSend".</p>
+				
 				<div class="row">
 
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
+					<div class="col-md-12">
+						<ul class="list-unstyled list-icons" style="text-align: justify;">
+							<li><i class="fa fa-circle-o"></i> <b>PrivateSend:</b> Es un servicio basado en CoinJoin que mezcla monedas con múltiples modificaciones. Con la implementación de privateSent se permite a los masternodes enviar transacciones utilizando un código especial de red denominado DSTX, para obtener mayor privacidad entre los usuarios.</li>
+							<li><i class="fa fa-circle-o"></i> <b>InstantSend:</b> Se trata de un servicio que permite realizar transacciones de manera casi instantánea. Con este sistema los inputs se bloquean para una transacción específica y son verificados por la red de Masternodes, quienes se encargan de transmitir la transacción a la red y evitar el problema del doble gasto.</li>
 							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<br>
-								<img class="img-responsive" src="assets/images/demo/monedas/dash.svg" style="width: 80%" alt="">
-							</div>
-						</div>
-
+						</ul>
 					</div>
-
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Dash</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA CRIPTODIVISA PEER-TO-PEER</b></span></h2>
-						</header>
-
-						<p style="text-align: justify;">Se trata de una criptodivisa del tipo peer-to-peer de código abierto que ofrece características similares a Bitcoin pero con algunas funcionalidades más avanzadas, cómo las transacciones instantáneas “InstantSend”, transacciones privadas "PrivateSend".</p>
-						
-						<div class="row">
-
-							<div class="col-md-12">
-								<ul class="list-unstyled list-icons" style="text-align: justify;">
-									<li><i class="fa fa-circle-o"></i> <b>PrivateSend:</b> Es un servicio basado en CoinJoin que mezcla monedas con múltiples modificaciones. Con la implementación de privateSent se permite a los masternodes enviar transacciones utilizando un código especial de red denominado DSTX, para obtener mayor privacidad entre los usuarios.</li>
-									<li><i class="fa fa-circle-o"></i> <b>InstantSend:</b> Se trata de un servicio que permite realizar transacciones de manera casi instantánea. Con este sistema los inputs se bloquean para una transacción específica y son verificados por la red de Masternodes, quienes se encargan de transmitir la transacción a la red y evitar el problema del doble gasto..</li>
-									
-								</ul>
-							</div>
-
-						</div>
-						
-					</div>			
-
-				</div>	
-			</div>
-		</section>	
-
-		<section id="litecoin">
-			<div class="container">
-				<br>
-				<!-- Litecoin -->
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Litecoin</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA HERMANA DE BITCOIN</b></span></h2>
-						</header>
-
-						<p style="text-align: justify;">Muchos consideran a la moneda como la prima o hasta la hermana de Bitcoin. Los costos de transferencias son muy bajos, en algunos casos son gratuitos, lo que es perfecto para aquellos que desean ahorrar dinero en la transferencia de dinero a familiares o amigos. La moneda es muy segura y se adapta muy bien a las plataformas que utilizan Bitcoin.</p>
-						
-						<div class="row">
-
-							<div class="col-md-12">
-								<ul class="list-unstyled list-icons" style="text-align: justify;">
-									<li><i class="fa fa-circle-o"></i> La velocidad de las transacciones realizadas es notablemente superior.</li>
-									
-								</ul>
-							</div>
-
-						</div>
-
-					</div>
-
-				<div class="row">
-
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
-							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<br>
-								<img class="img-responsive" src="assets/images/demo/monedas/litecoin.png" style="width: 80%" alt="">
-							</div>
-						</div>
-
-					</div>								
 
 				</div>
+				
 			</div>
-		</section>
 
-		<section id="petro">
-			<div class="container">
-				<br>
-				<!-- Petro -->
-				<div class="row">
+			<div class="col-sm-6">
 
-					<div class="col-sm-6">
-
-						<!-- 
-							controlls-over		= navigation buttons over the image 
-							buttons-autohide 	= navigation buttons visible on mouse hover only
-							
-							data-plugin-options:
-								"singleItem": true
-								"autoPlay": true (or ms. eg: 4000)
-								"navigation": true
-								"pagination": true
-								"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
-						-->
-						<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-							<div>
-								<br>
-								<img class="img-responsive" src="assets/images/demo/monedas/petro.png" style="width: 80%" alt="">
-							</div>
-						</div>
-
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
+					
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<br>
+						<img class="img-responsive" src="assets/images/demo/monedas/dash.svg" style="width: 100%" alt="">
 					</div>
+				</div>
 
-					<div class="col-sm-6">
-						<header class="margin-bottom-40">
-							<h1 class="weight-300">Petro</h1>
-							<h2 class="weight-300 letter-spacing-1 size-13"><span><b>RESPALDADA POR LAS RESERVAS NACIONALES DE ORO, PETRÓLEO, DIAMANTE Y GAS</b></span></h2>
-						</header>
+			</div>							
 
-						<p style="text-align: justify;">Lo que diferencia la Criptomoneda venezolana de Bitcoin o Ethereum, es que esta moneda estará respaldada por las reservas nacionales de oro, petróleo, diamante y gas. Al contrario del Bitcoin el petro estará centralizado por un intermediario, en este caso el gobierno de Venezuela. El valor del Petro se establecerá de acuerdo al precio del barril del petróleo. Podrá ser usado más adelante para pagar impuestos y servicios públicos. El registro de transacciones digitales de la moneda se efectúa a través del Observatorio Blockchain de Venezuela. Las transacciones electrónicas se realizan sin intercesor alguno,10 son inmediatas y no tienen comisiones.</p>
+		</div>	
+	</div>
+</section>	
 
+<section id="litecoin">
+	<div class="container">
+		<br>
+		<!-- Litecoin -->
+		<div class="col-sm-6">
+
+			<header class="margin-bottom-40">
+				<h1 class="weight-300">Litecoin</h1>
+				<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA HERMANA DE BITCOIN</b></span></h2>
+			</header>
+
+			<p style="text-align: justify;">Muchos consideran a la moneda como la prima o hasta la hermana de Bitcoin. Los costos de transferencias son muy bajos, en algunos casos son gratuitos, lo que es perfecto para aquellos que desean ahorrar dinero en la transferencia de dinero a familiares o amigos. La moneda es muy segura y se adapta muy bien a las plataformas que utilizan Bitcoin.</p>
+			
+			<div class="row">
+
+				<div class="col-md-12">
+					<ul class="list-unstyled list-icons" style="text-align: justify;">
+						<li><i class="fa fa-circle-o"></i> La velocidad de las transacciones realizadas es notablemente superior.</li>
 						
-						
-					</div>			
+					</ul>
+				</div>
 
-				</div>	
 			</div>
-		</section>				
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
+					
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<br>
+						<img class="img-responsive" src="assets/images/demo/monedas/litecoin.png" style="width: 100%" alt="">
+					</div>
+				</div>
+
+			</div>								
+
+		</div>
 
 	</div>
 </section>
-<!-- /WELCOME -->
+
+<section id="petro">
+	<div class="container">
+		<br>
+		<!-- Petro -->
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<header class="margin-bottom-40">
+					<h1 class="weight-300">Petro</h1>
+					<h2 class="weight-300 letter-spacing-1 size-13"><span><b>RESPALDADA POR LAS RESERVAS NACIONALES DE ORO, PETRÓLEO, DIAMANTE Y GAS</b></span></h2>
+				</header>
+
+				<p style="text-align: justify;">Lo que diferencia la Criptomoneda venezolana de Bitcoin o Ethereum, es que esta moneda estará respaldada por las reservas nacionales de oro, petróleo, diamante y gas. Al contrario del Bitcoin el petro estará centralizado por un intermediario, en este caso el gobierno de Venezuela. El valor del Petro se establecerá de acuerdo al precio del barril del petróleo. Podrá ser usado más adelante para pagar impuestos y servicios públicos. El registro de transacciones digitales de la moneda se efectúa a través del Observatorio Blockchain de Venezuela. Las transacciones electrónicas se realizan sin intercesor alguno,10 son inmediatas y no tienen comisiones.</p>
+
+			</div>
+
+			<div class="col-sm-6">
+
+				<!-- 
+					controlls-over		= navigation buttons over the image 
+					buttons-autohide 	= navigation buttons visible on mouse hover only
+					
+					data-plugin-options:
+						"singleItem": true
+						"autoPlay": true (or ms. eg: 4000)
+						"navigation": true
+						"pagination": true
+						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+				-->
+				<div class="" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<br>
+						<img class="img-responsive" src="assets/images/demo/monedas/petro.png" style="width: 100%" alt="">
+					</div>
+				</div>
+
+			</div>							
+
+		</div>	
+	</div>
+</section>				
 
 @endsection

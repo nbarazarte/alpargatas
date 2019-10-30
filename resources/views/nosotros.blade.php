@@ -163,7 +163,7 @@
 
 				<div class="box-icon box-icon-side box-icon-color box-icon-round">
 					<i class="fa fa-tablet"></i>
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<h2>Innovación</h2>
 					</a>
 					<p>A través de Cryptia Exchange tendrán acceso garantizado a una plataforma tecnológica de primera categoría. Trabajamos arduamente para ser referencia en Venezuela y el mundo entero.</p>
@@ -176,7 +176,7 @@
 
 				<div class="box-icon box-icon-side box-icon-color box-icon-round">
 					<i class="fa fa-tint"></i>
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<h2>Integridad</h2>
 					</a>
 					<p>Nuestro talante moral y profesional nos permite establecer relaciones comerciales objetivas adaptadas a las regulaciones que se van generando en el tema cripto.</p>
@@ -189,7 +189,7 @@
 
 				<div class="box-icon box-icon-side box-icon-color box-icon-round">
 					<i class="fa fa-cogs"></i>
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<h2>Servicio</h2>
 					</a>
 					<p>La atención al cliente es nuestra mayor premisa, por ello ofrecemos diversos canales de comunicación entre usuarios y técnicos de la plataforma que permitan atender y procesar la resolución de sus inquietudes.</p>
@@ -226,7 +226,7 @@
 			<div class="col-md-5th">
 
 				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<i class="fa fa-tablet"></i>
 						<h2>Tecnología</h2>
 					</a>
@@ -238,7 +238,7 @@
 			<div class="col-md-5th">
 
 				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<i class="fa fa-random"></i>
 						<h2>Ecosistema Digital</h2>
 					</a>
@@ -250,7 +250,7 @@
 			<div class="col-md-5th">
 
 				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<i class="fa fa-globe"></i>
 						<h2>Alcance Global</h2>
 					</a>
@@ -262,7 +262,7 @@
 			<div class="col-md-5th">
 
 				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<i class="fa fa-tachometer"></i>
 						<h2>Monitoreo</h2>
 					</a>
@@ -274,7 +274,7 @@
 			<div class="col-md-5th">
 
 				<div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-					<a class="box-icon-title" href="#">
+					<a class="box-icon-title">
 						<i class="fa fa-trophy"></i>
 						<h2>Servicio</h2>
 					</a>
