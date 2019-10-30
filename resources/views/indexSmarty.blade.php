@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- REVOLUTION SLIDER -->
-<div class="slider fullwidthbanner-container roundedcorners">
+<section id="slider" class="slider fullwidthbanner-container roundedcorners">
 	<!--
 		Navigation Styles:
 		
@@ -32,7 +32,7 @@
 			data-height="750"
 			data-height="800"
 	-->
-	<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="">
+	<div class="fullscreenbanner" data-navigationStyle="">
 		<ul class="hide">
 
 			<!-- SLIDE  -->
@@ -40,15 +40,18 @@
 
 				<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
+				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
 				<div class="tp-caption"
-					data-x="left"
+					data-x="0"
 					data-y="center"
-					style="z-index: 10;width: 100%; height: 100%">
-					<div id="particles" style="width: 100%; height: 100%"></div>	
+					style="z-index: 10;width: 1200px; height: 1200px">
+					<div id="particles" style="width: 1200px; height: 1200px"></div>	
 				</div>
 
 				<div class="tp-caption lft start" 
-					data-x="0" 
+					data-x="center" 
 					data-y="0" 
 					data-speed="750" 
 					data-start="750" 
@@ -57,53 +60,55 @@
 					data-endelementdelay="0.1" 
 					data-endspeed="300"
 					data-endeasing="Power4.easeIn" style="z-index: 10;">
-						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png">
+						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="1200px">
+				</div>								
+
+				<div class="tp-caption customin ltl tp-resizeme text_white"
+					data-x="center"
+					data-y="10"
+					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+					data-speed="800"
+					data-start="1000"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 10;font-size: 40px">
+					<span class="weight-300">COMPRA Y VENDE</span>
 				</div>
 
-				<div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
-					data-x="12"
-					data-y="150"
-					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-					data-speed="500"
-					data-start="780"
-					data-easing="Back.easeOut"
-					data-endspeed="500"
-					data-endeasing="Power4.easeIn"
-					data-captionhidden="off"
-					style="z-index: 10; font-size: 25px;color: #fff;">Compra y Vende
+				<div class="tp-caption customin ltl tp-resizeme large_bold_white"
+					data-x="center"
+					data-y="60"
+					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+					data-speed="800"
+					data-start="1200"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 10; font-size: 80px">
+					CRIPTOMONEDAS
 				</div>
 
-				<div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
-					data-x="12"
-					data-y="213"
-					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-					data-speed="500"
-					data-start="780"
-					data-easing="Back.easeOut"
-					data-endspeed="500"
-					data-endeasing="Power4.easeIn"
-					data-captionhidden="off"
-					style="z-index: 10; font-size: 45px;color: #fff;">CRIPTOMONEDAS
-				</div>
-
-				<div class="tp-caption small_light_white lfl start" 
-					data-x="12" 
-					data-y="315" 
-					data-speed="1000" 
-					data-start="1800" 
-					data-easing="easeOutExpo" 
-					data-splitin="none" 
-					data-splitout="none" 
-					data-elementdelay="0.1" 
-					data-endelementdelay="0.1" 
-					data-endspeed="300"
-					data-endeasing="Power4.easeIn" style="z-index: 10; font-size: 25px;">
-					<br>
-					<b>
-						Cryptia Exchange utiliza la más <br>
-						novedosa tecnología blockchain <br>
-						adaptada al mercado venezolano.
-					</b>
+				<div class="tp-caption customin ltl tp-resizeme small_light_white"
+					data-x="center"
+					data-y="550"
+					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+					data-speed="800"
+					data-start="1400"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 35px;">
+					Cryptia Exchange utiliza la más novedosa tecnología blockchain <br><br>adaptada al mercado venezolano.
 				</div>
 
 				<div class="tp-caption tp-fade fadeout fullscreenvideo"
@@ -134,14 +139,14 @@
 
 				<div class="tp-caption lfb" 
 					data-x="right" data-hoffset="-70" 
-					data-y="150" 
+					data-y="90" 
 					data-speed="2000" 
 					data-start="500" 
 					data-easing="easeOutExpo" 
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 2;">
+					style="z-index: 10;">
 					<img class="img-responsive" src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png">
 				</div>
 
@@ -151,105 +156,107 @@
 			<li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" style="background-color: #F6F6F6;">							
 
 				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
-
-				<div class="tp-caption"
-					data-x="left"
-					data-y="center"
-					style="z-index: 4;width: 100%; height: 100%">
-					<div id="particles2" style="width: 100%; height: 100%"></div>	
-				</div>
-
-				<div class="tp-caption lft boxshadow"
-					data-x="left" data-hoffset="45"
-					data-y="150"
-					data-customin="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-					data-speed="400"
-					data-start="1000"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-autoplay="true"
-					data-volume="mute" 
-					data-aspectratio="4:3"
-					data-endeasing="Power4.easeIn"
-					style="z-index: 4;" >
-					<video class="" preload="none" width="700px" poster="">
-						<source src="assets/images/demo/video/CRYPTIAHD.mp4" type="video/mp4" />
-					</video>
-				</div>
 				
 				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
+				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
 
-					<div class="tp-caption lft start" 
-						data-x="right" 
-						data-y="0" 
-						data-speed="750" 
-						data-start="750" 
-						data-easing="easeOutExpo" 
-						data-elementdelay="0.1" 
-						data-endelementdelay="0.1" 
-						data-endspeed="300"
-						data-forcerewind="on" style="z-index: 4;">
-							<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png">
-					</div>
-
-				<div class="tp-caption large_bold_grey skewfromrightshort customout font-open-sans"
-					data-x="780"
-					data-y="150"
-					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-					data-speed="500"
-					data-start="780"
-					data-easing="Back.easeOut"
-					data-endspeed="500"
-					data-endeasing="Power4.easeIn"
-					data-captionhidden="off"
-					style="z-index: 5; font-size: 25px; color: #fff;">A través de
+				<div class="tp-caption"
+					data-x="0"
+					data-y="center"
+					style="z-index: 10;width: 1200px; height: 1200px">
+					<div id="particles" style="width: 1200px; height: 1200px"></div>	
 				</div>
 
-				<div class="tp-caption large_bold_grey skewfromleftshort customout font-open-sans"
-					data-x="780"
-					data-y="213"
-					data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-					data-speed="300"
-					data-start="1100"
-					data-easing="Back.easeOut"
-					data-endspeed="500"
-					data-endeasing="Power4.easeIn"
-					data-captionhidden="off"
-					style="z-index: 5; color: #fff;">CRYPTIA
+				<div class="tp-caption mediumlarge_light_white lft tp-resizeme" 
+					data-x="left" data-hoffset="70"
+					data-y="85" 
+					data-speed="1000" 
+					data-start="1200" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size:60px">+ A través de CRYPTIA EXCHANGE
 				</div>
 
-				<div class="tp-caption ltl customin customout small_light_white font-lato"
-					data-x="780"
-					data-y="315"
-					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1.3;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-					data-speed="500"
-					data-start="1300"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="500"
-					data-endeasing="Power4.easeIn" style="z-index: 5; color: #fff; font-size:25px; max-width: 550px; white-space: normal; text-shadow:none;">
-					<b>
-						Tendrás acceso a las ordenes de <br>
-						compra y venta, precios ofertados <br>
-						y volúmenes intercambiados en <br>
-						tiempo real.
-					</b>
+				<div class="tp-caption mediumlarge_light_white lfb tp-resizeme" 
+					data-x="left" data-hoffset="150"
+					data-y="133" 
+					data-speed="1000" 
+					data-start="1400" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size:60px">+ tendrás acceso a
+				</div>				
+
+				<div class="tp-caption block_white sfl tp-resizeme" 
+					data-x="70" 
+					data-y="216" 
+					data-speed="750" 
+					data-start="1900" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Ordenes de compra y venta
 				</div>
+
+				<div class="tp-caption block_theme_color sfr tp-resizeme" 
+					data-x="120" 
+					data-y="260" 
+					data-speed="750" 
+					data-start="2200" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">precios ofertados y
+				</div>
+
+				<div class="tp-caption block_white sfb tp-resizeme" 
+					data-x="170" 
+					data-y="306" 
+					data-speed="750" 
+					data-start="2500" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">volúmenes intercambiados
+				</div>
+
+				<div class="tp-caption block_theme_color sfr tp-resizeme" 
+					data-x="220" 
+					data-y="350" 
+					data-speed="750" 
+					data-start="2800" 
+					data-easing="easeOutExpo" 
+					data-splitin="none" 
+					data-splitout="none" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">en tiempo real
+				</div>				
 
 			</li>
 
 		</ul>
-
-		<div class="tp-bannertimer"><!-- progress bar --></div>
+		<div class="tp-bannertimer"></div>
 	</div>
-</div>
+</section>
 <!-- /REVOLUTION SLIDER -->
 
 <!-- CALLOUT -->
@@ -288,19 +295,19 @@
 
 				<div class="row countTo-sm text-center">
 
-					<div class="col-xs-6 col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<i class="fa fa-users size-20"></i> &nbsp; 
 						<span class="countTo" data-speed="3000" style="color:#59BA41">1303</span>
 						<h6>CLIENTES SATISFECHOS</h6>
 					</div>
 
-					<div class="col-xs-6 col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<i class="fa fa-briefcase size-20"></i> &nbsp; 
 						<span class="countTo" data-speed="3000" style="color:#774F38">56000</span>
 						<h6>OPERACIONES REALIZADAS</h6>
 					</div>
 
-					<div class="col-xs-6 col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<i class="fa fa-twitter size-20"></i> &nbsp; 
 						<span class="countTo" data-speed="3000" style="color:#C02942">1137</span>
 						<h6>SEGUIDORES EN TWITTER</h6>

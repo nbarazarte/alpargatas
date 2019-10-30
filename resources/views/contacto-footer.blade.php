@@ -253,7 +253,7 @@
 				<!-- Links -->
 				<h4 class="letter-spacing-1">CRYPTIA EXCHANGE</h4>
 				<ul class="footer-links list-unstyled">
-					<li><a href="route('inicio')}}">Incio</a></li>
+					<li><a href="{{ route('inicio')}}">Incio</a></li>
 					<li><a href="{{ route('nosotros')}}">Sobre Nosotros</a></li>
 					<li><a href="{{ route('mercados')}}">Mercados</a></li>
 					<li><a href="{{ route('monedas')}}">Monedas</a></li>
