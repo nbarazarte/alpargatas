@@ -261,7 +261,7 @@
 
 				<!-- cinta donde muestra la variacion de las criptomonedas -->
 				<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-				<coingecko-coin-price-marquee-widget  coin-ids="bitcoin,eos,ethereum,litecoin,ripple,dash" currency="eur" background-color="#000000" locale="en" font-color="#ffffff"></coingecko-coin-price-marquee-widget>
+				<coingecko-coin-price-marquee-widget  coin-ids="bitcoin,eos,ethereum,litecoin,ripple,dash" currency="eur" background-color="#000000" locale="es" font-color="#ffffff"></coingecko-coin-price-marquee-widget>
 				<!-- End-->
 
 			</div>
