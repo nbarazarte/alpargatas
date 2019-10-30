@@ -835,7 +835,7 @@
 
 <section id="bitcoin">
 	<div class="container">
-		<br>
+		
 		<!-- Bitcoin -->
 		<div class="row">
 
@@ -889,9 +889,9 @@
 	</div>
 </section>
 
-<section id="ripple">
+<section id="ripple" class="dark">
 	<div class="container">
-		<br>
+		
 		<!-- Ripple -->
 		<div  class="row">
 
@@ -945,7 +945,7 @@
 
 <section id="ethereum">
 	<div class="container">
-		<br>
+		
 		<!-- Ethereum -->
 		<div class="row">
 
@@ -987,9 +987,9 @@
 	</div>
 </section>
 
-<section id="dash">
+<section id="dash" class="dark">
 	<div class="container">
-		<br>
+		
 		<!-- Dash -->
 		<div class="row">
 
@@ -1044,7 +1044,7 @@
 
 <section id="litecoin">
 	<div class="container">
-		<br>
+		
 		<!-- Litecoin -->
 		<div class="col-sm-6">
 
@@ -1097,9 +1097,9 @@
 	</div>
 </section>
 
-<section id="petro">
+<section id="petro" class="dark">
 	<div class="container">
-		<br>
+		
 		<!-- Petro -->
 		<div class="row">
 
