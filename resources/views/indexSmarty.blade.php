@@ -52,7 +52,7 @@
 
 				<div class="tp-caption lft start" 
 					data-x="center" 
-					data-y="0" 
+					data-y="-850" 
 					data-speed="750" 
 					data-start="750" 
 					data-easing="easeOutExpo" 
@@ -153,13 +153,15 @@
 			</li>
 
 			<!-- SLIDE  -->
+
+			<!--
 			<li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" style="background-color: #F6F6F6;">							
 
 				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
 				
 				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
-				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
-
+				<!--<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+<!--
 				<div class="tp-caption"
 					data-x="0"
 					data-y="center"
@@ -252,6 +254,9 @@
 				</div>				
 
 			</li>
+
+
+		-->
 
 		</ul>
 		<div class="tp-bannertimer"></div>
