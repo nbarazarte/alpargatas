@@ -98,7 +98,7 @@
 								@else
 
 									<li><!-- INICIO -->							
-										<a class="external" href="{{route('inicio')}}">
+										<a class="dropdown-toggle" href="{{route('inicio')}}">
 											INICIO
 										</a>
 										<ul class="dropdown-menu">
@@ -132,10 +132,10 @@
 											SOBRE NOSOTROS
 										</a>
 										<ul class="dropdown-menu">
-											<li><a href="route('nosotros')}}#mision">MISIÓN</a></li>
-											<li><a href="route('nosotros')}}#vision">VISIÓN</a></li>
-											<li><a href="route('nosotros')}}#valores">VALORES</a></li>
-											<li><a href="route('nosotros')}}#servicios">SERVICIOS</a></li>				
+											<li><a href="{{route('nosotros')}}#mision">MISIÓN</a></li>
+											<li><a href="{{route('nosotros')}}#vision">VISIÓN</a></li>
+											<li><a href="{{route('nosotros')}}#valores">VALORES</a></li>
+											<li><a href="{{route('nosotros')}}#servicios">SERVICIOS</a></li>				
 										</ul>
 									</li>
 
