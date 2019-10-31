@@ -98,14 +98,14 @@
 								@else
 
 									<li><!-- INICIO -->							
-										<a class="dropdown-toggle" href="{{ route('inicio')}}">
+										<a class="external" href="{{route('inicio')}}">
 											INICIO
 										</a>
 										<ul class="dropdown-menu">
-											<li><a href="{{ route('inicio')}}#cryptia">CRYPTIA EXCHANGE</a></li>
-											<li><a href="{{ route('inicio')}}#monedas-inicio">MONEDAS</a></li>
-											<li><a href="{{ route('inicio')}}#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
-											<li><a href="{{ route('inicio')}}#blog-resumen">NUESTRO BLOG</a></li>
+											<li><a href="{{route('inicio')}}#cryptia">CRYPTIA EXCHANGE</a></li>
+											<li><a href="{{route('inicio')}}#monedas-inicio">MONEDAS</a></li>
+											<li><a href="{{route('inicio')}}#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
+											<li><a href="{{route('inicio')}}#blog-resumen">NUESTRO BLOG</a></li>
 										</ul>
 									</li>
 
@@ -127,35 +127,17 @@
 
 								@else
 
-									@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
-
-										<li><!-- NOSOTROS -->									
-											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros">
-												SOBRE NOSOTROS
-											</a>
-											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#mision">MISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#vision">VISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#valores">VALORES</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros#servicios">SERVICIOS</a></li>												
-											</ul>
-										</li>
-
-									@else
-
-										<li><!-- NOSOTROS -->									
-											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros">
-												SOBRE NOSOTROS
-											</a>
-											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#mision">MISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#vision">VISIÓN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#valores">VALORES</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros#servicios">SERVICIOS</a></li>			
-											</ul>
-										</li>									
-
-									@endif
+									<li><!-- NOSOTROS -->									
+										<a class="dropdown-toggle" href="route('nosotros')}}">
+											SOBRE NOSOTROS
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="route('nosotros')}}#mision">MISIÓN</a></li>
+											<li><a href="route('nosotros')}}#vision">VISIÓN</a></li>
+											<li><a href="route('nosotros')}}#valores">VALORES</a></li>
+											<li><a href="route('nosotros')}}#servicios">SERVICIOS</a></li>				
+										</ul>
+									</li>
 
 								@endif
 
@@ -193,39 +175,19 @@
 
 								@else
 
-									@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
-
-										<li><!-- MONEDAS -->									
-											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas">
-												MONEDAS
-											</a>
-											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#bitcoin">BITCOIN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#ripple">RIPPLE</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#ethereum">ETHEREUM</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#dash">DASH</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#litecoin">LITECOIN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas#petro">PETRO</a></li>												
-											</ul>
-										</li>
-
-									@else
-
-										<li><!-- MONEDAS -->									
-											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas">
-												MONEDAS
-											</a>
-											<ul class="dropdown-menu">
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#bitcoin">BITCOIN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#ripple">RIPPLE</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#ethereum">ETHEREUM</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#dash">DASH</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#litecoin">LITECOIN</a></li>
-												<li><a href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas#petro">PETRO</a></li>												
-											</ul>
-										</li>								
-
-									@endif
+									<li><!-- MONEDAS -->									
+										<a class="dropdown-toggle" href="{{route('monedas')}}">
+											MONEDAS
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="{{route('monedas')}}#bitcoin">BITCOIN</a></li>
+											<li><a href="{{route('monedas')}}#ripple">RIPPLE</a></li>
+											<li><a href="{{route('monedas')}}#ethereum">ETHEREUM</a></li>
+											<li><a href="{{route('monedas')}}#dash">DASH</a></li>
+											<li><a href="{{route('monedas')}}#litecoin">LITECOIN</a></li>
+											<li><a href="{{route('monedas')}}#petro">PETRO</a></li>												
+										</ul>
+									</li>
 
 								@endif								
 
@@ -254,7 +216,7 @@
 								@else
 
 									<li><!-- TUTORIALES -->
-										<a class="external" href="{{ route('tutoriales')}}">
+										<a class="external" href="{{route('tutoriales')}}">
 											TUTORIALES
 										</a>
 									</li>
@@ -270,7 +232,7 @@
 								@else
 
 									<li><!-- BLOG -->
-										<a class="external" href="{{ route('blog')}}">
+										<a class="external" href="{{route('blog')}}">
 											BLOG
 										</a>
 									</li>
