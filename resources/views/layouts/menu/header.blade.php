@@ -85,9 +85,10 @@
 
 									<li class="active"><!-- INICIO -->							
 										<a class="dropdown-toggle" href="#">
-											INICIO
+											<i class="fa fa-home"></i>
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="#">INICIO</a></li>
 											<li><a href="#cryptia">CRYPTIA EXCHANGE</a></li>
 											<li><a href="#monedas-inicio">MONEDAS</a></li>
 											<li><a href="#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
@@ -99,9 +100,10 @@
 
 									<li><!-- INICIO -->							
 										<a class="dropdown-toggle" href="{{route('inicio')}}">
-											INICIO
+											<i class="fa fa-home"></i>
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="{{route('inicio')}}#">INICIO</a></li>
 											<li><a href="{{route('inicio')}}#cryptia">CRYPTIA EXCHANGE</a></li>
 											<li><a href="{{route('inicio')}}#monedas-inicio">MONEDAS</a></li>
 											<li><a href="{{route('inicio')}}#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
@@ -118,6 +120,7 @@
 											SOBRE NOSOTROS
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="#quienes-somos">¿QUIENES SOMOS?</a></li>
 											<li><a href="#mision">MISIÓN</a></li>
 											<li><a href="#vision">VISIÓN</a></li>
 											<li><a href="#valores">VALORES</a></li>
@@ -132,6 +135,7 @@
 											SOBRE NOSOTROS
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="{{route('nosotros')}}#quienes-somos">¿QUIENES SOMOS?</a></li>
 											<li><a href="{{route('nosotros')}}#mision">MISIÓN</a></li>
 											<li><a href="{{route('nosotros')}}#vision">VISIÓN</a></li>
 											<li><a href="{{route('nosotros')}}#valores">VALORES</a></li>
@@ -164,6 +168,7 @@
 											MONEDAS
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="#">CRIPTOMONEDAS</a></li>
 											<li><a href="#bitcoin">BITCOIN</a></li>
 											<li><a href="#ripple">RIPPLE</a></li>
 											<li><a href="#ethereum">ETHEREUM</a></li>
@@ -180,6 +185,7 @@
 											MONEDAS
 										</a>
 										<ul class="dropdown-menu">
+											<li><a href="{{route('monedas')}}#">CRIPTOMONEDAS</a></li>
 											<li><a href="{{route('monedas')}}#bitcoin">BITCOIN</a></li>
 											<li><a href="{{route('monedas')}}#ripple">RIPPLE</a></li>
 											<li><a href="{{route('monedas')}}#ethereum">ETHEREUM</a></li>

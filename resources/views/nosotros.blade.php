@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Sobre nosotros-->
-<section>
+<section id="quienes-somos">
 	<div class="container">
 		<header class="text-center margin-bottom-60">
 			<h2 style="font-size: 60px">Cryptia <span>Exchange</span></h2>
