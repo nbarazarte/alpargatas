@@ -60,7 +60,7 @@
 					data-endelementdelay="0.1" 
 					data-endspeed="300"
 					data-endeasing="Power4.easeIn" style="z-index: 10;">
-						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="1200px">
+						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="3000px">
 				</div>								
 
 				<div class="tp-caption customin ltl tp-resizeme text_white"
@@ -177,7 +177,7 @@
 					data-endelementdelay="0.1" 
 					data-endspeed="300"
 					data-endeasing="Power4.easeIn" style="z-index: 10;">
-						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="1200px">
+						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="3000px">
 				</div>												
 
 				<div class="tp-caption lfb" 
@@ -204,12 +204,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 40px">+ A través de CRYPTIA EXCHANGE
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ A través de <b>CRYPTIA</b>
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white lfb tp-resizeme" 
 					data-x="left" data-hoffset="110"
-					data-y="183" 
+					data-y="193" 
 					data-speed="1000" 
 					data-start="1400" 
 					data-easing="easeOutExpo" 
@@ -218,12 +218,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 40px">+ trendrás acceso a
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ trendrás acceso a
 				</div>
 
 				<div class="tp-caption block_white sfl tp-resizeme" 
 					data-x="70" 
-					data-y="266" 
+					data-y="276" 
 					data-speed="750" 
 					data-start="1900" 
 					data-easing="easeOutExpo" 
@@ -237,7 +237,7 @@
 
 				<div class="tp-caption block_theme_color sfr tp-resizeme" 
 					data-x="120" 
-					data-y="310" 
+					data-y="320" 
 					data-speed="750" 
 					data-start="2200" 
 					data-easing="easeOutExpo" 
@@ -251,7 +251,7 @@
 
 				<div class="tp-caption block_white sfb tp-resizeme" 
 					data-x="170" 
-					data-y="356" 
+					data-y="366" 
 					data-speed="750" 
 					data-start="2500" 
 					data-easing="easeOutExpo" 
