@@ -311,7 +311,7 @@
 
 	</div>
 
-	<div class="copyright">
+	<div class="copyright" style="background-color: #000000">
 		<div class="container">
 			<ul class="pull-right nomargin list-inline mobile-block">
 				<li><a href="#">Tarifas</a></li>

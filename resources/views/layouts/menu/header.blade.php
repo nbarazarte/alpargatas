@@ -70,7 +70,7 @@
 							AVAILABLE CLASSES:
 							submenu-dark = dark sub menu
 						-->
-						<div class="navbar-collapse pull-right nav-main-collapse collapse">
+						<div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
 							<nav class="nav-main">
 
 								<!-- 
@@ -81,12 +81,40 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									
-								@include('layouts.menu.inicio')
+								@if (Route::current()->getName() == 'inicio')
+
+									<li class="active"><!-- INICIO -->							
+										<a class="dropdown-toggle" href="#">
+											INICIO
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#cryptia">CRYPTIA EXCHANGE</a></li>
+											<li><a href="#monedas-inicio">MONEDAS</a></li>
+											<li><a href="#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
+											<li><a href="#blog-resumen">NUESTRO BLOG</a></li>
+										</ul>
+									</li>
+
+								@else
+
+									<li><!-- INICIO -->							
+										<a class="dropdown-toggle" href="{{ route('inicio')}}">
+											INICIO
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="{{ route('inicio')}}#cryptia">CRYPTIA EXCHANGE</a></li>
+											<li><a href="{{ route('inicio')}}#monedas-inicio">MONEDAS</a></li>
+											<li><a href="{{ route('inicio')}}#noticias-resumen">RESUMEN DE NOTICIAS</a></li>
+											<li><a href="{{ route('inicio')}}#blog-resumen">NUESTRO BLOG</a></li>
+										</ul>
+									</li>
+
+								@endif
 
 								@if (Route::current()->getName() == 'nosotros')
 									
 									<li class="active">
-										<a href="#">
+										<a class="dropdown-toggle" href="#">
 											SOBRE NOSOTROS
 										</a>
 										<ul class="dropdown-menu">
@@ -102,7 +130,7 @@
 									@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
 
 										<li><!-- NOSOTROS -->									
-											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros">
+											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/sobre-nosotros">
 												SOBRE NOSOTROS
 											</a>
 											<ul class="dropdown-menu">
@@ -116,7 +144,7 @@
 									@else
 
 										<li><!-- NOSOTROS -->									
-											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros">
+											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}/sobre-nosotros">
 												SOBRE NOSOTROS
 											</a>
 											<ul class="dropdown-menu">
@@ -133,7 +161,9 @@
 
 								@if (Route::current()->getName() == 'mercados')
 									
-									<li class="active"><a href="#">MERCADOS</a></li>
+									<li class="active">
+										<a href="#">MERCADOS</a>
+									</li>
 
 								@else
 
@@ -148,7 +178,7 @@
 								@if (Route::current()->getName() == 'monedas')
 									
 									<li class="active">
-										<a href="#">
+										<a class="dropdown-toggle" href="#">
 											MONEDAS
 										</a>
 										<ul class="dropdown-menu">
@@ -166,7 +196,7 @@
 									@if(($_SERVER['SERVER_NAME'] == 'localhost' ) || ( $_SERVER['SERVER_NAME'] == '127.0.0.1'))
 
 										<li><!-- MONEDAS -->									
-											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas">
+											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}:8000/monedas">
 												MONEDAS
 											</a>
 											<ul class="dropdown-menu">
@@ -182,7 +212,7 @@
 									@else
 
 										<li><!-- MONEDAS -->									
-											<a class="external" href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas">
+											<a class="dropdown-toggle" href="http://{{ $_SERVER['SERVER_NAME'] }}/monedas">
 												MONEDAS
 											</a>
 											<ul class="dropdown-menu">
@@ -201,11 +231,14 @@
 
 								@if (Route::current()->getName() == 'noticias')
 									
-									<li class="active"><a href="#">NOTICIAS</a></li>
+									<li class="active">
+										<a href="#">NOTICIAS</a>
+									</li>
 
 								@else
+
 									<li><!-- NOTICIAS -->
-										<a href="{{ route('noticias')}}">
+										<a class="external" href="{{ route('noticias')}}">
 											NOTICIAS
 										</a>
 									</li>
@@ -214,7 +247,9 @@
 									
 								@if (Route::current()->getName() == 'tutoriales')
 									
-									<li class="active"><a href="#">TUTORIALES</a></li>
+									<li class="active"><!-- TUTORIALES -->
+										<a href="#">TUTORIALES</a>
+									</li>
 
 								@else
 
@@ -228,7 +263,9 @@
 
 								@if (Route::current()->getName() == 'blog')
 									
-									<li class="active"><a href="#">BLOG</a></li>
+									<li class="active">
+										<a href="#">BLOG</a>
+									</li>
 
 								@else
 

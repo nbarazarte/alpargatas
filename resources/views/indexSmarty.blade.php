@@ -108,7 +108,7 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 35px;">
-					Cryptia Exchange utiliza la más novedosa tecnología blockchain <br><br>adaptada al mercado venezolano.
+					Utilizamos la más novedosa tecnología blockchain <br><br>adaptada al mercado venezolano.
 				</div>
 
 				<div class="tp-caption tp-fade fadeout fullscreenvideo"

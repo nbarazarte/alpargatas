@@ -57,7 +57,7 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			@include('header')
+			@include('layouts.menu.header')
 
 			@yield('content')
 
