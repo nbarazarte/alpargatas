@@ -38,16 +38,16 @@
 			<!-- SLIDE  -->
 			<li data-transition="fade" data-slotamount="7" data-masterspeed="800"  data-saveperformance="off" >
 
-				<img src="assets/images/1x1.png" data-lazyload="" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/video/cryptocurrencyIntro.png" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
 				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
 
 				<div class="tp-caption"
-					data-x="0"
+					data-x="-275"
 					data-y="center"
-					style="z-index: 10;width: 1200px; height: 1200px">
-					<div id="particles" style="width: 1200px; height: 1200px"></div>	
+					style="z-index: 10;width: 1600px; height: 1200px">
+					<div id="particles" style="width: 1600px; height: 1200px"></div>	
 				</div>
 
 				<div class="tp-caption lft start" 
@@ -153,25 +153,49 @@
 			</li>
 
 			<!-- SLIDE  -->
+			<li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-link="" data-title="Slide 4" data-target="_blank" data-saveperformance="off">
 
-			<!--
-			<li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" style="background-color: #F6F6F6;">							
+				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
-				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
-				
 				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
-				<!--<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
-<!--
+				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
 				<div class="tp-caption"
-					data-x="0"
+					data-x="-275"
 					data-y="center"
-					style="z-index: 10;width: 1200px; height: 1200px">
-					<div id="particles" style="width: 1200px; height: 1200px"></div>	
+					style="z-index: 10;width: 1600px; height: 1200px">
+					<div id="particles2" style="width: 1600px; height: 1200px"></div>	
+				</div>
+
+				<div class="tp-caption lft start" 
+					data-x="center" 
+					data-y="-850" 
+					data-speed="750" 
+					data-start="750" 
+					data-easing="easeOutExpo" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300"
+					data-endeasing="Power4.easeIn" style="z-index: 10;">
+						<img src="assets/images/1x1.png" alt="" data-lazyload="assets/images/caption_bg.png" width="1200px">
+				</div>												
+
+				<div class="tp-caption lfb" 
+					data-x="right" data-hoffset="-20" 
+					data-y="120" 
+					data-speed="2000" 
+					data-start="500" 
+					data-easing="easeOutExpo" 
+					data-elementdelay="0.1" 
+					data-endelementdelay="0.1" 
+					data-endspeed="300" 
+					style="z-index: 10;">
+					<img class="img-responsive" src="assets/images/1x1.png" alt="" data-lazyload="assets/images/demo/desktop_empty.png">
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white lft tp-resizeme" 
-					data-x="left" data-hoffset="70"
-					data-y="85" 
+					data-x="left" data-hoffset="30"
+					data-y="135" 
 					data-speed="1000" 
 					data-start="1200" 
 					data-easing="easeOutExpo" 
@@ -180,12 +204,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size:60px">+ A través de CRYPTIA EXCHANGE
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 40px">+ A través de CRYPTIA EXCHANGE
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white lfb tp-resizeme" 
-					data-x="left" data-hoffset="150"
-					data-y="133" 
+					data-x="left" data-hoffset="110"
+					data-y="183" 
 					data-speed="1000" 
 					data-start="1400" 
 					data-easing="easeOutExpo" 
@@ -194,12 +218,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size:60px">+ tendrás acceso a
-				</div>				
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 40px">+ trendrás acceso a
+				</div>
 
 				<div class="tp-caption block_white sfl tp-resizeme" 
 					data-x="70" 
-					data-y="216" 
+					data-y="266" 
 					data-speed="750" 
 					data-start="1900" 
 					data-easing="easeOutExpo" 
@@ -208,12 +232,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Ordenes de compra y venta
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 30px">Ordenes de compra y venta
 				</div>
 
 				<div class="tp-caption block_theme_color sfr tp-resizeme" 
 					data-x="120" 
-					data-y="260" 
+					data-y="310" 
 					data-speed="750" 
 					data-start="2200" 
 					data-easing="easeOutExpo" 
@@ -222,12 +246,12 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">precios ofertados y
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 30px">Precios ofertados
 				</div>
 
 				<div class="tp-caption block_white sfb tp-resizeme" 
 					data-x="170" 
-					data-y="306" 
+					data-y="356" 
 					data-speed="750" 
 					data-start="2500" 
 					data-easing="easeOutExpo" 
@@ -236,27 +260,9 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">volúmenes intercambiados
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 30px">Volúmenes intercambiados
 				</div>
-
-				<div class="tp-caption block_theme_color sfr tp-resizeme" 
-					data-x="220" 
-					data-y="350" 
-					data-speed="750" 
-					data-start="2800" 
-					data-easing="easeOutExpo" 
-					data-splitin="none" 
-					data-splitout="none" 
-					data-elementdelay="0.1" 
-					data-endelementdelay="0.1" 
-					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">en tiempo real
-				</div>				
-
-			</li>
-
-
-		-->
+			</li>			
 
 		</ul>
 		<div class="tp-bannertimer"></div>
