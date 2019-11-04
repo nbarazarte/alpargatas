@@ -40,9 +40,6 @@
 
 				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/video/cryptocurrencyIntro.png" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
-				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
-
 				<div class="tp-caption"
 					data-x="-275"
 					data-y="center"
