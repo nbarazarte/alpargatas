@@ -153,7 +153,7 @@
 			</li>
 
 			<!-- SLIDE  -->
-			<li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-link="" data-title="Slide 4" data-target="_blank" data-saveperformance="off">
+			<li data-transition="fade" data-slotamount="7" data-masterspeed="800" data-link="" data-title="Slide 4" data-target="_blank" data-saveperformance="off">
 
 				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
