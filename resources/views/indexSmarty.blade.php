@@ -154,8 +154,7 @@
 
 				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
-				<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
-				<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
 
 				<div class="tp-caption"
 					data-x="-275"
