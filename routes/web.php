@@ -10,11 +10,32 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-Route::get('/', function () {
-    return view('indexSmarty');
+/********************* Settings **********************/
+Route::get('/clear-view', function() {
+    Artisan::call('view:clear');
+    return "View is cleared";
 });
-*/
+
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
+
+Route::get('/cache-route', function() {
+    Artisan::call('route:cache');
+    return "Route is cleared";
+});
+
+Route::get('/cache-config', function() {
+    Artisan::call('config:cache');
+    return "Config cache is cleared";
+});
+
+Route::get('/clear-config', function() {
+    Artisan::call('config:clear');
+    return "Config is cleared";
+});
+/****************************************************/
 Route::get('/', [
 	'uses' => 'PublicController@index',
 	'as' =>'inicio'
