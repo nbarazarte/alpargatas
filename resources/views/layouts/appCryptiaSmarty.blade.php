@@ -588,5 +588,19 @@
 	
 </script>			
 
+<script type="text/javascript">
+$(function(){
+
+$(".news-text").each(function () {
+    len=$(this).text().length;
+    str= $(this).text().substr(0,200);
+    lastIndexOf = str.lastIndexOf(" "); 
+    if(len>200) {
+        $(this).text(str.substr(0, lastIndexOf) + '...');
+    }
+});
+
+});
+</script>
 	</body>
 </html>
