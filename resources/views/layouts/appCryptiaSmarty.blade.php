@@ -9,6 +9,15 @@
 		<meta name="description" content="" />
 		<meta name="Author" content="" />
 
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://www.cryptiaexchange.com/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Cryptia Exchange | Compra y venta de criptomonedas" />
+  <meta property="og:description"   content="Exchange" />
+  <meta property="og:image"         content="https://www.cryptiaexchange.com/wp-content/uploads/elementor/thumbs/Ccryptia_footer_logo-nw4wqkhad220f1ppx6sm7frbmm0y9fzdtovhupee4g.png" />    
+
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -585,22 +594,30 @@
       };
 }());
 
-	
 </script>			
 
-<script type="text/javascript">
-$(function(){
+    @if(Route::current()->getName() == 'blog')
 
-$(".news-text").each(function () {
-    len=$(this).text().length;
-    str= $(this).text().substr(0,200);
-    lastIndexOf = str.lastIndexOf(" "); 
-    if(len>200) {
-        $(this).text(str.substr(0, lastIndexOf) + '...');
-    }
-});
+      <script type="text/javascript">
+      $(function(){
 
-});
-</script>
+        $(".news-text").each(function () {
+            len=$(this).text().length;
+            str= $(this).text().substr(0,200);
+            lastIndexOf = str.lastIndexOf(" "); 
+            if(len>200) {
+                $(this).text(str.substr(0, lastIndexOf) + '...');
+            }
+        });
+
+      });
+      </script>
+
+    @endif
+
+
+ <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0&appId=923879157809752&autoLogAppEvents=1"></script>
+
 	</body>
 </html>

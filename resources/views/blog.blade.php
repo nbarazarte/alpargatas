@@ -83,7 +83,7 @@
 
 				@endif
 
-				<h2 ><a href="#">{{ str_replace("-"," ",$post->str_titulo) }}</a></h2>
+				<h2 ><a href="{{ route('verBlog',[$post->str_titulo])}}" target="_blank">{{ str_replace("-"," ",$post->str_titulo) }}</a></h2>
 				<hr>
 				<i class="fa fa-tags" aria-hidden="true"></i>
 
@@ -131,7 +131,7 @@
 					{!! html_entity_decode($post->str_post_resumen) !!} 
 				</div>
 
-				<a href="#" class="btn btn-reveal btn-default">
+				<a href="{{ route('verBlog',[$post->str_titulo])}}" target="_blank" class="btn btn-reveal btn-default">
 					<i class="fa fa-plus"></i>
 					<span>Leer más</span>
 				</a>

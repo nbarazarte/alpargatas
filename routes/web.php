@@ -61,9 +61,21 @@ Route::get('/tutoriales', [
 	'as' =>'tutoriales'
 ]);
 
+
+Route::get('/tutoriales-ajax/{id}', [
+	'uses' => 'PublicController@tutorialesAjax',
+	'as' =>'tutoriales-ajax'
+]);
+
 Route::get('/blog', [
 	'uses' => 'PublicController@blog',
 	'as' =>'blog'
+]);
+
+//Ver Tutorial:
+Route::get('/blog-{titulo}', [
+	'uses' => 'PublicController@verBlog',
+	'as' =>'verBlog'
 ]);
 
 Route::get('/monedas', [

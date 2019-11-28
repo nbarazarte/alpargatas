@@ -60,8 +60,40 @@ class PublicController extends Controller
     public function tutoriales()
     {
 
-        return view('tutoriales');
-    } 
+        $tutoriales = DB::table('tbl_tutorial as t')
+        ->where('t.str_estatus', '=' ,'activo')
+        ->Where(function ($query) {
+            $query->where('t.bol_eliminado', '=', 0);
+        })
+        ->select( 't.id', 't.created_at as fecha','t.str_titulo','t.str_video','t.str_post','t.str_src','t.blb_img1')
+
+        ->orderBy('t.id', 'desc')
+        ->get();  
+
+        //dd($tutoriales);die();
+        return view('tutoriales', ['tutoriales' => $tutoriales]);
+    }
+
+     /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function tutorialesAjax($id)
+    {
+
+        $tutoriales = DB::table('tbl_tutorial as t')
+        ->where([
+            ['t.str_estatus', '=' ,'activo'],
+            ['t.bol_eliminado', '=', 0],
+            ['t.id', '=', $id],
+        ])
+        ->select( 't.id', 't.created_at as fecha','t.str_titulo','t.str_video','t.str_post','t.str_src')
+        ->orderBy('t.id', 'desc')
+        ->get();
+        //dd($tutoriales);die();
+        return view('tutoriales-ajax',['tutoriales' => $tutoriales]);
+    }     
 
      /**
      * Show the application dashboard.
@@ -70,14 +102,6 @@ class PublicController extends Controller
      */
     public function blog()
     {
-
-        /*
-
-        $posts = DB::table('tbl_post')->get();
-
-        return view('blog', ['posts' => $posts]);
-
-        */
 
         $posts = DB::table('tbl_post as p')
         ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
@@ -100,8 +124,27 @@ class PublicController extends Controller
 
         return view('blog', ['posts' => $posts, 'categorias' => $categorias]);
 
-        //return view('blog');
-    } 
+    }
+
+    public function verBlog($titulo)
+    {
+    
+
+        $posts = DB::table('tbl_post as p')
+        ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
+        ->where('p.str_titulo', '=' ,$titulo)
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->select( 'p.id','p.str_tipo', 'p.created_at as fecha','p.str_titulo', 'p.str_post', 'p.str_post_resumen','p.str_video', 'p.str_audio', 'p.blb_img1', 'p.blb_img2', 'p.blb_img3', 'a.str_nombre as autor')
+
+        ->orderBy('p.id', 'desc')
+        ->get(); 
+
+
+        return \View::make('verBlog', compact('posts'));
+    }
+  
 
     /**
      * Show the application dashboard.
