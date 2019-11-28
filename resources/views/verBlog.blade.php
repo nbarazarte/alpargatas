@@ -37,16 +37,21 @@
 										</span>
 									</a>
 								</li>
-
 								<li>
 									<i class="fa fa-folder-open-o"></i> 
 
-									<a class="category" href="#">
-										<span class="font-lato">Design</span>
-									</a>
-									<a class="category" href="#">
-										<span class="font-lato">Photography</span>
-									</a>
+									@foreach($categorias as $categoria)
+
+										@if($categoria->lng_idpost == $post->id)
+
+											<a class="category" >
+												<span class="font-lato">{{ $categoria->str_categoria }}</span>
+											</a>						
+											
+										@endif
+
+									@endforeach	
+
 								</li>
 								<li>
 									<a href="#">

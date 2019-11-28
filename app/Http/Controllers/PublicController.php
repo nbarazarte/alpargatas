@@ -141,8 +141,15 @@ class PublicController extends Controller
         ->orderBy('p.id', 'desc')
         ->get(); 
 
+        $categorias = DB::table('tbl_categorias_post as cat')
+        ->join('tbl_post as p', 'p.id', '=', 'cat.lng_idpost')
+        ->where('p.str_titulo', '=' ,$titulo)
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->get();  
 
-        return \View::make('verBlog', compact('posts'));
+        return \View::make('verBlog', compact('posts','categorias'));
     }
   
 
