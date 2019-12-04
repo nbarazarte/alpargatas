@@ -28,31 +28,32 @@
 						"pagination": true
 						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
 				-->
-				<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": true, "navigation": true, "pagination": true, "transitionStyle":"fade"}'>
-					<a href="#">
-						<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">
-					</a>
-					<a href="#">
-						<img class="img-responsive" src="assets/images/demo/magazine/2-min.jpg" alt="">
-					</a>
-					<a href="#">
-						<img class="img-responsive" src="assets/images/demo/magazine/3-min.jpg" alt="">
-					</a>
+				<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": 3000, "navigation": true, "pagination": true, "transitionStyle":"fade"}'>
+
+					@foreach ($noticiasRecientes as $noticiaNew)
+
+						<a href="#">
+							<!--<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">-->
+							<img class="img-responsive" src="data:image/jpeg;base64,{{ $noticiaNew->blb_img1 }}" alt="" title="" >
+						</a>
+
+					@endforeach
+
 				</div>
 
 				<!-- breaking news -->
 				<div class="alert alert-mini alert-primary margin-bottom-30"><!-- DANGER -->
 					<strong>ÚLTIMAS NOTICIAS:</strong>
 					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000, "stopOnHover":true, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
-						<div class="text-left size-14">
-							<a href="#">1/3 Potential for the contamination of forensic DNA evidence has been highlighted by the Meredith Kercher murder trial.</a>
-						</div>
-						<div class="text-left size-14">
-							<a href="#">2/3 Australia thrash England to win T20 series in Melbourne</a>
-						</div>
-						<div class="text-left size-14">
-							<a href="#">3/3 China's bulldozer mayor kicked out of party, handed to prosecutors</a>
-						</div>
+
+						@foreach ($noticiasRecientes as $noticiaNew)
+							<div class="text-left size-14">
+								<a href="#">
+									{!! html_entity_decode($noticiaNew->str_post_resumen) !!} 
+								</a>
+							</div>
+						@endforeach
+
 					</div>
 				</div><!-- /breaking news -->
 

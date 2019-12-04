@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Noticias;
 
 class PublicController extends Controller
 {
@@ -49,7 +50,35 @@ class PublicController extends Controller
     public function noticias()
     {
 
-        return view('noticias');
+        $noticias = DB::table('tbl_noticias as p')
+        ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
+        ->where('p.str_estatus', '=' ,'activo')
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->select( 'p.id','p.str_tipo', 'p.created_at as fecha','p.str_titulo', 'p.str_post', 'p.str_post_resumen','p.str_video', 'p.str_audio', 'p.blb_img1', 'p.blb_img2', 'p.blb_img3', 'a.str_nombre as autor')        
+
+        ->orderBy('p.id', 'desc')
+        ->get();  
+
+        $noticiasRecientes = Noticias::latest()
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','str_post_resumen')
+         ->take(3)
+         ->get();
+
+        //dd($noticiasRecientes); die();
+
+        $categorias = DB::table('tbl_categorias_noticias as cat')
+        ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
+        ->where('p.str_estatus', '=' ,'activo')
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->get();          
+
+        return view('noticias', ['noticiasRecientes' => $noticiasRecientes,'noticias' => $noticias, 'categorias' => $categorias]);
+
     }   
 
      /**
@@ -128,7 +157,6 @@ class PublicController extends Controller
 
     public function verBlog($titulo)
     {
-    
 
         $posts = DB::table('tbl_post as p')
         ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
