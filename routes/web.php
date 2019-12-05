@@ -56,6 +56,12 @@ Route::get('/noticias', [
 	'as' =>'noticias'
 ]);
 
+//Ver Noticias:
+Route::get('/noticia-{titulo}', [
+	'uses' => 'PublicController@verNoticias',
+	'as' =>'verNoticias'
+]);
+
 Route::get('/tutoriales', [
 	'uses' => 'PublicController@tutoriales',
 	'as' =>'tutoriales'
@@ -72,7 +78,7 @@ Route::get('/blog', [
 	'as' =>'blog'
 ]);
 
-//Ver Tutorial:
+//Ver Blog:
 Route::get('/blog-{titulo}', [
 	'uses' => 'PublicController@verBlog',
 	'as' =>'verBlog'

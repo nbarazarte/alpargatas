@@ -131,6 +131,21 @@ class PublicController extends Controller
 
     }   
 
+
+     /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function verNoticias($titulo)
+    {
+
+
+        return view('verNoticias');
+    }
+
+
+
      /**
      * Show the application dashboard.
      *
@@ -227,7 +242,17 @@ class PublicController extends Controller
         })
         ->get();  
 
-        return \View::make('verBlog', compact('posts','categorias'));
+        $blogRecientes = DB::table('tbl_post')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($blogRecientes);die();
+
+        return \View::make('verBlog', compact('posts','categorias','blogRecientes'));
     }
   
 

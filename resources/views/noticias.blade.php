@@ -28,13 +28,13 @@
 						"pagination": true
 						"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
 				-->
-				<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": 3000, "navigation": true, "pagination": true, "transitionStyle":"fade"}'>
+				<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"autoPlay":3000, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
 
-					@foreach ($noticiasRecientes as $noticiaNew)
+					@foreach ($ultimasNoticias as $ultima)
 
-						<a href="#">
+						<a href="{{ route('verNoticias',[$ultima->str_titulo])}}" target="_blank">
 							<!--<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">-->
-							<img class="img-responsive" src="data:image/jpeg;base64,{{ $noticiaNew->blb_img1 }}" alt="" title="" >
+							<img class="img-responsive" src="data:image/jpeg;base64,{{ $ultima->blb_img1 }}" alt="{{ str_replace("-"," ",$ultima->str_titulo) }}" title="{{ str_replace("-"," ",$ultima->str_titulo) }}" >						
 						</a>
 
 					@endforeach
@@ -44,11 +44,11 @@
 				<!-- breaking news -->
 				<div class="alert alert-mini alert-primary margin-bottom-30"><!-- DANGER -->
 					<strong>ÚLTIMAS NOTICIAS:</strong>
-					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000, "stopOnHover":true, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
+					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
 
 						@foreach ($ultimasNoticias as $ultima)
 							<div class="text-left size-14">
-								<a href="#">
+								<a href="{{ route('verNoticias',[$ultima->str_titulo])}}" target="_blank">
 									<strong style="font-size: 16px">{{ str_replace("-"," ",$ultima->str_titulo) }}</strong> - {!! html_entity_decode($ultima->str_post_resumen) !!} 
 								</a>
 							</div>
@@ -64,7 +64,7 @@
 					<div class="col-md-8">
 
 						<h3 class="page-header weight-300">
-							<a href="#" data-toggle="tooltip" title="view more"><i class="fa fa-plus-square-o"></i></a>
+							<i class="fa fa-plus-square-o"></i>
 							<strong>Lo más</strong> Reciente
 						</h3>
 
@@ -73,6 +73,21 @@
 							<!-- article summary -->
 							<div class="row">
 								<div class="col-md-4 text-center">
+
+									<!--
+									<a href="{{ route('verNoticias',[$recientes->str_titulo])}}" target="_blank">
+									-->
+							<!-- article item -->
+							<div class="item-box">
+								<figure>
+
+									<a class="item-hover" href="{{ route('verNoticias',[$recientes->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$recientes->str_titulo) }}">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>LEER</strong> MÁS
+										</span>
+									</a>
 
 									@if($recientes->str_tipo == 'imagen')
 
@@ -84,7 +99,7 @@
 									@elseif($recientes->str_tipo == 'carrusel-imagen')
 
 										<!-- carousel -->
-										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000,"items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
 											<div>
 												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
 											</div>
@@ -98,15 +113,23 @@
 										<!-- /rating -->
 									@elseif($recientes->str_tipo == 'video')
 
-										<div class="embed-responsive embed-responsive-16by9 margin-top-30">
+										<div class="embed-responsive embed-responsive-16by9 margin-top-0">
 											{!! html_entity_decode($recientes->str_video) !!}
 										</div>
 
 									@endif
 
+									
+									<!--
+										</a>
+									-->
+									</figure>
+									</div>										
+
+
 								</div>
 								<div class="col-md-8">
-									<h4><a href="#">{{ str_replace("-"," ",$recientes->str_titulo) }}</a></h4>
+									<h4><a href="{{ route('verNoticias',[$recientes->str_titulo])}}" target="_blank">{{ str_replace("-"," ",$recientes->str_titulo) }}</a></h4>
 									<p style="text-align: justify;">
 										{!! html_entity_decode($recientes->str_post_resumen) !!} 
 										<small class="block">
@@ -139,12 +162,12 @@
 					<div class="col-md-4">
 
 						<h3 class="page-header weight-300">
-							<a href="#" data-toggle="tooltip" title="view more"><i class="fa fa-plus-square-o"></i></a> 
+							<i class="fa fa-plus-square-o"></i> 
 							Ésta <strong>Semana</strong>  
 						</h3>
 
 						@foreach ($estaSemana as $semana)
-						<h4><a href="#">{{ str_replace("-"," ",$semana->str_titulo) }}</a></h4>
+						<h4><a href="{{ route('verNoticias',[$semana->str_titulo])}}" target="_blank">{{ str_replace("-"," ",$semana->str_titulo) }}</a></h4>
 						<p style="text-align: justify;">
 							{!! html_entity_decode($semana->str_post_resumen) !!} 
 							<small class="block">
@@ -174,7 +197,7 @@
 				<!-- /TWO COLUMNS -->
 
 				<h3 class="page-header weight-300 margin-top-100">
-					<a href="#" data-toggle="tooltip" title="view more"><i class="fa fa-plus-square-o"></i></a> 
+					<i class="fa fa-plus-square-o"></i> 
 					Otras <strong>Noticias</strong> 
 				</h3>
 
@@ -189,7 +212,7 @@
 							<div class="item-box">
 								<figure>
 
-									<a class="item-hover" href="magazine-single.html">
+									<a class="item-hover" href="{{ route('verNoticias',[$otras->str_titulo])}}" target="_blank">
 										<span class="overlay color2"></span>
 										<span class="inner">
 											<span class="block fa fa-plus fsize20"></span>
@@ -204,7 +227,7 @@
 									@elseif($otras->str_tipo == 'carrusel-imagen')
 
 										<!-- carousel -->
-										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000,"items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
 											<div>
 												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $otras->blb_img1 }}" />
 											</div>
@@ -226,7 +249,7 @@
 
 								</figure>
 								<div class="item-box-desc">
-									<h4>{{ str_replace("-"," ",$otras->str_titulo) }}</h4>
+									<h4><a href="{{ route('verNoticias',[$otras->str_titulo])}}" target="_blank">{{ str_replace("-"," ",$otras->str_titulo) }}</a></h4>
 									<small>
 										
 										<?php
@@ -271,41 +294,48 @@
 				<!-- No #1 Hot -->
 				<div class="item-box nomargin-top">
 
-					@if($interesar->str_tipo == 'imagen')
-
+					<!-- article item -->
+					<div class="item-box">
 						<figure>
-							<a class="item-hover" href="#">
+
+							<a class="item-hover" href="{{ route('verNoticias',[$interesar->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$interesar->str_titulo) }}">
 								<span class="overlay color2"></span>
 								<span class="inner">
 									<span class="block fa fa-plus fsize20"></span>
 									<strong>LEER</strong> MÁS
 								</span>
 							</a>
-							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $interesar->blb_img1 }}" />
+
+							@if($interesar->str_tipo == 'imagen')
+
+								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $interesar->blb_img1 }}" />
+
+							@elseif($interesar->str_tipo == 'carrusel-imagen')
+
+								<!-- carousel -->
+								<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+									<div>
+										<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $interesar->blb_img1 }}" />
+									</div>
+									<div>
+										<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $interesar->blb_img2 }}" />
+									</div>
+								</div>
+								<!-- /carousel -->
+								<!-- rating -->
+								
+								<!-- /rating -->
+							@elseif($interesar->str_tipo == 'video')
+
+								<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+									{!! html_entity_decode($interesar->str_video) !!}
+								</div>											
+
+							@endif
+
 						</figure>
 
-					@elseif($interesar->str_tipo == 'carrusel-imagen')
-
-						<!-- carousel -->
-						<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
-							<div>
-								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
-							</div>
-							<div>
-								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img2 }}" />
-							</div>
-						</div>
-						<!-- /carousel -->
-						<!-- rating -->
-						
-						<!-- /rating -->
-					@elseif($interesar->str_tipo == 'video')
-
-						<div class="embed-responsive embed-responsive-16by9 margin-top-30">
-							{!! html_entity_decode($interesar->str_video) !!}
-						</div>											
-
-					@endif
+					</div>
 
 					<div class="item-box-desc padding-10">
 						<small>
@@ -323,7 +353,11 @@
 							{!! $interesar->fecha !!} 
 
 						</small>
-						<h4 style="text-align: justify;"><a href="#">{!! html_entity_decode($interesar->str_post_resumen) !!}</a></h4>
+						<h4 style="text-align: justify;">
+							<a href="{{ route('verNoticias',[$interesar->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$interesar->str_titulo) }}">
+								{!! html_entity_decode($interesar->str_post_resumen) !!}
+							</a>
+						</h4>
 					</div>
 				</div>
 				<!-- /No #1 Hot -->
@@ -339,16 +373,16 @@
 
 							@if($mini->str_tipo == 'imagen')
 
-								<a href="#">
+								<a href="{{ route('verNoticias',[$mini->str_titulo])}}">
 									<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $mini->blb_img1 }}" />
 									<h6 class="fsize12 font300 padding6">{{ str_replace("-"," ",$mini->str_titulo) }}</h6>
 								</a>
 
 							@elseif($mini->str_tipo == 'carrusel-imagen')
 
-								<a href="#">
+								<a href="{{ route('verNoticias',[$mini->str_titulo])}}">
 									<!-- carousel -->
-									<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+									<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000,"items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
 										<div>
 											<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $mini->blb_img1 }}" />
 										</div>
@@ -362,7 +396,7 @@
 
 							@elseif($mini->str_tipo == 'video')
 
-								<a href="#">
+								<a href="{{ route('verNoticias',[$mini->str_titulo])}}">
 									<div class="embed-responsive embed-responsive-16by9 margin-top-0">
 										{!! html_entity_decode($mini->str_video) !!}
 									</div>
