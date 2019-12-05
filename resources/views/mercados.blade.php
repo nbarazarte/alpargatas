@@ -17,7 +17,8 @@
 			<div class="col-sm-12">
 
 				<div class="embed-responsive embed-responsive-16by9">
-				  <iframe class="embed-responsive-item" src="https://cryptowat.ch/assets" allowfullscreen></iframe>
+				  <!--<iframe class="embed-responsive-item" src="https://cryptowat.ch/assets" allowfullscreen></iframe>-->
+				  <iframe class="embed-responsive-item" src="https://frame.cryptowat.ch/" allowfullscreen></iframe>
 				</div>
 
 			</div>

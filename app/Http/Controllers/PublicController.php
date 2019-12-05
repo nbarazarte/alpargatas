@@ -61,13 +61,63 @@ class PublicController extends Controller
         ->orderBy('p.id', 'desc')
         ->get();  
 
-        $noticiasRecientes = Noticias::latest()
+        $ultimasNoticias = Noticias::latest()
         ->where('str_estatus', '=' ,'activo')
-        ->select('blb_img1','str_post_resumen')
+        ->select('blb_img1','str_titulo','str_post_resumen')
          ->take(3)
          ->get();
 
-        //dd($noticiasRecientes); die();
+        //dd($ultimasNoticias); die();
+
+        $noticiasRecientes = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(3) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($noticiasRecientes); die();  
+
+        $estaSemana = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(6) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($estaSemana); die(); 
+
+        $otrasNoticias = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(9) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($otrasNoticias); die(); 
+
+        $puedeInteresar = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(11) //las siguientes tres noticias
+        ->limit(2)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($puedeInteresar); die();   
+
+        $miniNoticias = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(13) //las siguientes tres noticias
+        ->limit(2)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($miniNoticias); die();                 
 
         $categorias = DB::table('tbl_categorias_noticias as cat')
         ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
@@ -77,7 +127,7 @@ class PublicController extends Controller
         })
         ->get();          
 
-        return view('noticias', ['noticiasRecientes' => $noticiasRecientes,'noticias' => $noticias, 'categorias' => $categorias]);
+        return view('noticias', ['miniNoticias' => $miniNoticias,'puedeInteresar' => $puedeInteresar,'otrasNoticias' => $otrasNoticias,'estaSemana' => $estaSemana,'ultimasNoticias' => $ultimasNoticias,'noticiasRecientes' => $noticiasRecientes,'noticias' => $noticias, 'categorias' => $categorias]);
 
     }   
 

@@ -46,10 +46,10 @@
 					<strong>ÚLTIMAS NOTICIAS:</strong>
 					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000, "stopOnHover":true, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
 
-						@foreach ($noticiasRecientes as $noticiaNew)
+						@foreach ($ultimasNoticias as $ultima)
 							<div class="text-left size-14">
 								<a href="#">
-									{!! html_entity_decode($noticiaNew->str_post_resumen) !!} 
+									<strong style="font-size: 16px">{{ str_replace("-"," ",$ultima->str_titulo) }}</strong> - {!! html_entity_decode($ultima->str_post_resumen) !!} 
 								</a>
 							</div>
 						@endforeach
@@ -68,75 +68,70 @@
 							<strong>Lo más</strong> Reciente
 						</h3>
 
-						<!-- article summary -->
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<!-- carousel -->
-								<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
-									<div>
-										<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_1-min.jpg" />
-									</div>
-									<div>
-										<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_2-min.jpg" />
-									</div>
-									<div>
-										<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_3-min.jpg" />
-									</div>
+						@foreach ($noticiasRecientes as $recientes)
+
+							<!-- article summary -->
+							<div class="row">
+								<div class="col-md-4 text-center">
+
+									@if($recientes->str_tipo == 'imagen')
+
+										<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+										<!-- rating -->
+										
+										<!-- /rating -->
+
+									@elseif($recientes->str_tipo == 'carrusel-imagen')
+
+										<!-- carousel -->
+										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+											<div>
+												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+											</div>
+											<div>
+												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img2 }}" />
+											</div>
+										</div>
+										<!-- /carousel -->
+										<!-- rating -->
+										
+										<!-- /rating -->
+									@elseif($recientes->str_tipo == 'video')
+
+										<div class="embed-responsive embed-responsive-16by9 margin-top-30">
+											{!! html_entity_decode($recientes->str_video) !!}
+										</div>
+
+									@endif
+
 								</div>
-								<!-- /carousel -->
-								<!-- rating -->
-								<div class="rating rating-4 size-13 margin-top-10 width-100"><!-- rating-0 ... rating-5 --></div>
-								<!-- /rating -->
-							</div>
-							<div class="col-md-8">
-								<h4><a href="#">Boulder smashes through Italian farm</a></h4>
-								<p>
-									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
-									<small class="block">31/10/2019, 9:55</small>
-								</p>
-							</div>
-						</div>
-						<!-- /article summary -->
+								<div class="col-md-8">
+									<h4><a href="#">{{ str_replace("-"," ",$recientes->str_titulo) }}</a></h4>
+									<p style="text-align: justify;">
+										{!! html_entity_decode($recientes->str_post_resumen) !!} 
+										<small class="block">
+											
+											<?php
 
-						<hr /><!-- separator -->
+										  		$recientes->fecha = substr($recientes->fecha, 0,10);
 
-						<!-- article summary -->
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_6-min.jpg" />
-								<!-- rating -->
-								<div class="rating rating-4 size-13 margin-top-10 width-100"><!-- rating-0 ... rating-5 --></div>
-								<!-- /rating -->
-							</div>
-							<div class="col-md-8">
-								<h4><a href="#">Fall in eurozone inflation rate fuels deflation concerns</a></h4>
-								<p>
-									Calls for European Central Bank action to help protect the eurozone's fragile recovery have grown after the release of inflation and jobless data.
-									<small class="block">31/10/2019, 9:55</small>
-								</p>
-							</div>
-						</div>
-						<!-- /article summary -->
+										        $var = explode('-',$recientes->fecha);
 
-						<hr /><!-- separator -->
+										        $recientes->fecha = "$var[2]-$var[1]-$var[0]";
 
-						<!-- article summary -->
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_7-min.jpg" />
-								<!-- rating -->
-								<div class="rating rating-4 size-13 margin-top-10 width-100"><!-- rating-0 ... rating-5 --></div>
-								<!-- /rating -->
+											?>
+
+											{!! $recientes->fecha !!} 
+
+										</small>
+									</p>
+								</div>
 							</div>
-							<div class="col-md-8">
-								<h4><a href="#">Australia to dump dredged sand in Great Barrier Reef Park</a></h4>
-								<p>
-									Australia's government approves plan to dump millions of tons of spoil at the Great Barrier Reef.
-									<small class="block">31/10/2019, 9:55</small>
-								</p>
-							</div>
-						</div>
-						<!-- /article summary -->
+							<!-- /article summary -->
+
+							<hr /><!-- separator -->
+
+						@endforeach
 
 					</div>
 
@@ -148,27 +143,31 @@
 							Ésta <strong>Semana</strong>  
 						</h3>
 
-						<h4><a href="#">Chinese New Year by the numbers</a></h4>
-						<p>
-							Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.
-							<small class="block">31/10/2019, 9:55</small>
+						@foreach ($estaSemana as $semana)
+						<h4><a href="#">{{ str_replace("-"," ",$semana->str_titulo) }}</a></h4>
+						<p style="text-align: justify;">
+							{!! html_entity_decode($semana->str_post_resumen) !!} 
+							<small class="block">
+								
+								<?php
+
+							  		$semana->fecha = substr($semana->fecha, 0,10);
+
+							        $var = explode('-',$semana->fecha);
+
+							        $semana->fecha = "$var[2]-$var[1]-$var[0]";
+
+								?>
+
+								{!! $semana->fecha !!} 
+
+							</small>
 						</p>
 
 						<hr class="half-margins" /><!-- separator -->
 
-						<h4><a href="#">Chinese New Year by the numbers</a></h4>
-						<p>
-							Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.
-							<small class="block">31/10/2019, 9:55</small>
-						</p>
-
-						<hr class="half-margins" /><!-- separator -->
-
-						<h4><a href="#">Chinese New Year by the numbers</a></h4>
-						<p>
-							Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.
-							<small class="block">31/10/2019, 9:55</small>
-						</p>
+						@endforeach
+	
 					</div>
 
 				</div>
@@ -182,77 +181,75 @@
 				<!-- THREE COLUMNS -->
 				<div class="row">
 
-					<div class="col-md-4">
+					@foreach ($otrasNoticias as $otras)
 
-						<!-- article item -->
-						<div class="item-box">
-							<figure>
-								<a class="item-hover" href="magazine-single.html">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>LEER</strong> MÁS
-									</span>
-								</a>
-								<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_1-min.jpg" width="263" height="147" />
-							</figure>
-							<div class="item-box-desc">
-								<h4>Chinese New Year by the numbers</h4>
-								<small>31/10/2019, 9:55</small>
-								<p>Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.</p>
+						<div class="col-md-4">
+
+							<!-- article item -->
+							<div class="item-box">
+								<figure>
+
+									<a class="item-hover" href="magazine-single.html">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>LEER</strong> MÁS
+										</span>
+									</a>
+
+									@if($otras->str_tipo == 'imagen')
+
+										<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $otras->blb_img1 }}" width="263" height="147" />
+
+									@elseif($otras->str_tipo == 'carrusel-imagen')
+
+										<!-- carousel -->
+										<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+											<div>
+												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $otras->blb_img1 }}" />
+											</div>
+											<div>
+												<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $otras->blb_img2 }}" />
+											</div>
+										</div>
+										<!-- /carousel -->
+										<!-- rating -->
+										
+										<!-- /rating -->
+									@elseif($otras->str_tipo == 'video')
+
+										<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+											{!! html_entity_decode($otras->str_video) !!}
+										</div>
+
+									@endif
+
+								</figure>
+								<div class="item-box-desc">
+									<h4>{{ str_replace("-"," ",$otras->str_titulo) }}</h4>
+									<small>
+										
+										<?php
+
+									  		$otras->fecha = substr($otras->fecha, 0,10);
+
+									        $var = explode('-',$otras->fecha);
+
+									        $otras->fecha = "$var[2]-$var[1]-$var[0]";
+
+										?>
+
+										{!! $otras->fecha !!} 
+
+									</small>
+									<p style="text-align: justify;">{!! html_entity_decode($otras->str_post_resumen) !!} </p>
+								</div>
 							</div>
+							<!-- /article item -->
+
 						</div>
-						<!-- /article item -->
 
-					</div>
-
-					<div class="col-md-4">
-
-						<!-- article item -->
-						<div class="item-box">
-							<figure>
-								<a class="item-hover" href="magazine-single.html">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>LEER</strong> MÁS
-									</span>
-								</a>
-								<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_2-min.jpg" width="263" height="147" />
-							</figure>
-							<div class="item-box-desc">
-								<h4>Chinese New Year by the numbers</h4>
-								<small>31/10/2019, 9:55</small>
-								<p>Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.</p>
-							</div>
-						</div>
-						<!-- /article item -->
-
-					</div>
-
-					<div class="col-md-4">
-
-						<!-- article item -->
-						<div class="item-box">
-							<figure>
-								<a class="item-hover" href="magazine-single.html">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>LEER</strong> MÁS
-									</span>
-								</a>
-								<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_3-min.jpg" width="263" height="147" />
-							</figure>
-							<div class="item-box-desc">
-								<h4>Chinese New Year by the numbers</h4>
-								<small>31/10/2019, 9:55</small>
-								<p>Billions of people travel in China during Lunar New Year. Check out the mind-boggling figures.</p>
-							</div>
-						</div>
-						<!-- /article item -->
-
-					</div>
+					@endforeach
 
 					<!-- /article item -->
 				</div>
@@ -266,101 +263,119 @@
 
 				<!-- HOT -->
 				<h3 class="page-header nomargin-top weight-300">
-					Lo más <span>Viral</span>
+					Te puede <span>Interesar</span>
 				</h3>
+
+				@foreach ($puedeInteresar as $interesar)
 
 				<!-- No #1 Hot -->
 				<div class="item-box nomargin-top">
-					<figure>
-						<a class="item-hover" href="#">
-							<span class="overlay color2"></span>
-							<span class="inner">
-								<span class="block fa fa-plus fsize20"></span>
-								<strong>LEER</strong> MÁS
-							</span>
-						</a>
-						<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_4-min.jpg" />
-					</figure>
+
+					@if($interesar->str_tipo == 'imagen')
+
+						<figure>
+							<a class="item-hover" href="#">
+								<span class="overlay color2"></span>
+								<span class="inner">
+									<span class="block fa fa-plus fsize20"></span>
+									<strong>LEER</strong> MÁS
+								</span>
+							</a>
+							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $interesar->blb_img1 }}" />
+						</figure>
+
+					@elseif($interesar->str_tipo == 'carrusel-imagen')
+
+						<!-- carousel -->
+						<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+							<div>
+								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+							</div>
+							<div>
+								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img2 }}" />
+							</div>
+						</div>
+						<!-- /carousel -->
+						<!-- rating -->
+						
+						<!-- /rating -->
+					@elseif($interesar->str_tipo == 'video')
+
+						<div class="embed-responsive embed-responsive-16by9 margin-top-30">
+							{!! html_entity_decode($interesar->str_video) !!}
+						</div>											
+
+					@endif
+
 					<div class="item-box-desc padding-10">
-						<small>31/10/2019, 08:33</small>
-						<h4><a href="#">World's most polluted...</a></h4>
+						<small>
+							
+							<?php
+
+						  		$interesar->fecha = substr($interesar->fecha, 0,10);
+
+						        $var = explode('-',$interesar->fecha);
+
+						        $interesar->fecha = "$var[2]-$var[1]-$var[0]";
+
+							?>
+
+							{!! $interesar->fecha !!} 
+
+						</small>
+						<h4 style="text-align: justify;"><a href="#">{!! html_entity_decode($interesar->str_post_resumen) !!}</a></h4>
 					</div>
 				</div>
 				<!-- /No #1 Hot -->
 
-				<!-- video -->
-				<div class="embed-responsive embed-responsive-16by9 margin-top-30">
-					<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
-				</div>
-				<h5 class="weight-300 padding-top-10 size-13">
-					<i class="fa fa-comments"></i> <a href="#">Comment this video</a> 
-					<small class="pull-right margin-top-3">(0 comments)</small>
-				</h5>
-				<!-- /video -->
+				@endforeach
 
 				<!-- small articles -->
 				<div class="row margin-top-30">
-					<div class="col-xs-6 col-md-6">
-						<a href="#">
-							<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_3-min.jpg" />
-							<h6 class="fsize12 font300 padding6">Horses hypnotized by the sea</h6>
-						</a>							
-					</div>
-					<div class="col-xs-6 col-md-6">
-						<a href="#">
-							<img alt="" class="img-responsive" src="assets/images/demo/magazine/thumbs/thumb_4-min.jpg" />
-							<h6 class="fsize12 font300 padding6">Sochi protesters fight to be heard</h6>
-						</a>							
-					</div>
+
+					@foreach ($miniNoticias as $mini)
+
+						<div class="col-xs-6 col-md-6">
+
+							@if($mini->str_tipo == 'imagen')
+
+								<a href="#">
+									<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $mini->blb_img1 }}" />
+									<h6 class="fsize12 font300 padding6">{{ str_replace("-"," ",$mini->str_titulo) }}</h6>
+								</a>
+
+							@elseif($mini->str_tipo == 'carrusel-imagen')
+
+								<a href="#">
+									<!-- carousel -->
+									<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+										<div>
+											<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $mini->blb_img1 }}" />
+										</div>
+										<div>
+											<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $mini->blb_img2 }}" />
+										</div>
+									</div>
+									<!-- /carousel -->
+									<h6 class="fsize12 font300 padding6">{{ str_replace("-"," ",$mini->str_titulo) }}</h6>
+								</a>
+
+							@elseif($mini->str_tipo == 'video')
+
+								<a href="#">
+									<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+										{!! html_entity_decode($mini->str_video) !!}
+									</div>
+									<h6 class="fsize12 font300 padding6">{{ str_replace("-"," ",$mini->str_titulo) }}</h6>
+								</a>										
+
+							@endif
+
+						</div>
+
+					@endforeach
 				</div>
 				<!-- /small articles -->
-
-				<!-- LATEST -->
-				<h3 class="page-header weight-300 margin-top-60">
-					También <span>es noticia</span>
-				</h3>
-
-				<div class="panel-group" id="accordion">
-		
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-									<i class="fa fa-star"></i>
-									Lo más Votado
-								</a>
-							</h4>
-						</div>
-						<div id="collapseTwo" class="accordion-body collapse in">
-							<div class="panel-body">
-								<ul class="list-unstyled list-icons margin-bottom-10">
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Boulder smashes through Italian farm</a></li>
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Fall in eurozone inflation rate fuels deflation concerns</a></li>
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Australia to dump dredged sand in Great Barrier Reef Park</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-									<i class="fa fa-comment"></i>
-									Lo más Comentado
-								</a>
-							</h4>
-						</div>
-						<div id="collapseThree" class="accordion-body collapse">
-							<div class="panel-body">
-								<ul class="list-unstyled list-icons margin-bottom-10">
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Boulder smashes through Italian farm</a></li>
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Fall in eurozone inflation rate fuels deflation concerns</a></li>
-									<li class="margin-top-6"><i class="fa fa-angle-right"></i> <a href="#">Australia to dump dredged sand in Great Barrier Reef Park</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<!-- TWEETS -->
 				<h3 class="page-header weight-300 margin-top-60">
@@ -377,7 +392,7 @@
 					php/_cache/ - folder should be writable by the webserver!
 							- it's used to cache tweets
 				-->
-				<ul class="widget-twitter" data-php="php/twitter/tweet.php" data-username="cryptiaexchange" data-limit="3">
+				<ul class="widget-twitter" data-php="php/twitter/tweet.php" data-username="cryptiaexchange" data-limit="5">
 					<li></li>
 				</ul>
 
