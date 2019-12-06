@@ -228,7 +228,7 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 30px">Ordenes de compra y venta
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 30px">Órdenes de compra y venta
 				</div>
 
 				<div class="tp-caption block_theme_color sfr tp-resizeme" 
@@ -296,7 +296,7 @@
 			</div>
 
 			<div class="col-sm-6">
-				<p class="dropcap" style="text-align: justify;">Nuestra plataforma ha sido diseñada específicamente para inversores de criptoactivos. Somos el vehículo mas importante de masificación e incorporación en el uso de las criptomonedas en Venezuela. <br> Estamos orientados a proporcionar a sus usuarios la plataforma mas rápida y segura para la comercialización de monedas digitales como bitcoin, etheriumm y proximamente petro, entre otros.</p>
+				<p class="dropcap" style="text-align: justify;">Nuestra plataforma ha sido diseñada específicamente para inversores de criptoactivos. Somos el vehículo más importante de masificación e incorporación en el uso de las criptomonedas en Venezuela. <br> Estamos orientados a proporcionar a sus usuarios la plataforma más rápida y segura para la comercialización de monedas digitales como bitcoin, ethereum y próximamente petro, entre otros.</p>
 
 				<hr />
 
@@ -333,7 +333,7 @@
 
 		<div class="text-center">
 
-			<h3>Proporcionamos a nuestros usuarios la plataforma mas rápida y segura</h3>
+			<h3>Proporcionamos a nuestros usuarios la plataforma más rápida y segura</h3>
 			<p class="font-lato size-20">
 				El mercado de criptomonedas está en constante expansión produciendo nuevas oportunidades de negocio a nivel mundial. <br>A través de la tecnología blockchain ofrecemos una forma segura y confiable de intercambiar criptomonedas.
 			</p>

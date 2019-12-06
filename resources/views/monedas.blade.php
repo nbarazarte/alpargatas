@@ -853,7 +853,7 @@
 
 					<div class="col-md-12">
 						<ul class="list-unstyled list-icons" style="text-align: justify;">
-							<li><i class="fa fa-circle-o"></i> Esta la criptomoneda alcanzó un valor máximo histórico de casi US$20,000 a mediados de diciembre 2017.</li>
+							<li><i class="fa fa-circle-o"></i> Esta criptomoneda alcanzó un valor máximo histórico de casi US$20,000 a mediados de diciembre 2017.</li>
 							<li><i class="fa fa-circle-o"></i> Se trata de una moneda digital que solo existe en la cadena de bloques o blockchain que la soporta y debido a un sofisticado proceso de verificación (consenso) de transacciones.</li>
 							<li><i class="fa fa-circle-o"></i> Cada bitcoin — o porción de él — es único, pues cada transacción se registra públicamente (aunque sin datos personales) en un gran “libro” digital de contabilidad elaborado con complejas estructuras criptográficas, llamado blockchain o cadena de bloques. Por ello bitcoin es llamado ‘criptomoneda’ y es tan sólo la primera de su tipo.</li>
 						</ul>
