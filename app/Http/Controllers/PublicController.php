@@ -140,8 +140,37 @@ class PublicController extends Controller
     public function verNoticias($titulo)
     {
 
+        $posts = DB::table('tbl_noticias as p')
+        ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
+        ->where('p.str_titulo', '=' ,$titulo)
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->select( 'p.id','p.str_tipo', 'p.created_at as fecha','p.str_titulo', 'p.str_post', 'p.str_post_resumen','p.str_video', 'p.str_audio', 'p.blb_img1', 'p.blb_img2', 'p.blb_img3', 'a.str_nombre as autor')
 
-        return view('verNoticias');
+        ->orderBy('p.id', 'desc')
+        ->get(); 
+
+        $categorias = DB::table('tbl_categorias_noticias as cat')
+        ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
+        ->where('p.str_titulo', '=' ,$titulo)
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->get();  
+
+        $blogRecientes = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
+
+        //dd($blogRecientes);die();
+
+        return \View::make('verNoticias', compact('posts','categorias','blogRecientes'));
+        
     }
 
 

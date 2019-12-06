@@ -119,7 +119,7 @@
 
 							<!-- article content -->
 
-								<p style="text-align: justify;">
+								<p class="dropcap" style="text-align: justify;">
 									{!! html_entity_decode($post->str_post) !!} 
 								</p>
 							<!-- /article content -->
@@ -177,14 +177,6 @@
 
 							<hr />
 
-
-
-
-
-
-
-
-
 				<!-- HOT -->
 				<h3 class="page-header nomargin-top weight-300">
 					Te puede <span>Interesar</span>
@@ -195,19 +187,19 @@
 				<!-- No #1 Hot -->
 				<div class="item-box nomargin-top">
 
+					<figure>
+						<a class="item-hover" href="{{ route('verBlog',[$recientes->str_titulo])}}">
+							<span class="overlay color2"></span>
+							<span class="inner">
+								<span class="block fa fa-plus fsize20"></span>
+								<strong>LEER</strong> MÁS
+							</span>
+						</a>
+
 					@if($recientes->str_tipo == 'imagen')
 
-						<figure>
-							<a class="item-hover" href="#">
-								<span class="overlay color2"></span>
-								<span class="inner">
-									<span class="block fa fa-plus fsize20"></span>
-									<strong>LEER</strong> MÁS
-								</span>
-							</a>
-							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
-						</figure>
-
+						<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+						
 					@elseif($recientes->str_tipo == 'carrusel-imagen')
 
 						<!-- carousel -->
@@ -231,6 +223,8 @@
 
 					@endif
 
+				</figure>
+
 					<div class="item-box-desc padding-10">
 						<small>
 							
@@ -247,8 +241,16 @@
 							{!! $recientes->fecha !!} 
 
 						</small>
-						<h4 style="text-align: justify;"><a href="#">{{ str_replace("-"," ",$recientes->str_titulo) }}</a></h4>
+						<h4 style="text-align: justify;">
+							<a href="{{ route('verBlog',[$recientes->str_titulo])}}">
+								{{ str_replace("-"," ",$recientes->str_titulo) }}
+							</a>
+						</h4>
 					</div>
+
+
+
+
 				</div>
 				<!-- /No #1 Hot -->
 
