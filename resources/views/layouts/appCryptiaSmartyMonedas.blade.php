@@ -6,8 +6,8 @@
 		<meta charset="utf-8" />
 		<title>Cryptia Exchange | Compra y venta de criptomonedas</title>
 		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="Author" content="" />
+		<meta name="description" content="Casa de cambio de Criptomonedas: Invierte en Petros, Bitcoins, Ethereum y más Cryptocurrencies, con soporte comercial Vex" />
+		<meta name="Author" content="Cryptia Exchange" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />

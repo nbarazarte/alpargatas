@@ -6,8 +6,8 @@
 		<meta charset="utf-8" />
 		<title>Cryptia Exchange | Compra y venta de criptomonedas</title>
 		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="Author" content="" />
+		<meta name="description" content="Casa de cambio de Criptomonedas: Invierte en Petros, Bitcoins, Ethereum y más Cryptocurrencies, con soporte comercial Vex" />
+		<meta name="Author" content="Cryptia Exchange" />
 
 
     <!-- You can use Open Graph tags to customize link previews.
@@ -596,7 +596,7 @@
 
 </script>			
 
-    @if(Route::current()->getName() == 'blog')
+    @if (Route::current()->getName() == 'blog')
 
       <script type="text/javascript">
       $(function(){

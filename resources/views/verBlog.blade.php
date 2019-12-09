@@ -2,6 +2,24 @@
 
 @endforeach
 
+<?php
+  $tags = "";
+?>
+
+@foreach($categorias as $categoria)
+
+    @if($categoria->lng_idpost == $post->id)
+
+    <?php
+      
+      $tags = $categoria->str_categoria.",".$tags;
+
+    ?>
+      
+    @endif
+
+@endforeach
+
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
@@ -9,22 +27,14 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>{{ str_replace("-"," ",$post->str_titulo) }} - Cryptia Exchange</title>
-		<meta name="keywords" content="@foreach($categorias as $categoria)
-
-                    @if($categoria->lng_idpost == $post->id)
-
-                      {{ $categoria->str_categoria }},
-                                 
-                    @endif
-
-                  @endforeach" />
+		<meta name="keywords" content="<?=substr($tags ,0,-1);?>" />
 		<meta name="description" content="{{ html_entity_decode($post->str_post_resumen) }}" />
-		<meta name="Author" content="" />
+		<meta name="Author" content="{{ $post->autor }}" />
 
 
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="https://www.cryptiaexchange.com/" />
+  <meta property="og:url"           content="https://www.cryptiaexchange.com/blog-{{ $post->str_titulo }}" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{ str_replace("-"," ",$post->str_titulo) }} - Cryptia Exchange" />
   <meta property="og:description"   content="{{ html_entity_decode($post->str_post_resumen) }}" />

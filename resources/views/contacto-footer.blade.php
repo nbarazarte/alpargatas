@@ -297,9 +297,9 @@
 						<i class="icon-twitter"></i>
 					</a>
 
-					<a href="https://www.instagram.com/cryptiaexchange/" class="social-icon social-icon-border social-gplus pull-left" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram">
-						<i class="icon-instagram"></i>
-						<i class="icon-instagram"></i>
+					<a href="https://www.instagram.com/cryptiaexchange/" class="social-icon social-icon-border social-instagram pull-left" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram">
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-instagram"></i>
 					</a>
 		
 				</div>

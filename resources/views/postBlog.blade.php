@@ -281,8 +281,8 @@
 								</a>
 
 								<a href="https://www.instagram.com/cryptiaexchange/" target="_blank" class="social-icon social-icon-border social-instagram pull-left" data-toggle="tooltip" data-placement="top" title="Instagram">
-									<i class="icon-instagram"></i>
-									<i class="icon-instagram"></i>
+									<i class="fa fa-instagram"></i>
+									<i class="fa fa-instagram"></i>
 								</a>
 					
 							</div>

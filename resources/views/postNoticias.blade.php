@@ -4,132 +4,6 @@
 
 					<div class="row">
 
-						<!-- RIGHT -->
-						<div class="col-md-3 col-sm-3">
-
-							<!-- INLINE SEARCH -->
-							<div class="inline-search clearfix margin-bottom-30">
-								<form action="#" method="get" class="widget_search">
-									<input type="search" placeholder="Buscar" id="s" name="s" class="serch-input">
-									<button type="submit">
-										<i class="fa fa-search"></i>
-									</button>
-								</form>
-							</div>
-							<!-- /INLINE SEARCH -->
-
-							<hr />
-
-				<!-- HOT -->
-				<h3 class="page-header nomargin-top weight-300">
-					Te puede <span>Interesar</span>
-				</h3>
-
-				@foreach ($blogRecientes as $recientes)
-
-				<!-- No #1 Hot -->
-				<div class="item-box nomargin-top">
-
-					<figure>
-						<a class="item-hover" href="{{ route('verNoticias',[$recientes->str_titulo])}}">
-							<span class="overlay color2"></span>
-							<span class="inner">
-								<span class="block fa fa-plus fsize20"></span>
-								<strong>LEER</strong> MÁS
-							</span>
-						</a>
-					@if($recientes->str_tipo == 'imagen')
-
-						<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
-
-					@elseif($recientes->str_tipo == 'carrusel-imagen')
-
-						<!-- carousel -->
-						<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
-							<div>
-								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
-							</div>
-							<div>
-								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img2 }}" />
-							</div>
-						</div>
-						<!-- /carousel -->
-						<!-- rating -->
-						
-						<!-- /rating -->
-					@elseif($recientes->str_tipo == 'video')
-
-						<div class="embed-responsive embed-responsive-16by9 margin-top-0">
-							{!! html_entity_decode($recientes->str_video) !!}
-						</div>											
-
-					@endif
-
-				</figure>					
-
-					<div class="item-box-desc padding-10">
-						<small>
-							
-							<?php
-
-						  		$recientes->fecha = substr($recientes->fecha, 0,10);
-
-						        $var = explode('-',$recientes->fecha);
-
-						        $recientes->fecha = "$var[2]-$var[1]-$var[0]";
-
-							?>
-
-							{!! $recientes->fecha !!} 
-
-						</small>
-						<h4 style="text-align: justify;">
-							<a href="{{ route('verNoticias',[$recientes->str_titulo])}}">
-								{{ str_replace("-"," ",$recientes->str_titulo) }}
-							</a>
-						</h4>
-					</div>
-				</div>
-				<!-- /No #1 Hot -->
-
-				@endforeach
-
-							<!-- TWIITER WIDGET -->
-							<h3 class="page-header weight-300 margin-top-60">
-								<i class="fa fa-twitter"></i> 
-								Últimos <span>Tweets</span> 
-							</h3>						
-							<ul class="hidden-xs widget-twitter margin-bottom-60" data-php="php/twitter/tweet.php" data-username="cryptiaexchange" data-limit="3">
-								<li></li>
-							</ul>
-
-							<hr />
-
-							<!-- Social Icons -->
-							<div class="margin-top-20 clearfix">
-								<a href="https://www.facebook.com/CryptiaExchange/?hc_ref=ARRunlUUrumZJ2D8puynjxgr67QxldbQ372nMx-bW7-dZK2xCWjN5jPlaS44ZNfBONU&fref=nf" target="_blank" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="https://twitter.com/cryptiaexchange" target="_blank" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="https://www.instagram.com/cryptiaexchange/" target="_blank" class="social-icon social-icon-border social-instagram pull-left" data-toggle="tooltip" data-placement="top" title="Instagram">
-									<i class="icon-instagram"></i>
-									<i class="icon-instagram"></i>
-								</a>
-					
-							</div>
-							<!-- /Social Icons -->
-
-						</div>
-
-
-
 						<!-- LEFT -->
 						<div class="col-md-9 col-sm-9">
 
@@ -280,6 +154,130 @@
 								<div class="fb-comments" data-href="http://localhost:8000/noticia-{{ $post->str_titulo }}" data-width="850" data-numposts="5"></div>
 
 						</div>
+
+						<!-- RIGHT -->
+						<div class="col-md-3 col-sm-3">
+
+							<!-- INLINE SEARCH -->
+							<div class="inline-search clearfix margin-bottom-30">
+								<form action="#" method="get" class="widget_search">
+									<input type="search" placeholder="Buscar" id="s" name="s" class="serch-input">
+									<button type="submit">
+										<i class="fa fa-search"></i>
+									</button>
+								</form>
+							</div>
+							<!-- /INLINE SEARCH -->
+
+							<hr />
+
+				<!-- HOT -->
+				<h3 class="page-header nomargin-top weight-300">
+					Te puede <span>Interesar</span>
+				</h3>
+
+				@foreach ($blogRecientes as $recientes)
+
+				<!-- No #1 Hot -->
+				<div class="item-box nomargin-top">
+
+					<figure>
+						<a class="item-hover" href="{{ route('verNoticias',[$recientes->str_titulo])}}">
+							<span class="overlay color2"></span>
+							<span class="inner">
+								<span class="block fa fa-plus fsize20"></span>
+								<strong>LEER</strong> MÁS
+							</span>
+						</a>
+					@if($recientes->str_tipo == 'imagen')
+
+						<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+
+					@elseif($recientes->str_tipo == 'carrusel-imagen')
+
+						<!-- carousel -->
+						<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+							<div>
+								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img1 }}" />
+							</div>
+							<div>
+								<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $recientes->blb_img2 }}" />
+							</div>
+						</div>
+						<!-- /carousel -->
+						<!-- rating -->
+						
+						<!-- /rating -->
+					@elseif($recientes->str_tipo == 'video')
+
+						<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+							{!! html_entity_decode($recientes->str_video) !!}
+						</div>											
+
+					@endif
+
+				</figure>					
+
+					<div class="item-box-desc padding-10">
+						<small>
+							
+							<?php
+
+						  		$recientes->fecha = substr($recientes->fecha, 0,10);
+
+						        $var = explode('-',$recientes->fecha);
+
+						        $recientes->fecha = "$var[2]-$var[1]-$var[0]";
+
+							?>
+
+							{!! $recientes->fecha !!} 
+
+						</small>
+						<h4 style="text-align: justify;">
+							<a href="{{ route('verNoticias',[$recientes->str_titulo])}}">
+								{{ str_replace("-"," ",$recientes->str_titulo) }}
+							</a>
+						</h4>
+					</div>
+				</div>
+				<!-- /No #1 Hot -->
+
+				@endforeach
+
+							<!-- TWIITER WIDGET -->
+							<h3 class="page-header weight-300 margin-top-60">
+								<i class="fa fa-twitter"></i> 
+								Últimos <span>Tweets</span> 
+							</h3>						
+							<ul class="hidden-xs widget-twitter margin-bottom-60" data-php="php/twitter/tweet.php" data-username="cryptiaexchange" data-limit="3">
+								<li></li>
+							</ul>
+
+							<hr />
+
+							<!-- Social Icons -->
+							<div class="margin-top-20 clearfix">
+								<a href="https://www.facebook.com/CryptiaExchange/?hc_ref=ARRunlUUrumZJ2D8puynjxgr67QxldbQ372nMx-bW7-dZK2xCWjN5jPlaS44ZNfBONU&fref=nf" target="_blank" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="https://twitter.com/cryptiaexchange" target="_blank" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="https://www.instagram.com/cryptiaexchange/" target="_blank" class="social-icon social-icon-border social-instagram pull-left" data-toggle="tooltip" data-placement="top" title="Instagram">
+									<i class="fa fa-instagram"></i>
+									<i class="fa fa-instagram"></i>
+								</a>
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>						
 
 
 

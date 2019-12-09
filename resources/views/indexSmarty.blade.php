@@ -200,7 +200,7 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ A través de <b>CRYPTIA</b>
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ A través de <b style="color: #DCC857">CRYPTIA</b>
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white lfb tp-resizeme" 
@@ -217,7 +217,7 @@
 					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ trendrás acceso a
 				</div>
 
-				<div class="tp-caption block_white sfl tp-resizeme" 
+				<div class="tp-caption mediumlarge_light_white sfl tp-resizeme" 
 					data-x="70" 
 					data-y="276" 
 					data-speed="750" 
@@ -228,10 +228,10 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 30px">Órdenes de compra y venta
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 35px"><b>Órdenes de compra y venta</b>
 				</div>
 
-				<div class="tp-caption block_theme_color sfr tp-resizeme" 
+				<div class="tp-caption mediumlarge_light_white sfr tp-resizeme" 
 					data-x="120" 
 					data-y="320" 
 					data-speed="750" 
@@ -242,10 +242,10 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 30px">Precios ofertados
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 35px"><b>Precios ofertados</b>
 				</div>
 
-				<div class="tp-caption block_white sfb tp-resizeme" 
+				<div class="tp-caption mediumlarge_light_white sfb tp-resizeme" 
 					data-x="170" 
 					data-y="366" 
 					data-speed="750" 
@@ -256,7 +256,7 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 30px">Volúmenes intercambiados
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 35px"><b>Volúmenes intercambiados</b>
 				</div>
 			</li>			
 
@@ -400,162 +400,82 @@
 				.owl-padding-20
 		-->
 		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": false, "pagination": false}'>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/24-min.jpg" alt="">
-				</a>
 
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/17-min.jpg" alt="">
-				</a>
+			@foreach($ultimasNoticias as $noticias)
 
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
 			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/30-min.jpg" alt="">
-				</a>
 
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/26-min.jpg" alt="">
-				</a>
+				@if($noticias->str_audio)
 
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+					<div class="margin-bottom-20">
+						<div class="embed-responsive embed-responsive-16by9">
+							{!! html_entity_decode($noticias->str_audio) !!} 
+						</div>
+					</div>									
+
+				@elseif($noticias->str_tipo == 'imagen')
+
+					<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $noticias->blb_img1 }}" />
+					<!-- rating -->
+					
+					<!-- /rating -->
+
+				@elseif($noticias->str_tipo == 'carrusel-imagen')
+
+					<!-- carousel -->
+					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000,"items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+						<div>
+							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $noticias->blb_img1 }}" />
+						</div>
+						<div>
+							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $noticias->blb_img2 }}" />
+						</div>
+					</div>
+					<!-- /carousel -->
+					<!-- rating -->
+					
+					<!-- /rating -->
+				@elseif($noticias->str_tipo == 'video')
+
+					<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+						{!! html_entity_decode($noticias->str_video) !!}
+					</div>
+
+				@endif
+
+				<h4 class="text-left margin-top-20">
+					<a href="{{ route('verNoticias',[$noticias->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$noticias->str_titulo) }}" style="color: #ffffff">
+						{{ str_replace("-"," ",$noticias->str_titulo) }}
+					</a>
+				</h4>
+
+				<p style="text-align: justify;">
+					{!! html_entity_decode($noticias->str_post_resumen) !!}
+				</p>
+
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
 						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
+
+							<?php
+
+						  		$noticias->fecha = substr($noticias->fecha, 0,10);
+
+						        $var = explode('-',$noticias->fecha);
+
+						        $noticias->fecha = "$var[2]-$var[1]-$var[0]";
+
+							?>
+
+							{!! $noticias->fecha !!} 
+
 					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
+
 				</ul>
 			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/18-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/34-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/37-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/23-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#" style="color: #ffffff">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
+
+			@endforeach
+
 		</div>
 
 	</div>
@@ -593,162 +513,82 @@
 				.owl-padding-20
 		-->
 		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/24-min.jpg" alt="">
-				</a>
 
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
+			@foreach($ultimosBlog as $blog)
+			
 			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/17-min.jpg" alt="">
-				</a>
 
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/30-min.jpg" alt="">
-				</a>
+				@if($blog->str_audio)
 
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/26-min.jpg" alt="">
-				</a>
+					<div class="margin-bottom-20">
+						<div class="embed-responsive embed-responsive-16by9">
+							{!! html_entity_decode($blog->str_audio) !!} 
+						</div>
+					</div>									
 
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				@elseif($blog->str_tipo == 'imagen')
+
+					<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $blog->blb_img1 }}" />
+					<!-- rating -->
+					
+					<!-- /rating -->
+
+				@elseif($blog->str_tipo == 'carrusel-imagen')
+
+					<!-- carousel -->
+					<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":3000,"items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+						<div>
+							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $blog->blb_img1 }}" />
+						</div>
+						<div>
+							<img alt="" class="img-responsive" src="data:image/jpeg;base64,{{ $blog->blb_img2 }}" />
+						</div>
+					</div>
+					<!-- /carousel -->
+					<!-- rating -->
+					
+					<!-- /rating -->
+				@elseif($blog->str_tipo == 'video')
+
+					<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+						{!! html_entity_decode($blog->str_video) !!}
+					</div>
+
+				@endif
+
+				<h4 class="text-left margin-top-20">
+					<a href="{{ route('verNoticias',[$blog->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$blog->str_titulo) }}" style="color: #ffffff">
+						{{ str_replace("-"," ",$blog->str_titulo) }}
+					</a>
+				</h4>
+
+				<p style="text-align: justify;">
+					{!! html_entity_decode($blog->str_post_resumen) !!}
+				</p>
+
 				<ul class="text-left size-12 list-inline list-separator">
 					<li>
 						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
+
+							<?php
+
+						  		$blog->fecha = substr($blog->fecha, 0,10);
+
+						        $var = explode('-',$noticias->fecha);
+
+						        $blog->fecha = "$var[2]-$var[1]-$var[0]";
+
+							?>
+
+							{!! $blog->fecha !!} 
+
 					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
+
 				</ul>
 			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/18-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/34-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/37-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="img-hover">
-				<a href="#">
-					<img class="img-responsive" src="assets/images/demo/451x300/23-min.jpg" alt="">
-				</a>
-				<h4 class="text-left margin-top-20"><a href="#">Lorem Ipsum Dolor</a></h4>
-				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
-				<ul class="text-left size-12 list-inline list-separator">
-					<li>
-						<i class="fa fa-calendar"></i> 
-						29th Jan 2015
-					</li>
-					<li>
-						<a href="##comments">
-							<i class="fa fa-comments"></i> 
-							3
-						</a>
-					</li>
-				</ul>
-			</div>
+
+			@endforeach
+
 		</div>
 
 	</div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Noticias;
+use App\Blog;
 
 class PublicController extends Controller
 {
@@ -16,8 +17,23 @@ class PublicController extends Controller
      */
     public function index()
     {
+        $ultimasNoticias = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('id','blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(8)
+         ->orderBy('id', 'desc')
+        ->get();
 
-        return view('indexSmarty');
+        $ultimosBlog = DB::table('tbl_post')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('id','blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(8)
+         ->orderBy('id', 'desc')
+        ->get();                
+
+        return \View::make('indexSmarty', compact('ultimasNoticias','ultimosBlog'));        
     }
 
      /**
@@ -172,8 +188,6 @@ class PublicController extends Controller
         return \View::make('verNoticias', compact('posts','categorias','blogRecientes'));
         
     }
-
-
 
      /**
      * Show the application dashboard.
