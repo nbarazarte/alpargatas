@@ -53,7 +53,7 @@
 								</li>
 							</ul>
 
-						@if($post->str_audio)
+						@if($post->str_tipo == 'audio')
 
 							<div class="margin-bottom-20">
 								<div class="embed-responsive embed-responsive-16by9">

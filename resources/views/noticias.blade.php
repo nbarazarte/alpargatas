@@ -52,21 +52,13 @@
 
 						@if ($ultima->str_tipo == 'video')
 
-							<div class="margin-bottom-20">
-								<div class="embed-responsive embed-responsive-16by9">
-									{!! html_entity_decode($ultima->str_video) !!}
-								</div>
-							</div>	
+							<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">
 
 						@endif
 
 						@if ($ultima->str_tipo == 'audio')
-
-							<div class="margin-bottom-20">
-								<div class="embed-responsive embed-responsive-16by9">
-									{!! html_entity_decode($ultima->str_audio) !!} 
-								</div>
-							</div>									
+							
+							<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">								
 
 						@endif
 

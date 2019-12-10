@@ -79,7 +79,7 @@ class PublicController extends Controller
 
         $ultimasNoticias = Noticias::latest()
         ->where('str_estatus', '=' ,'activo')
-        ->select('blb_img1','str_titulo','str_post_resumen')
+        ->select('str_tipo','blb_img1','str_titulo','str_post_resumen')
          ->take(3)
          ->get();
 
@@ -158,7 +158,7 @@ class PublicController extends Controller
 
         $posts = DB::table('tbl_noticias as p')
         ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
-        ->where('p.str_titulo', '=' ,$titulo)
+        ->where('p.str_titulo', '=' ,$titulo)        
         ->Where(function ($query) {
             $query->where('p.bol_eliminado', '=', 0);
         })
@@ -166,6 +166,8 @@ class PublicController extends Controller
 
         ->orderBy('p.id', 'desc')
         ->get(); 
+
+        //dd($posts);die();
 
         $categorias = DB::table('tbl_categorias_noticias as cat')
         ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
