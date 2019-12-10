@@ -32,10 +32,43 @@
 
 					@foreach ($ultimasNoticias as $ultima)
 
-						<a href="{{ route('verNoticias',[$ultima->str_titulo])}}" target="_blank">
-							<!--<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">-->
-							<img class="img-responsive" src="data:image/jpeg;base64,{{ $ultima->blb_img1 }}" alt="{{ str_replace("-"," ",$ultima->str_titulo) }}" title="{{ str_replace("-"," ",$ultima->str_titulo) }}" >						
-						</a>
+						@if ($ultima->str_tipo == 'imagen')
+
+							<a href="{{ route('verNoticias',[$ultima->str_titulo])}}" target="_blank">
+								<!--<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">-->
+								<img class="img-responsive" src="data:image/jpeg;base64,{{ $ultima->blb_img1 }}" alt="{{ str_replace("-"," ",$ultima->str_titulo) }}" title="{{ str_replace("-"," ",$ultima->str_titulo) }}" >						
+							</a>
+
+						@endif
+
+						@if ($ultima->str_tipo == 'carrusel-imagen')
+
+							<a href="{{ route('verNoticias',[$ultima->str_titulo])}}" target="_blank">
+								<!--<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">-->
+								<img class="img-responsive" src="data:image/jpeg;base64,{{ $ultima->blb_img1 }}" alt="{{ str_replace("-"," ",$ultima->str_titulo) }}" title="{{ str_replace("-"," ",$ultima->str_titulo) }}" >						
+							</a>
+
+						@endif
+
+						@if ($ultima->str_tipo == 'video')
+
+							<div class="margin-bottom-20">
+								<div class="embed-responsive embed-responsive-16by9">
+									{!! html_entity_decode($ultima->str_video) !!}
+								</div>
+							</div>	
+
+						@endif
+
+						@if ($ultima->str_tipo == 'audio')
+
+							<div class="margin-bottom-20">
+								<div class="embed-responsive embed-responsive-16by9">
+									{!! html_entity_decode($ultima->str_audio) !!} 
+								</div>
+							</div>									
+
+						@endif
 
 					@endforeach
 
