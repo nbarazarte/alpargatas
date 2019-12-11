@@ -65,23 +65,19 @@ class PublicController extends Controller
      */
     public function noticias()
     {
-
-        $noticias = DB::table('tbl_noticias as p')
-        ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
-        ->where('p.str_estatus', '=' ,'activo')
-        ->Where(function ($query) {
-            $query->where('p.bol_eliminado', '=', 0);
-        })
-        ->select( 'p.id','p.str_tipo', 'p.created_at as fecha','p.str_titulo', 'p.str_post', 'p.str_post_resumen','p.str_video', 'p.str_audio', 'p.blb_img1', 'p.blb_img2', 'p.blb_img3', 'a.str_nombre as autor')        
-
-        ->orderBy('p.id', 'desc')
-        ->get();  
-
-        $ultimasNoticias = Noticias::latest()
+        /*$ultimasNoticias = Noticias::latest()
         ->where('str_estatus', '=' ,'activo')
         ->select('str_tipo','blb_img1','str_titulo','str_post_resumen')
          ->take(3)
-         ->get();
+         ->get();*/
+
+        $ultimasNoticias = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();
 
         //dd($ultimasNoticias); die();
 
@@ -118,8 +114,8 @@ class PublicController extends Controller
         $puedeInteresar = DB::table('tbl_noticias')
         ->where('str_estatus', '=' ,'activo')
         ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
-        ->offset(11) //las siguientes tres noticias
-        ->limit(2)
+        ->offset(12) //las siguientes tres noticias
+        ->limit(3)
          ->orderBy('id', 'desc')
         ->get();
 
@@ -128,7 +124,7 @@ class PublicController extends Controller
         $miniNoticias = DB::table('tbl_noticias')
         ->where('str_estatus', '=' ,'activo')
         ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
-        ->offset(13) //las siguientes tres noticias
+        ->offset(15) //las siguientes tres noticias
         ->limit(2)
          ->orderBy('id', 'desc')
         ->get();
@@ -143,10 +139,8 @@ class PublicController extends Controller
         })
         ->get();          
 
-        return view('noticias', ['miniNoticias' => $miniNoticias,'puedeInteresar' => $puedeInteresar,'otrasNoticias' => $otrasNoticias,'estaSemana' => $estaSemana,'ultimasNoticias' => $ultimasNoticias,'noticiasRecientes' => $noticiasRecientes,'noticias' => $noticias, 'categorias' => $categorias]);
-
+        return view('noticias', ['miniNoticias' => $miniNoticias,'puedeInteresar' => $puedeInteresar,'otrasNoticias' => $otrasNoticias,'estaSemana' => $estaSemana,'ultimasNoticias' => $ultimasNoticias,'noticiasRecientes' => $noticiasRecientes, 'categorias' => $categorias]);
     }   
-
 
      /**
      * Show the application dashboard.
@@ -155,10 +149,9 @@ class PublicController extends Controller
      */
     public function verNoticias($titulo)
     {
-
         $posts = DB::table('tbl_noticias as p')
         ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
-        ->where('p.str_titulo', '=' ,$titulo)        
+        ->where('p.str_titulo', 'like' ,"%$titulo%")        
         ->Where(function ($query) {
             $query->where('p.bol_eliminado', '=', 0);
         })
@@ -171,7 +164,7 @@ class PublicController extends Controller
 
         $categorias = DB::table('tbl_categorias_noticias as cat')
         ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
-        ->where('p.str_titulo', '=' ,$titulo)
+        ->where('p.str_titulo', 'like' ,"%$titulo%")
         ->Where(function ($query) {
             $query->where('p.bol_eliminado', '=', 0);
         })
@@ -179,6 +172,7 @@ class PublicController extends Controller
 
         $blogRecientes = DB::table('tbl_noticias')
         ->where('str_estatus', '=' ,'activo')
+        ->where('str_titulo', 'not like' ,"%$titulo%")
         ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
         ->offset(0) //las siguientes tres noticias
         ->limit(3)

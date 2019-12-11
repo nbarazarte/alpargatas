@@ -8,7 +8,13 @@
 			
 		<header class="text-center margin-bottom-60">
 			<h2 style="font-size: 60px">Noticias</h2>
-			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
+			<h2 class="weight-300 letter-spacing-1 size-13">
+				<span>
+					<b>
+						LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS
+					</b>
+				</span>
+			</h2>
 			<hr />
 		</header>
 
@@ -52,19 +58,28 @@
 
 						@if ($ultima->str_tipo == 'video')
 
-							<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">
+							<div class="embed-responsive embed-responsive-16by9 margin-top-0">
+								{!! html_entity_decode($ultima->str_video) !!}
+							</div>
 
 						@endif
 
 						@if ($ultima->str_tipo == 'audio')
 							
-							<img class="img-responsive" src="assets/images/demo/magazine/1-min.jpg" alt="">								
+							<div class="embed-responsive embed-responsive-16by9">
+								{!! html_entity_decode($ultima->str_audio) !!} 
+							</div>
 
 						@endif
 
 					@endforeach
 
 				</div>
+
+
+
+
+
 
 				<!-- breaking news -->
 				<div class="alert alert-mini alert-primary margin-bottom-30"><!-- DANGER -->
@@ -380,7 +395,7 @@
 						</small>
 						<h4 style="text-align: justify;">
 							<a href="{{ route('verNoticias',[$interesar->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$interesar->str_titulo) }}">
-								{!! html_entity_decode($interesar->str_post_resumen) !!}
+								{{ str_replace("-"," ",$interesar->str_titulo) }}
 							</a>
 						</h4>
 					</div>

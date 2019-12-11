@@ -212,8 +212,14 @@
 
 						<div class="embed-responsive embed-responsive-16by9 margin-top-0">
 							{!! html_entity_decode($recientes->str_video) !!}
-						</div>											
+						</div>
 
+					@elseif($recientes->str_tipo == 'audio')
+
+						<div class="embed-responsive embed-responsive-16by9">
+							{!! html_entity_decode($recientes->str_audio) !!} 
+						</div>
+							
 					@endif
 
 				</figure>					

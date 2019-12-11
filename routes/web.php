@@ -57,7 +57,7 @@ Route::get('/noticias', [
 ]);
 
 //Ver Noticias:
-Route::get('/noticia-{titulo}', [
+Route::get('/noticias-{titulo}', [
 	'uses' => 'PublicController@verNoticias',
 	'as' =>'verNoticias'
 ]);
