@@ -557,7 +557,7 @@
 				@endif
 
 				<h4 class="text-left margin-top-20">
-					<a href="{{ route('verNoticias',[$blog->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$blog->str_titulo) }}" style="color: #ffffff">
+					<a href="{{ route('verBlog',[$blog->str_titulo])}}" target="_blank" title="{{ str_replace("-"," ",$blog->str_titulo) }}" style="color: #000000">
 						{{ str_replace("-"," ",$blog->str_titulo) }}
 					</a>
 				</h4>

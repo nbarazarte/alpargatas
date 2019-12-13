@@ -264,7 +264,7 @@ class PublicController extends Controller
 
         $posts = DB::table('tbl_post as p')
         ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
-        ->where('p.str_titulo', '=' ,$titulo)
+        ->where('p.str_titulo', 'like' ,"%$titulo%")
         ->Where(function ($query) {
             $query->where('p.bol_eliminado', '=', 0);
         })
@@ -275,7 +275,7 @@ class PublicController extends Controller
 
         $categorias = DB::table('tbl_categorias_post as cat')
         ->join('tbl_post as p', 'p.id', '=', 'cat.lng_idpost')
-        ->where('p.str_titulo', '=' ,$titulo)
+        ->where('p.str_titulo', 'like' ,"%$titulo%")
         ->Where(function ($query) {
             $query->where('p.bol_eliminado', '=', 0);
         })
