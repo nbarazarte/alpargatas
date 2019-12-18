@@ -119,7 +119,8 @@
 
 							<!-- article content -->
 
-								<p class="dropcap" style="text-align: justify;">
+								<!-- <p class="dropcap" style="text-align: justify;"> -->
+								<p class="" style="text-align: justify;">									
 									{!! html_entity_decode($post->str_post) !!} 
 								</p>
 							<!-- /article content -->
