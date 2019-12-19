@@ -231,18 +231,30 @@
 				<!-- Latest Blog Post -->
 				<h4 class="letter-spacing-1">ÚLTIMAS NOTICIAS</h4>
 				<ul class="footer-posts list-unstyled">
-					<li>
-						<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
-						<small>29 June 2015</small>
-					</li>
-					<li>
-						<a href="#">Nullam id dolor id nibh ultricies</a>
-						<small>29 June 2015</small>
-					</li>
-					<li>
-						<a href="#">Duis mollis, est non commodo luctus</a>
-						<small>29 June 2015</small>
-					</li>
+
+					@foreach ($ultimasNoticiasFooter as $ultimaFooter)
+
+						<li>
+							<a href="{{ route('verNoticias',[$ultimaFooter->str_titulo])}}" target="_blank">{{ str_replace("-"," ",$ultimaFooter->str_titulo) }}</a>
+							<small>
+								
+								<?php
+
+							  		$ultimaFooter->fecha = substr($ultimaFooter->fecha, 0,10);
+
+							        $var = explode('-',$ultimaFooter->fecha);
+
+							        $ultimaFooter->fecha = "$var[2]-$var[1]-$var[0]";
+
+								?>
+
+								{!! $ultimaFooter->fecha !!} 
+											
+							</small>
+						</li>
+
+					@endforeach
+
 				</ul>
 				<!-- /Latest Blog Post -->
 

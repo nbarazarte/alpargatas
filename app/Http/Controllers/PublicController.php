@@ -9,7 +9,23 @@ use App\Blog;
 
 class PublicController extends Controller
 {
-     
+    /**
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $ultimasNoticiasFooter = DB::table('tbl_noticias')
+        ->where('str_estatus', '=' ,'activo')
+        ->select('blb_img1','blb_img2','blb_img3','created_at as fecha','str_video','str_audio','str_titulo','str_post_resumen','str_tipo')
+        ->offset(0) //las siguientes tres noticias
+        ->limit(3)
+         ->orderBy('id', 'desc')
+        ->get();  
+
+       return \View::share(compact('ultimasNoticiasFooter'));
+    }
+
      /**
      * Show the application dashboard.
      *
@@ -31,7 +47,7 @@ class PublicController extends Controller
         ->offset(0) //las siguientes tres noticias
         ->limit(8)
          ->orderBy('id', 'desc')
-        ->get();                
+        ->get();  
 
         return \View::make('indexSmarty', compact('ultimasNoticias','ultimosBlog'));        
     }
