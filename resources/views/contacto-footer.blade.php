@@ -170,17 +170,9 @@
 				<p>
 					<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Av. Francisco de Miranda con Mohedano, Edif. Centro de Seguros Sudamérica, piso 11, oficina 11-B2, Urb. El Rosal, Caracas (Chacao), Miranda Zona Postal 1060 Caracas, Venezuela</span>
 					<span class="block">
-						<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
-						<a href="tel:+58-0212-953-5109">+58-0212-953-5109</a></span>
-						
-						<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
-						<a href="tel:+58-0212-953-7412">+58-0212-953-7412</a></span>
-						<br>
-						<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
-						<a href="tel:+58-0212-953-8130">+58-0212-953-8130</a></span>
-						<br>
-						<strong><i class="fa fa-phone"></i> Teléfonos:</strong>
-						<a href="tel:+58-0212-953-6733">+58-0212-953-6733</a></span>
+
+
+
 					<span class="block"><strong><i class="fa fa-envelope"></i> Correo Electrónico:</strong> <a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a></span>
 				</p>
 
@@ -214,8 +206,8 @@
 							Av. Francisco de Miranda con Mohedano, Edif. Centro de Seguros Sudamérica, piso 11, oficina 11-B2, Urb. El Rosal, Caracas (Chacao), <br>
 							Miranda Zona Postal 1060 Caracas, Venezuela
 						</li>
-						<li class="footer-sprite phone">
-							Teléfonos: +58-0212-953-5109 / 7412 / 8130 / 6733
+						<li class="">
+							<br>
 						</li>
 						<li class="footer-sprite email">
 							<a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a>

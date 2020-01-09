@@ -124,7 +124,7 @@
 		<div class="row">
 			
 			<div class="col-md-12">
-				<p style="text-align: justify;">La innovación tecnológica y financiera es un principio activo de nuestra plataforma para expedir soluciones que siempre generen a sus clientes las mejores oportunidades de crecimiento.Trabajamos para hacerles sentir que somos la elección correcta cuando de rapidez, soporte y fiabilidad se trate.<br>¡Tus estados de cuenta hablarán por si solos!.</p>
+				<p style="text-align: justify;">La innovación tecnológica y financiera es un principio activo de nuestra plataforma para expedir soluciones que siempre generen a sus clientes las mejores oportunidades de crecimiento.Trabajamos para hacerles sentir que somos la elección correcta cuando de rapidez, soporte y fiabilidad se trate.</p>
 				<hr />
 			</div>
 
