@@ -2,32 +2,31 @@
 
 @section('content')
 
-<!-- Mercados -->
-<section id="">
-	<div class="container">				
-			
-		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Mercados</h2>
-			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
-			<hr />
-		</header>
+<style type="text/css">
 
-		<div class="row">
+iframe{
 
-			<div class="col-sm-12">
+	width:100%;
+	height:1040px;
+	position: absolute;
+	top: -130px;
+}	
 
-				<div class="embed-responsive embed-responsive-16by9">
-				  <!--<iframe class="embed-responsive-item" src="https://cryptowat.ch/assets" allowfullscreen></iframe>-->
-				  <iframe class="embed-responsive-item" src="https://frame.cryptowat.ch/" allowfullscreen></iframe>
-				</div>
+div .cryptowathframe{
 
-			</div>
+	border: 1px solid black;
+	position: relative;
+	width: 100%;
+	height: 769px;
+	top: -141px;
+}
 
-		</div>
+</style>
 
-	</div>
+<div class="cryptowathframe">
+	
+	<iframe src="https://frame.cryptowat.ch/" scrolling="no" frameborder="0" allowtransparency="false"></iframe>
 
-</section>
-<!-- /Mercados -->
+</div>
 
 @endsection
