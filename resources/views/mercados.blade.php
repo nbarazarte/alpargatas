@@ -135,6 +135,27 @@
   
 }
 
+@media (max-width: 767px) and (min-width: 481px) {
+  
+	iframe{
+
+		width:100%;
+		height:1080px;
+		position: absolute;
+		top: -95px;
+	}	
+
+	div .cryptowathframe{
+
+		border: 0px solid black;
+		position: relative;
+		width: 100%;
+		height: 820px;
+		top: -165px;
+	}
+  
+}
+
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
