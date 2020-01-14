@@ -182,7 +182,32 @@
   
 }
 
+/* 
+	Huawei P20 Lite
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
+@media (min-width: 360px) and (max-width: 760px) {
+  
+	iframe{
+
+		width:100%;
+		height:1210px;/*1210*/
+		position: absolute;
+		top: -200px;
+	}	
+
+	div .cryptowathframe{
+
+		border: 1px solid black;
+		position: relative;
+		width: 100%;
+		height: 870px;/*870*/
+		top: -141px;
+	}
+  
+}
 
 
 /* 
