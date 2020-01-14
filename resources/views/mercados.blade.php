@@ -185,6 +185,33 @@
 
 
 
+/* 
+	IPHONE 6,7,8
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 414px) and (max-width: 736px) {
+  
+	iframe{
+
+		width:100%;
+		height:1150px;
+		position: absolute;
+		top: -190px;
+	}	
+
+	div .cryptowathframe{
+
+		border: 1px solid black;
+		position: relative;
+		width: 100%;
+		height: 815px;
+		top: -141px;
+	}
+  
+}
+
 
 
 
