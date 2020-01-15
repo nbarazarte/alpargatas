@@ -157,6 +157,7 @@
 }
 
 /* 
+	IPHONE 5/SE & P20 Lite
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -168,33 +169,6 @@
 		width:100%;
 		height:1228px;
 		position: absolute;
-		top: -200px;
-	}	
-
-	div .cryptowathframe{
-
-		border: 1px solid black;
-		position: relative;
-		width: 100%;
-		height: 885px;
-		top: -141px;
-	}
-  
-}
-
-/* 
-	Huawei P20 Lite
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 360px) and (max-width: 760px) {
-  
-	iframe{
-
-		width:100%;
-		height:1230px;/*1210*/
-		position: absolute;
 		top: -220px;
 	}	
 
@@ -203,12 +177,11 @@
 		border: 1px solid black;
 		position: relative;
 		width: 100%;
-		height: 870px;/*870*/
+		height: 867px;
 		top: -141px;
 	}
   
 }
-
 
 /* 
 	IPHONE 6,7,8
@@ -236,15 +209,6 @@
 	}
   
 }
-
-
-
-
-
-
-
-
-
 
 </style>
 
