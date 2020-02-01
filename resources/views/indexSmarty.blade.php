@@ -152,7 +152,7 @@
 			<!-- SLIDE  -->
 			<li data-transition="fade" data-slotamount="7" data-masterspeed="800" data-link="" data-title="Slide 4" data-target="_blank" data-saveperformance="off">
 
-				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/2345634635-2.jpeg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/Rectangle_10_A1_Rectangle_12_pattern.png" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
 
 
@@ -200,11 +200,11 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ A través de <b style="color: #DCC857">CRYPTIA</b>
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">A través de <b style="color: #DCC857">CRYPTIA</b>
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white lfb tp-resizeme" 
-					data-x="left" data-hoffset="110"
+					data-x="left" data-hoffset="30"
 					data-y="193" 
 					data-speed="1000" 
 					data-start="1400" 
@@ -214,7 +214,7 @@
 					data-elementdelay="0.1" 
 					data-endelementdelay="0.1" 
 					data-endspeed="300" 
-					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">+ trendrás acceso a
+					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap; font-size: 60px">trendrás acceso a
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white sfl tp-resizeme" 
@@ -232,7 +232,7 @@
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white sfr tp-resizeme" 
-					data-x="120" 
+					data-x="70" 
 					data-y="320" 
 					data-speed="750" 
 					data-start="2200" 
@@ -246,7 +246,7 @@
 				</div>
 
 				<div class="tp-caption mediumlarge_light_white sfb tp-resizeme" 
-					data-x="170" 
+					data-x="70" 
 					data-y="366" 
 					data-speed="750" 
 					data-start="2500" 

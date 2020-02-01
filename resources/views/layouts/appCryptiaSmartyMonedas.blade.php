@@ -66,6 +66,8 @@
 		</div>
 		<!-- /wrapper -->
 
+		@include('layouts.menu.opciones')
+		
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
 
