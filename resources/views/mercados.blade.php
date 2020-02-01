@@ -24,12 +24,7 @@
 </style>
 
 <div class="cryptowathframe">
-	
-	
 	<iframe src="https://frame.cryptowat.ch/" scrolling="no" frameborder="0" allowtransparency="false"></iframe>
-
-	
 </div>
-
 
 @endsection
