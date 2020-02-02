@@ -64,7 +64,11 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation">
+	<body class="smoothscroll enable-animation" style="background-image: url('{{ asset('assets/images/Group_86_A3_Group_158_pattern.png')}}');">
+
+    <!--
+  style="background-image: url('{{ asset('assets/images/nodes-1427176.png')}}'); z-index: 2"
+    -->
 
 		<!-- wrapper -->
 		<div id="wrapper">
@@ -72,7 +76,7 @@
 			@include('layouts.menu.header')
       
 			@yield('content')
-			
+
 			@include('contacto-footer')
 
 		</div>

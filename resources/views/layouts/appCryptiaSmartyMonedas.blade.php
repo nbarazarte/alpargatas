@@ -52,7 +52,7 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation">
+	<body class="smoothscroll enable-animation" style="background-image: url('{{ asset('assets/images/Group_86_A3_Group_158_pattern.png')}}');">
 
 		<!-- wrapper -->
 		<div id="wrapper">
