@@ -23,7 +23,8 @@ $config['subject']				= 'Formulario de contacto - Cryptia Exchange';	// subject 
 
 /** ******************************************************* MISC ******************************************************* **/
 define('UPLOAD_FOLDER',		'_upload/');										// upload folder path - slash at the end!
-define('UPLOAD_FOLDER_URL',	'http://localhost/PRJ/Smarty/HTML/php/_upload/');	// Full url path to upload folder (used for contact files) - slash at the end!
+//define('UPLOAD_FOLDER_URL',	'http://localhost/PRJ/Smarty/HTML/php/_upload/');	// Full url path to upload folder (used for contact files) - slash at the end!
+define('UPLOAD_FOLDER_URL',	'http://dev.ploshshop.com/PRJ/Smarty/HTML/php/_upload/');	// Full url path to upload folder (used for contact files) - slash at the end!
 define('UPLOAD_MAX_SIZE',	10000000);											// 1000000 = 10Mb
 
 
