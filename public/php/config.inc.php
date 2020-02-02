@@ -8,15 +8,15 @@ $config['use_smtp']				= true;						// true|false
 // SMTP Server Settings
 $config['smtp_host'] 			= 'smtp.gmail.com';   		// eg.: smtp.gmail.com
 $config['smtp_port'] 			= 587;						// eg.: 587
-$config['smtp_user'] 			= ''; 						// you@gmail.com
-$config['smtp_pass'] 			= '';						// password
+$config['smtp_user'] 			= 'atrellus@gmail.com'; 						// you@gmail.com
+$config['smtp_pass'] 			= 'falcor90dvv';						// password
 $config['smtp_ssl']				= false;					// should remain false
 
 // Who receive all emails?
-$config['send_to']				= 'youremail@gmail.com';	// destination of all emails sent throught contact form
+$config['send_to']				= 'atrellus@gmail.com';	// destination of all emails sent throught contact form
 
 // Email Subject
-$config['subject']				= 'Smarty Contact Form';	// subject of emails you receive
+$config['subject']				= 'Formulario de contacto - Cryptia Exchange';	// subject of emails you receive
 
 
 

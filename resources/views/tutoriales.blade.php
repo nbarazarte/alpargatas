@@ -7,7 +7,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Tutoriales</h2>
+			<h2 style="font-size: 64px">Tutoriales</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA MÁS NOVEDOSA TECNOLOGÍA BLOCKCHAIN DEL MERCADO VENEZOLANO</b></span></h2>
 			<hr />
 		</header>

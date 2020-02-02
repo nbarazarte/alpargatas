@@ -6,7 +6,7 @@
 <section id="quienes-somos">
 	<div class="container">
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Cryptia <span>Exchange</span></h2>
+			<h2 style="font-size: 64px">Cryptia <span>Exchange</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -90,7 +90,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestra <span>Misión</span></h2>
+			<h2 style="font-size: 64px">Nuestra <span>Misión</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<h2 class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">Desarrollar un sistema financiero tecnológico que pueda contribuir a la transformación digital del capital venezolano.</h2>		
 			<hr />
@@ -115,7 +115,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestra <span>Visión</span></h2>
+			<h2 style="font-size: 64px">Nuestra <span>Visión</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<h2 class="col-sm-10 col-sm-offset-1 nomargin-bottom weight-400">Liderar la industria comercial de criptoactivos venezolana con alcance internacional.</h2>			
 			<hr />
@@ -152,7 +152,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestros <span>Valores</span></h2>
+			<h2 style="font-size: 64px">Nuestros <span>Valores</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -210,7 +210,7 @@
 
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestros <span>Servicios</span></h2>
+			<h2 style="font-size: 64px">Nuestros <span>Servicios</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>

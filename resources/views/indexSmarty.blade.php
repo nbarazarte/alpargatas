@@ -271,7 +271,7 @@
 	<div class="container">
 
 		<div class="text-center">
-			<h3 class="size-30">Somos el exchange oficial de Venezuela.</h3>
+			<h3 class="" style="font-size: 33px;">Somos el exchange oficial de Venezuela.</h3>
 			<p>Sólo nosotros te podemos ofrecer las tasas más competitivas del mercado venezolano.</p>
 		</div>
 
@@ -284,7 +284,7 @@
 	<div class="container">				
 		<br>		
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Cryptia <span>Exchange</span></h2>
+			<h2 style="font-size: 64px">Cryptia <span>Exchange</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
@@ -350,7 +350,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Monedas</h2>
+			<h2 style="font-size: 64px">Monedas</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA MÁS NOVEDOSA TECNOLOGÍA BLOCKCHAIN DEL MERCADO VENEZOLANO</b></span></h2>
 			<hr />
 		</header>
@@ -375,10 +375,10 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2>Resumen de Noticias</h2>
+			<h2 style="font-size: 64px">Resumen de Noticias</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>CONOCE LAS NOTICIAS VINCULADAS AL MERCADO CAMBIARIO ACTUALIZADO DE CRIPTOACTIVOS</b></span></h2>
 			<hr />
-		</header>
+		</header>	
 
 		<!-- 
 			controlls-over		= navigation buttons over the image 
@@ -488,7 +488,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Nuestro <span>Blog</span></h2>
+			<h2 style="font-size: 64px">Nuestro <span>Blog</span></h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>SOMOS LA CASA DE INTERCAMBIO DE CRIPTOMONEDAS MÁS EFECTIVA</b></span></h2>
 			<hr />
 		</header>

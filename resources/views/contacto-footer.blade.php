@@ -23,7 +23,7 @@
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Contacto</h2>
+			<h2 style="font-size: 64px">Contacto</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>COMO CLIENTE DE CRYPTIA EXCHANGE ERES EL MAYOR VALOR</b></span></h2>
 			<hr />
 		</header>
@@ -63,7 +63,7 @@
 				<!-- Alert Success -->
 				<div id="alert_success" class="alert alert-success margin-bottom-30">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					<strong>Thank You!</strong> Your message successfully sent!
+					<strong>¡Gracias!</strong> ¡Hemos recibido su mensaje!
 				</div><!-- /Alert Success -->
 
 
@@ -277,7 +277,7 @@
 				<h4 class="letter-spacing-1">MANTENTE EN CONTACTO</h4>
 				<p>Subscríbete a nuestro boletín para mantenerte informado</p>
 
-				<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+				<form class="validate" action="php/newsletter.php" method="post" data-success="¡Gracias por suscribirte!" data-toastr-position="bottom-right">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 						<input type="email" id="email" name="email" class="form-control required" placeholder="Tu dirección correo electrónico">

@@ -7,7 +7,7 @@
 	<div class="container">				
 			
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Noticias</h2>
+			<h2 style="font-size: 64px">Noticias</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13">
 				<span>
 					<b>
@@ -75,11 +75,6 @@
 					@endforeach
 
 				</div>
-
-
-
-
-
 
 				<!-- breaking news -->
 				<div class="alert alert-mini alert-primary margin-bottom-30"><!-- DANGER -->
@@ -159,7 +154,6 @@
 
 									@endif
 
-									
 									<!--
 										</a>
 									-->

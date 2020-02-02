@@ -7,7 +7,7 @@
 	<div class="container">				
 			
 		<header class="text-center margin-bottom-60">
-			<h2 style="font-size: 60px">Blog</h2>
+			<h2 style="font-size: 64px">Blog</h2>
 			<h2 class="weight-300 letter-spacing-1 size-13"><span><b>LA FORMA SEGURA Y CONFIABLE DE INTERCAMBIAR CRIPTOMONEDAS</b></span></h2>
 			<hr />
 		</header>
