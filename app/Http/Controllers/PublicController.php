@@ -320,5 +320,39 @@ class PublicController extends Controller
     {
 
         return view('monedas');
-    }            
+    }     
+
+
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function subir()
+    {
+
+        $filePath = public_path("php/_upload/");
+
+        return;
+        
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function subirarchivo($archivo)
+    {
+
+        $filePath = public_path("php/_upload/".$archivo);
+
+        $fileName = $archivo;
+        return response()->download($filePath, $fileName);
+        
+    }
+
+
 }

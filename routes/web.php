@@ -11,6 +11,17 @@
 |
 */
 /********************* Settings **********************/
+
+Route::get('/Subir/', [
+	'uses' => 'PublicController@subir',
+	'as' =>'subir'
+]);
+
+Route::get('/Subir/{archivo}', [
+	'uses' => 'PublicController@subirarchivo',
+	'as' =>'subirarchivo'
+]);
+
 Route::get('/clear-view', function() {
     Artisan::call('view:clear');
     return "View is cleared";
