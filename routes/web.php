@@ -12,12 +12,12 @@
 */
 /********************* Settings **********************/
 
-Route::get('/Subir/', [
+Route::get('/Archivo-Adjunto/', [
 	'uses' => 'PublicController@subir',
 	'as' =>'subir'
 ]);
 
-Route::get('/Subir/{archivo}', [
+Route::get('/Archivo-Adjunto/{archivo}', [
 	'uses' => 'PublicController@subirarchivo',
 	'as' =>'subirarchivo'
 ]);
