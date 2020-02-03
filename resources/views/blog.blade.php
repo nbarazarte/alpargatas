@@ -143,13 +143,6 @@
 
 		</div>
 
-		<!-- PAGINATION -->
-		<ul class="pager">
-		  <li class="previous"><a class="radius-0" href="#">&larr; Anterior</a></li>
-		  <li class="next"><a class="radius-0" href="#">Siguiente &rarr;</a></li>
-		</ul>
-		<!-- /PAGINATION -->
-
 	</div>
 
 </section>

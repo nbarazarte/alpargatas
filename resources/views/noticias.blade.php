@@ -318,6 +318,22 @@
 			<!-- RIGHT -->
 			<div class="col-sm-3">
 
+				<!-- INLINE SEARCH -->
+				<div class="inline-search clearfix margin-bottom-30">
+					
+					<form action="{{ route('buscar') }}" method="post" class="widget_search" enctype="multipart/form-data">
+						<input type="search" placeholder="Buscar" id="s" name="s" class="serch-input">
+						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+						<button type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+
+				</div>
+				<!-- /INLINE SEARCH -->
+
+				<hr />
+
 				<!-- HOT -->
 				<h3 class="page-header nomargin-top weight-300">
 					Te puede <span>Interesar</span>

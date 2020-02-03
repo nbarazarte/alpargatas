@@ -332,11 +332,8 @@ class PublicController extends Controller
      */
     public function subir()
     {
-
         $filePath = public_path("php/_upload/");
-
         return;
-        
     }
 
     /**
@@ -355,4 +352,50 @@ class PublicController extends Controller
     }
 
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function buscar()
+    {
+        return view('buscar');     
+    }
+
+  /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postBuscar(Request $request)
+    {
+        
+        //dd($request['s']);die();
+
+        $titulo = $request['s'];
+
+        $posts = DB::table('tbl_noticias as p')
+        ->join('tbl_autores as a', 'p.lng_idautor', '=', 'a.id')
+        ->where('p.str_titulo', 'like' ,"%$titulo%")
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->select( 'p.id','p.str_tipo', 'p.created_at as fecha','p.str_titulo', 'p.str_post_resumen','p.str_video', 'p.str_audio', 'p.blb_img1', 'p.blb_img2', 'p.blb_img3', 'a.str_nombre as autor')
+
+        ->orderBy('p.id', 'desc')
+        ->get(); 
+
+        $categorias = DB::table('tbl_categorias_noticias as cat')
+        ->join('tbl_noticias as p', 'p.id', '=', 'cat.lng_idnoticias')
+        ->where('p.str_titulo', 'like' ,"%$titulo%")
+        ->Where(function ($query) {
+            $query->where('p.bol_eliminado', '=', 0);
+        })
+        ->get();  
+
+        //dd($posts);die();
+
+        return \View::make('buscar', compact('posts','categorias'));     
+    }
 }

@@ -161,12 +161,15 @@
 
 							<!-- INLINE SEARCH -->
 							<div class="inline-search clearfix margin-bottom-30">
-								<form action="#" method="get" class="widget_search">
+
+								<form action="{{ route('buscar') }}" method="post" class="widget_search" enctype="multipart/form-data">
 									<input type="search" placeholder="Buscar" id="s" name="s" class="serch-input">
+									<input type="hidden" name="_token" value="{{ csrf_token() }}">
 									<button type="submit">
 										<i class="fa fa-search"></i>
 									</button>
 								</form>
+
 							</div>
 							<!-- /INLINE SEARCH -->
 

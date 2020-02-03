@@ -12,6 +12,11 @@
 */
 /********************* Settings **********************/
 
+Route::get('/offWebSiteNow', function() {
+    Artisan::call('down');
+    return "Apagada";
+});
+
 Route::get('/archivo-adjunto/', [
 	'uses' => 'PublicController@subir',
 	'as' =>'subir'
@@ -78,7 +83,6 @@ Route::get('/tutoriales', [
 	'as' =>'tutoriales'
 ]);
 
-
 Route::get('/tutoriales-ajax/{id}', [
 	'uses' => 'PublicController@tutorialesAjax',
 	'as' =>'tutoriales-ajax'
@@ -99,6 +103,13 @@ Route::get('/monedas', [
 	'uses' => 'PublicController@monedas',
 	'as' =>'monedas'
 ]);
+
+Route::get('/buscar', [
+				'uses' => 'PublicController@buscar',
+				'as' =>'buscar'
+]);
+
+Route::post('/buscar', 'PublicController@postBuscar');
 
 Auth::routes();
 
