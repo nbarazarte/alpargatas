@@ -33,7 +33,7 @@
 			<!-- FORM -->
 			<div class="col-md-8 col-sm-8">
 
-				<h3>Si tienes dudas, comentarios o quieres ser parte de nuestro equipo <strong><em>¡contáctanos!</em></strong></h3>
+				<h3>Si tienes dudas, comentarios o quieres ser parte de nuestro equipo <strong>¡contáctanos!</strong></h3>
 
 				
 				<!--
@@ -171,9 +171,6 @@
 					<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Av. Francisco de Miranda con Mohedano, Edif. Centro de Seguros Sudamérica, piso 11, oficina 11-B2, Urb. El Rosal, Caracas (Chacao), Miranda Zona Postal 1060 Caracas, Venezuela</span>
 					<span class="block">
 
-
-
-					<span class="block"><strong><i class="fa fa-envelope"></i> Correo Electrónico:</strong> <a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a></span>
 				</p>
 
 			</div>
@@ -209,9 +206,7 @@
 						<li class="">
 							<br>
 						</li>
-						<li class="footer-sprite email">
-							<a href="mailto:atencionalcliente@cryptiaexchange.com">atencionalcliente@cryptiaexchange.com</a>
-						</li>
+
 					</ul>
 				</address>
 				<!-- /Contact Address -->
@@ -318,7 +313,7 @@
 	<div class="copyright" style="background-color: #000000">
 		<div class="container">
 			<ul class="pull-right nomargin list-inline mobile-block">
-				<li><a href="#">Tarifas</a></li>
+				<!--<li><a href="#">Tarifas</a></li>-->
 			</ul>
 			&copy; All Rights Reserved, Cryptia Exchange
 		</div>

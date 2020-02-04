@@ -38,7 +38,7 @@
 			<!-- SLIDE  -->
 			<li data-transition="fade" data-slotamount="7" data-masterspeed="800"  data-saveperformance="off" >
 
-				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/video/cryptocurrencyIntro.png" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+			<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/Cabecera_Mesa.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />				
 
 				<div class="tp-caption"
 					data-x="-275"
@@ -61,8 +61,8 @@
 				</div>								
 
 				<div class="tp-caption customin ltl tp-resizeme text_white"
-					data-x="center"
-					data-y="10"
+					data-x="800"
+					data-y="200"
 					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 					data-speed="800"
 					data-start="1000"
@@ -77,8 +77,8 @@
 				</div>
 
 				<div class="tp-caption customin ltl tp-resizeme large_bold_white"
-					data-x="center"
-					data-y="60"
+					data-x="520"
+					data-y="260"
 					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 					data-speed="800"
 					data-start="1200"
@@ -88,13 +88,13 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 10; font-size: 80px">
+					data-endeasing="Power4.easeIn" style="z-index: 10; font-size: 75px; color: #DCC857">
 					CRIPTOMONEDAS
 				</div>
 
 				<div class="tp-caption customin ltl tp-resizeme small_light_white"
-					data-x="center"
-					data-y="550"
+					data-x="667"
+					data-y="330"
 					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 					data-speed="800"
 					data-start="1400"
@@ -104,57 +104,53 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 35px;">
-					Utilizamos la más novedosa tecnología blockchain <br><br>adaptada al mercado venezolano.
+					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 27px;">
+					a través de la más novedosa tecnología
 				</div>
 
-				<div class="tp-caption tp-fade fadeout fullscreenvideo"
-					data-x="0"
-					data-y="0"
-					data-speed="1000"
-					data-start="1100"
-					data-easing="Power4.easeOut"
+				<div class="tp-caption customin ltl tp-resizeme small_light_white"
+					data-x="603"
+					data-y="360"
+					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+					data-speed="800"
+					data-start="1400"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
-					data-endspeed="1500"
-					data-endeasing="Power4.easeIn"
-					data-autoplay="true"
-					data-autoplayonlyfirsttime="false"
-					data-nextslideatend="true"
-					data-volume="mute" 
-					data-forceCover="1" 
-					data-aspectratio="16:9" 
-					data-forcerewind="on" style="z-index: 2;">
-
-					<div class="tp-dottedoverlay twoxtwo"><!-- dotted overlay --></div>
-
-					<video class="img-responsive" preload="none" width="100%" height="100%" poster="" >
-						<source src="assets/images/demo/video/cryptocurrencyIntro.mp4" type="video/mp4" />
-					</video>
-
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 27px;">
+					blockchain adaptada al mercado venezolano.
 				</div>
 
-				<div class="tp-caption lfb" 
-					data-x="right" data-hoffset="-70" 
-					data-y="90" 
-					data-speed="2000" 
-					data-start="500" 
-					data-easing="easeOutExpo" 
-					data-elementdelay="0.1" 
-					data-endelementdelay="0.1" 
-					data-endspeed="300" 
-					style="z-index: 10;">
-					<img class="img-responsive" src="assets/images/1x1.png" alt="" data-lazyload="wp-content/uploads/2017/12/logo-Cryptia-Exchange.png">
+				<div class="tp-caption customin ltl tp-resizeme small_light_white"
+					data-x="1035"
+					data-y="415"
+					data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+					data-speed="800"
+					data-start="1400"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 10; white-space: normal; text-align:center; font-size: 33px;">
+					
+					<a href="https://exchange.cryptiaexchange.com/en/login" target="_blank" style="color: #DCC857">
+						<b>Ingresar</b>
+					</a>
+					
 				</div>
 
 			</li>
 
 			<!-- SLIDE  -->
+			
 			<li data-transition="fade" data-slotamount="7" data-masterspeed="800" data-link="" data-title="Slide 4" data-target="_blank" data-saveperformance="off">
 
-				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/Rectangle_10_A1_Rectangle_12_pattern.png" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
-
-
+				<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/Cabecera_Mesa.jpg" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
 				<div class="tp-caption"
 					data-x="-275"
@@ -259,7 +255,7 @@
 					style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;font-size: 35px"><b>Volúmenes intercambiados</b>
 				</div>
 			</li>			
-
+			
 		</ul>
 		<div class="tp-bannertimer"></div>
 	</div>
@@ -296,7 +292,7 @@
 			</div>
 
 			<div class="col-sm-6">
-				<p class="dropcap" style="text-align: justify;">Nuestra plataforma ha sido diseñada específicamente para inversores de criptoactivos. Somos el vehículo más importante de masificación e incorporación en el uso de las criptomonedas en Venezuela. <br> Estamos orientados a proporcionar a sus usuarios la plataforma más rápida y segura para la comercialización de monedas digitales como bitcoin, ethereum y próximamente petro, entre otros.</p>
+				<p class="dropcap font-lato size-20" style="text-align: justify;">Nuestra plataforma ha sido diseñada específicamente para inversores de criptoactivos. Somos el vehículo más importante de masificación e incorporación en el uso de las criptomonedas en Venezuela. <br> Estamos orientados a proporcionar a sus usuarios la plataforma más rápida y segura para la comercialización de monedas digitales como bitcoin, ethereum y próximamente petro, entre otros.</p>
 
 				<hr />
 
@@ -333,7 +329,7 @@
 
 		<div class="text-center">
 
-			<h3>Proporcionamos a nuestros usuarios la plataforma más rápida y segura</h3>
+			<h3><b>Proporcionamos a nuestros usuarios la plataforma más rápida y segura<b></h3>
 			<p class="font-lato size-20">
 				El mercado de criptomonedas está en constante expansión produciendo nuevas oportunidades de negocio a nivel mundial. <br>A través de la tecnología blockchain ofrecemos una forma segura y confiable de intercambiar criptomonedas.
 			</p>
@@ -370,8 +366,8 @@
 <!-- /MONEDAS -->
 
 <!-- NOTICIAS -->
-<section id="noticias-resumen" class="parallax parallax-2" style="background-image: url('assets/images/demo/1200x800/bg-bitcoin345-2.jpg');">
-	<div class="overlay dark-8"><!-- dark overlay [1 to 9 opacity] --></div>
+<section id="noticias-resumen" class="parallax parallax-2" style="background-color: #041333">
+	<div class=""><!-- dark overlay [1 to 9 opacity] --></div>
 	<div class="container">
 		<br>
 		<header class="text-center margin-bottom-60">
